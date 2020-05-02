@@ -6,8 +6,8 @@ from flask import Flask, jsonify, request
 from flask_cors import CORS, cross_origin
 from flask_restx import Api
 from flask_sqlalchemy import SQLAlchemy
-from auth.auth import AuthError, RESPONSE_CODE
 
+from auth.auth import AuthError, RESPONSE_CODE
 from constants import LOG_LEVEL, ENV, API
 
 app = Flask(__name__)
@@ -89,8 +89,10 @@ def app_status():
 
     return jsonify(response), RESPONSE_CODE["200_OK"]
 
-# import all controllers
+
+# noinspection PyUnresolvedReferences
 from controllers import *
+
 
 # Error Handling
 @app.errorhandler(RESPONSE_CODE["400_BAD_REQUEST"])

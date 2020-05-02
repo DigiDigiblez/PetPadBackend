@@ -11,12 +11,16 @@ pet_ns = api.namespace("pets", description="Pet endpoints")
 class Index(Resource):
 
     @pet_ns.marshal_list_with(pet_list_model)
-    def get(self, payload):
-        all_pets = Pet.query.all()
+    def get(self):
+        all_pets = Pet.query.one_or_none()
 
-        response = {
-            "pets": all_pets,
-            "total_pets": len(all_pets),
-        }
+        if all_pets is None:
+            return "No pets"
 
-        return response
+        else:
+            response = {
+                "pets": all_pets,
+                "total_pets": len(all_pets),
+            }
+
+            return "Hello world"

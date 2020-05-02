@@ -21,5 +21,5 @@ pet_model = api.model("pet_model", {
 
 pet_list_model = api.model("pet_list_model", {
     "pets": fields.List(fields.Nested(pet_model), default=[]),
-    "count": fields.Integer(readonly=True, description="Pet count")
+    "total_pets": fields.Integer(readonly=True, description="Pet count")
 })
