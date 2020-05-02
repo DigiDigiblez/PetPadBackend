@@ -89,6 +89,8 @@ def app_status():
 
     return jsonify(response), RESPONSE_CODE["200_OK"]
 
+# import all controllers
+from controllers import *
 
 # Error Handling
 @app.errorhandler(RESPONSE_CODE["400_BAD_REQUEST"])
