@@ -1,4 +1,4 @@
-from app import api
+from backend.app import api
 from flask_restx import fields
 
 pad_note_model = api.model("pad_note_model", {
