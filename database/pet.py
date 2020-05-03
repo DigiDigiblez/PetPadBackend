@@ -1,3 +1,4 @@
+import re
 from dataclasses import dataclass
 from datetime import datetime
 
@@ -6,7 +7,7 @@ from app import db
 
 @dataclass
 class Pet(db.Model):
-    __tablename__ = "pets"
+    __tablename__ = "Pet"
     id: int = db.Column(db.Integer, primary_key=True, autoincrement=True)
     name: str = db.Column(db.String(80), nullable=False)
     gender: str = db.Column(db.String(10), nullable=False)
@@ -23,14 +24,10 @@ class Pet(db.Model):
     social_twitter_url: str = db.Column(db.String(500), nullable=True)
     social_instragram_url: str = db.Column(db.String(500), nullable=True)
 
-    # TODO relationships & foreign keys
-    # pad = db.relationship("Pad")
-    # assistant = db.relationship("Assistant")
-
     # Insert new Pet record into the database
     def insert(self):
         try:
-            # self.validate() TODO
+            self.validate()
             db.session.add(self)
             db.session.commit()
 
@@ -93,6 +90,23 @@ class Pet(db.Model):
 
         if self.gender.lower() not in genders:
             raise ValueError("Gender must be male or female")
+
+        if not re.match(r"^[a-zA-Z0-9]+", self.name):
+            raise ValueError("Name must only use a mix of letters, and numbers")
+
+        if not re.match(r"^[A-Z][a-z]*( [A-Z][a-z]*)*$", self.breed):
+            raise ValueError("Breed must only use a mix of single-spaced capitalised words")
+
+        # TODO - birthday validation (needed?)
+
+        # TODO - favourite toy validation
+
+        # TODO - favourite food validation
+
+        # TODO - personality trait validation
+
+        if not re.match(r"^[A-Z][a-z]*( [A-Z][a-z]*)*$", self.species):
+            raise ValueError("Species must only use a mix of single-spaced capitalised words")
 
         if not any(uriPart in self.social_google_plus_url for uriPart in uri_parts):
             raise ValueError("Social URL is not in valid format (e.g. https://plus.google.com/<account id>)")

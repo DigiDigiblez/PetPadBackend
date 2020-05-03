@@ -1,2 +1,3 @@
+SQLALCHEMY_DATABASE_URI = "postgres://carlbowen@localhost:5432/petpad"
 SQLALCHEMY_TRACK_MODIFICATIONS = False
 ERROR_404_HELP = True

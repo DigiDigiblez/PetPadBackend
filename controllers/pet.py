@@ -52,8 +52,10 @@ class PetsID(Resource):
         err_desc = ""
 
         try:
-            # Retrieve existing pet record to update
+            # Retrieve existing pet record to delete
             existing_pet = Pet.query.filter(Pet.id == pet_id).one_or_none()
+            # Retrieve pad record connected to pet record to delete TODO
+            # existing_pet_pad = Pad.query.filter(Pad.id == pet_id).one_or_none()
 
             # If pet record doesn't exist, abort
             if existing_pet is None:

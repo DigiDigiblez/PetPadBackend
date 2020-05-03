@@ -23,7 +23,6 @@ try:
     if os.environ["ENV"] == ENV["PROD"]:
         logger.level = LOG_LEVEL["INFO"]
         logging.getLogger("flask_cors").level = LOG_LEVEL["INFO"]
-        app.config["SQLALCHEMY_DATABASE_URI"] = os.environ["SQLALCHEMY_DATABASE_URI"]
 
     # Additional configuration for LOCAL, DEV, and TEST environments
     else:
