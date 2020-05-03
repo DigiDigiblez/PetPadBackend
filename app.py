@@ -4,48 +4,35 @@ import os
 
 from flask import Flask, jsonify, request
 from flask_cors import CORS, cross_origin
+from flask_migrate import Migrate
 from flask_restx import Api
 from flask_sqlalchemy import SQLAlchemy
 
-from auth.auth import AuthError, RESPONSE_CODE
-from constants import LOG_LEVEL, ENV, API
+from auth.auth import AuthError, RESPONSE
+from constants.constants import API, ENV, LOG_LEVEL
 
 app = Flask(__name__)
 
 logger = logging.getLogger("petpad_logger")
 
-# LIVE environment configuration
-if os.environ["ENV"] == ENV["PROD"]:
-    # Logging
-    logger.level = LOG_LEVEL["INFO"]
-    logging.getLogger("flask_cors").level = LOG_LEVEL["INFO"]
+# Try and configure project based on current environment
+try:
+    app.config.from_object(f"configurations.config_{os.environ['ENV']}_env")
 
-    app.config["SQLALCHEMY_DATABASE_URI"] = os.environ["SQLALCHEMY_DATABASE_URI"]
-    app.config.from_pyfile(os.path.join(".", "configurations/api.conf"), silent=True)
+    # Additional configuration for LIVE environment
+    if os.environ["ENV"] == ENV["PROD"]:
+        logger.level = LOG_LEVEL["INFO"]
+        logging.getLogger("flask_cors").level = LOG_LEVEL["INFO"]
+        app.config["SQLALCHEMY_DATABASE_URI"] = os.environ["SQLALCHEMY_DATABASE_URI"]
 
-# DEV environment configuration
-elif os.environ["ENV"] == ENV["DEV"]:
-    # Logging
-    logger.level = LOG_LEVEL["DEBUG"]
-    logging.getLogger("flask_cors").level = LOG_LEVEL["DEBUG"]
+    # Additional configuration for LOCAL, DEV, and TEST environments
+    else:
+        logger.level = LOG_LEVEL["DEBUG"]
+        logging.getLogger("flask_cors").level = LOG_LEVEL["DEBUG"]
 
-    app.config.from_pyfile(os.path.join(".", "configurations/api.dev.conf"), silent=True)
-
-# TEST environment configuration
-elif os.environ["ENV"] == ENV["TEST"]:
-    # Logging
-    logger.level = LOG_LEVEL["DEBUG"]
-    logging.getLogger("flask_cors").level = LOG_LEVEL["DEBUG"]
-
-    app.config.from_pyfile(os.path.join(".", "configurations/api.test.conf"), silent=True)
-
-# LOCAL environment configuration
-else:
-    # Logging
-    logging.getLogger("flask_cors").level = logging.DEBUG
-    logger.level = logging.DEBUG
-
-    app.config.from_pyfile(os.path.join(".", "configurations/api.local.conf"), silent=True)
+# Something went wrong with configuration
+except Exception as ex:
+    logger.exception(ex)
 
 # Configure logger
 logging.basicConfig()
@@ -53,7 +40,10 @@ logging.basicConfig()
 # Configure database
 db = SQLAlchemy()
 db.app = app
+
+# Initialise app with db (SQLAlchemy) and migration support (Flask Migrate)
 db.init_app(app)
+Migrate(app, db)
 
 # Configure Swagger UI
 api = Api(
@@ -87,7 +77,7 @@ def app_status():
         "success": True
     }
 
-    return jsonify(response), RESPONSE_CODE["200_OK"]
+    return jsonify(response), RESPONSE["200_OK"][0]
 
 
 # noinspection PyUnresolvedReferences
@@ -95,56 +85,69 @@ from controllers import *
 
 
 # Error Handling
-@app.errorhandler(RESPONSE_CODE["400_BAD_REQUEST"])
+@app.errorhandler(RESPONSE["400_BAD_REQUEST"][0])
 def bad_request(err):
-    print(err)
+    logger.error(err)
 
     response = {
         "success": False,
-        "error": RESPONSE_CODE["400_BAD_REQUEST"],
-        "message": "Bad request",
+        "error": RESPONSE["400_BAD_REQUEST"][0],
+        "message": RESPONSE["400_BAD_REQUEST"][1],
     }
 
-    return jsonify(response), RESPONSE_CODE["400_BAD_REQUEST"]
+    return jsonify(response), RESPONSE["400_BAD_REQUEST"][0]
 
 
-@app.errorhandler(RESPONSE_CODE["404_RESOURCE_NOT_FOUND"])
+@app.errorhandler(RESPONSE["404_RESOURCE_NOT_FOUND"][0])
 def resource_not_found(err):
-    print(err)
+    logger.error(err)
 
     response = {
         "success": False,
-        "error": RESPONSE_CODE["404_RESOURCE_NOT_FOUND"],
-        "message": "Resource not found",
+        "error": RESPONSE["404_RESOURCE_NOT_FOUND"][0],
+        "message": RESPONSE["404_RESOURCE_NOT_FOUND"][1],
     }
 
-    return jsonify(response), RESPONSE_CODE["404_RESOURCE_NOT_FOUND"]
+    return jsonify(response), RESPONSE["404_RESOURCE_NOT_FOUND"][0]
 
 
-@app.errorhandler(RESPONSE_CODE["422_UNPROCESSABLE_ENTITY"])
+@app.errorhandler(RESPONSE["405_METHOD_NOT_ALLOWED"][0])
+def method_not_allowed(err):
+    logger.error(err)
+
+    response = {
+        "success": False,
+        "error": RESPONSE["405_METHOD_NOT_ALLOWED"][0],
+        "message": RESPONSE["405_METHOD_NOT_ALLOWED"][1],
+    }
+
+    return jsonify(response), RESPONSE["405_METHOD_NOT_ALLOWED"][0]
+
+
+@app.errorhandler(RESPONSE["422_UNPROCESSABLE_ENTITY"][0])
 def unprocessable_entity(err):
-    print(err)
+    logger.error(err)
 
     response = {
         "success": False,
-        "error": RESPONSE_CODE["422_UNPROCESSABLE_ENTITY"],
-        "message": "Unprocessable entity",
+        "error": RESPONSE["422_UNPROCESSABLE_ENTITY"][0],
+        "message": RESPONSE["422_UNPROCESSABLE_ENTITY"][1],
     }
 
-    return jsonify(response), RESPONSE_CODE["422_UNPROCESSABLE_ENTITY"]
+    return jsonify(response), RESPONSE["422_UNPROCESSABLE_ENTITY"][0]
 
 
-@app.errorhandler(RESPONSE_CODE["500_INTERNAL_SERVER_ERROR"])
+@app.errorhandler(RESPONSE["500_INTERNAL_SERVER_ERROR"][0])
 def internal_server_error(err):
-    print(err)
+    logger.error(err)
 
     response = {
         "success": False,
-        "error": RESPONSE_CODE["500_INTERNAL_SERVER_ERROR"],
-        "message": "Internal server error",
+        "error": RESPONSE["500_INTERNAL_SERVER_ERROR"][0],
+        "message": RESPONSE["500_INTERNAL_SERVER_ERROR"][1],
     }
 
-    return jsonify(response), RESPONSE_CODE["500_INTERNAL_SERVER_ERROR"]
+    return jsonify(response), RESPONSE["500_INTERNAL_SERVER_ERROR"][0]
 
 
 @app.errorhandler(AuthError)

@@ -17,20 +17,20 @@ class Pet(db.Model):
     birthday: datetime = db.Column(db.DateTime, nullable=False)
     favourite_toy: str = db.Column(db.String(100), nullable=False)
     favourite_food: str = db.Column(db.String(100), nullable=False)
-    personality_trait: str = db.Column(db.String(50), nullable=False),
+    personality_trait: str = db.Column(db.String(50), nullable=False)
     social_google_plus_url: str = db.Column(db.String(500), nullable=True)
     social_facebook_url: str = db.Column(db.String(500), nullable=True)
     social_twitter_url: str = db.Column(db.String(500), nullable=True)
     social_instragram_url: str = db.Column(db.String(500), nullable=True)
 
-    # TODO
+    # TODO relationships & foreign keys
     # pad = db.relationship("Pad")
     # assistant = db.relationship("Assistant")
 
     # Insert new Pet record into the database
     def insert(self):
         try:
-            self.validate()
+            # self.validate() TODO
             db.session.add(self)
             db.session.commit()
 
@@ -80,10 +80,28 @@ class Pet(db.Model):
         finally:
             db.session.close()
 
-    # Validate Pet model data
+    # Prevent bad data from entering db
     def validate(self):
-        if self.target_weight < 0:
-            raise ValueError("target_weight must be greater or equal to zero")
+        genders = ["male", "female"]
+        uri_parts = ["http://www.", "https://www.", ".com/"]
 
-        if self.height < 0:
-            raise ValueError("height must be greater or equal to zero")
+        if self.weight < 0.0:
+            raise ValueError("Weight must exceed zero")
+
+        if self.height < 0.0:
+            raise ValueError("Height must exceed zero")
+
+        if self.gender.lower() not in genders:
+            raise ValueError("Gender must be male or female")
+
+        if not any(uriPart in self.social_google_plus_url for uriPart in uri_parts):
+            raise ValueError("Social URL is not in valid format (e.g. https://plus.google.com/<account id>)")
+
+        if not any(uriPart in self.social_facebook_url for uriPart in uri_parts):
+            raise ValueError("Social URL is not in valid format (e.g. https://Facebook.com/<account id>)")
+
+        if not any(uriPart in self.social_twitter_url for uriPart in uri_parts):
+            raise ValueError("Social URL is not in valid format (e.g. https://Twitter.com/<account id>)")
+
+        if not any(uriPart in self.social_instragram_url for uriPart in uri_parts):
+            raise ValueError("Social URL is not in valid format (e.g. https://Twitter.com/<account id>)")

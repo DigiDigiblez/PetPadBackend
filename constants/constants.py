@@ -1,18 +1,21 @@
 import logging
 
-RESPONSE_CODE = {
+RESPONSE = {
     # Success codes
-    "200_OK": 200,
+    "200_OK": [200, "OK"],  # GET requests
+    "201_CREATED": [201, "Created"],  # POST requests
+    "204_NO_CONTENT": [204, "No content"],  # DELETE, PATCH, PUT requests
 
     # Client error codes
-    "400_BAD_REQUEST": 400,
-    "401_UNAUTHORIZED": 401,
-    "403_FORBIDDEN": 403,
-    "404_RESOURCE_NOT_FOUND": 404,
-    "422_UNPROCESSABLE_ENTITY": 422,
+    "400_BAD_REQUEST": [400, "Bad request"],
+    "401_UNAUTHORIZED": [401, "Unauthorised"],
+    "403_FORBIDDEN": [403, "Forbidden"],
+    "404_RESOURCE_NOT_FOUND": [404, "Resource not found"],
+    "405_METHOD_NOT_ALLOWED": [405, "Method not allowed"],
+    "422_UNPROCESSABLE_ENTITY": [422, "Unprocessable entity"],
 
     # Server error codes
-    "500_INTERNAL_SERVER_ERROR": 500
+    "500_INTERNAL_SERVER_ERROR": [500, "Internal server error"]
 }
 
 AUTH_HEADER_ERR = {

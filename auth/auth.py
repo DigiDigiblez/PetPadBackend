@@ -6,7 +6,7 @@ from flask import request, abort
 from jose import jwt
 from six.moves.urllib.request import urlopen
 
-from constants import AUTH_HEADER_ERR, RESPONSE_CODE
+from constants.constants import AUTH_HEADER_ERR, RESPONSE
 
 # Auth0 identity provider config variables
 auth0Config = toml.load(r"configurations/auth0.toml")
@@ -29,7 +29,7 @@ def get_token_auth_header():
         raise AuthError({
             "code": AUTH_HEADER_ERR["INVALID_HEADER"],
             "description": "Authorization header is missing"
-        }, RESPONSE_CODE["401_UNAUTHORIZED"])
+        }, RESPONSE["401_UNAUTHORIZED"])
 
     # Dissect header
     header_parts = request.headers["Authorization"].split()
@@ -40,19 +40,19 @@ def get_token_auth_header():
         raise AuthError({
             "code": AUTH_HEADER_ERR["INVALID_HEADER"],
             "description": "Authorization header is missing bearer prefix"
-        }, RESPONSE_CODE["401_UNAUTHORIZED"])
+        }, RESPONSE["401_UNAUTHORIZED"])
 
     elif bearer_prefix and len(header_parts) == 1:
         raise AuthError({
             "code": AUTH_HEADER_ERR["INVALID_HEADER"],
             "description": "Authorization header is missing auth token"
-        }, RESPONSE_CODE["401_UNAUTHORIZED"])
+        }, RESPONSE["401_UNAUTHORIZED"])
 
     elif len(header_parts) > 2:
         raise AuthError({
             "code": AUTH_HEADER_ERR["INVALID_HEADER"],
             "description": "Authorization header is malformed"
-        }, RESPONSE_CODE["401_UNAUTHORIZED"])
+        }, RESPONSE["401_UNAUTHORIZED"])
 
     return auth_token
 
@@ -68,7 +68,7 @@ def verify_decode_jwt(token):
         raise AuthError({
             "code": AUTH_HEADER_ERR["INVALID_HEADER"],
             "description": "Authorization malformed."
-        }, RESPONSE_CODE["401_UNAUTHORIZED"])
+        }, RESPONSE["401_UNAUTHORIZED"])
 
     for key in jwks["keys"]:
         if key["kid"] == unverified_header["kid"]:
@@ -96,25 +96,25 @@ def verify_decode_jwt(token):
             raise AuthError({
                 "code": AUTH_HEADER_ERR["TOKEN_EXPIRED"],
                 "description": "Token expired."
-            }, RESPONSE_CODE["401_UNAUTHORIZED"])
+            }, RESPONSE["401_UNAUTHORIZED"])
 
         except jwt.JWTClaimsError:
             raise AuthError({
                 "code": AUTH_HEADER_ERR["INVALID_CLAIMS"],
                 "description":
                     "Incorrect claims. Please, check the audience and issuer."
-            }, RESPONSE_CODE["401_UNAUTHORIZED"])
+            }, RESPONSE["401_UNAUTHORIZED"])
 
         except Exception:
             raise AuthError({
                 "code": AUTH_HEADER_ERR["INVALID_HEADER"],
                 "description": "Unable to parse authentication token."
-            }, RESPONSE_CODE["400_BAD_REQUEST"])
+            }, RESPONSE["400_BAD_REQUEST"])
 
     raise AuthError({
         "code": AUTH_HEADER_ERR["INVALID_HEADER"],
         "description": "Unable to find the appropriate key."
-    }, RESPONSE_CODE["400_BAD_REQUEST"])
+    }, RESPONSE["400_BAD_REQUEST"])
 
 
 # Check user permissions
@@ -125,14 +125,14 @@ def check_permissions(permission, payload, user_id):
             raise AuthError({
                 "code": AUTH_HEADER_ERR["FORBIDDEN"],
                 "description": "Insufficient permission to perform the request."
-            }, RESPONSE_CODE["403_FORBIDDEN"])
+            }, RESPONSE["403_FORBIDDEN"])
 
         # Validate if the user is accessing their personal resource
         if payload["sub"] != user_id and user_id != "":
             raise AuthError({
                 "code": AUTH_HEADER_ERR["FORBIDDEN"],
                 "description": "You do not have permission to perform this task on another user resource."
-            }, RESPONSE_CODE["403_FORBIDDEN"])
+            }, RESPONSE["403_FORBIDDEN"])
 
     except AuthError:
         raise
@@ -142,7 +142,7 @@ def check_permissions(permission, payload, user_id):
             "code": AUTH_HEADER_ERR["INVALID_KEY"],
             "description": "Authorisation token does not contain permission."
                            "Ensure that RBAC is enabled and the user has an appropriate role assigned "
-        }, RESPONSE_CODE["401_UNAUTHORIZED"])
+        }, RESPONSE["401_UNAUTHORIZED"])
 
 
 # Decorator for user authentication and authorisation
