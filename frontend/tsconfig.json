@@ -1,0 +1,34 @@
+{
+	"compilerOptions": {
+		"target": "es5",
+		"lib": [
+			"dom",
+			"dom.iterable",
+			"esnext"
+		],
+		"allowJs": true,
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"module": "esnext",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"noEmit": true,
+		"jsx": "react"
+	},
+	"types": [
+		"react",
+		"jest"
+	],
+	"include": [
+		"./src",
+		"node_modules/cypress/types/index.d.ts",
+		"node_modules/cypress/types/blob-util.d.ts",
+		"node_modules/cypress/types/minimatch.d.ts",
+		"node_modules/cypress/types/bluebird.d.ts",
+		"frontend/cypress/**/*.ts"
+	]
+}

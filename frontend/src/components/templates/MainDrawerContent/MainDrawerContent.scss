@@ -1,0 +1,13 @@
+.main-drawer-content {
+    &__ctas {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 2.5rem;
+    }
+
+    &__drawers {
+        margin-top: 3rem;
+        padding-left: 5.5rem;
+    }
+}

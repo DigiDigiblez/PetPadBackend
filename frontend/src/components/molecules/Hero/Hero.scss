@@ -1,0 +1,28 @@
+.hero {
+  background: url("../../../icons/hero_background.png") no-repeat;
+  min-height: calc(90vh - 60px);
+
+  &__content {
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+
+    &-devices {
+      height: 80%;
+      margin: 4rem;
+    }
+  }
+}
+
+// Button styles
+.primary_cta {
+  background-color: #FF8965;
+  border: none;
+  border-radius: 5%;
+  color: white;
+  left: 28%;
+  padding: 10px;
+  position: fixed;
+  text-transform: uppercase;
+  top: 450px;
+}
