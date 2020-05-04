@@ -3,8 +3,10 @@ import { Redirect } from "react-router";
 import { Switch } from "react-router-dom";
 
 import PublicRoute from "../../molecules/PublicRoute/PublicRoute";
+import Profile from "../../templates/Profile";
 import Homepage from "../Homepage";
 import Page404 from "../Page404";
+import Register from "../Register";
 import { ROUTES } from "./types";
 
 const Routes = () => (
@@ -14,7 +16,16 @@ const Routes = () => (
             path={ROUTES.HOMEPAGE}
             component={Homepage}
         />
-        {/*  TEST ROUTES END  */}
+        <PublicRoute
+            exact
+            path={ROUTES.REGISTER}
+            component={Register}
+        />
+        <PublicRoute
+            exact
+            path={ROUTES.PROFILE}
+            component={Profile}
+        />
         <PublicRoute exact path="/404" component={Page404} />
         <Redirect to="/404" />
     </Switch>

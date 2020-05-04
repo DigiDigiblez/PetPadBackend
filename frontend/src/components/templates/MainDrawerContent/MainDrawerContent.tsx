@@ -13,7 +13,7 @@ const MainDrawerContent = () => {
     useEffect(() => {
         // TODO - Axios request post-auth BE setup to toggle based on authed user
         setAuth(localStorage.getItem("auth") === "true");
-    });
+    }, []);
 
     return (
         <Container className={baseclass}>

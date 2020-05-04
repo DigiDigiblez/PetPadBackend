@@ -15,7 +15,7 @@
       </option>
       <option name="outputFromStdout" value="false" />
       <option name="program" value="$ProjectFileDir$/frontend/node_modules/eslint/bin/eslint.js" />
-      <option name="runOnExternalChanges" value="true" />
+      <option name="runOnExternalChanges" value="false" />
       <option name="scopeName" value="Current File" />
       <option name="trackOnlyRoot" value="false" />
       <option name="workingDir" value="" />
@@ -35,8 +35,8 @@
       </option>
       <option name="outputFromStdout" value="false" />
       <option name="program" value="$ProjectFileDir$/frontend/node_modules/prettier/bin-prettier.js" />
-      <option name="runOnExternalChanges" value="true" />
-      <option name="scopeName" value="Project Files" />
+      <option name="runOnExternalChanges" value="false" />
+      <option name="scopeName" value="Recently Changed Files" />
       <option name="trackOnlyRoot" value="false" />
       <option name="workingDir" value="$ProjectFileDir$" />
       <envs />
@@ -55,8 +55,8 @@
       </option>
       <option name="outputFromStdout" value="false" />
       <option name="program" value="$ProjectFileDir$/frontend/node_modules/prettier/bin-prettier.js" />
-      <option name="runOnExternalChanges" value="true" />
-      <option name="scopeName" value="Project Files" />
+      <option name="runOnExternalChanges" value="false" />
+      <option name="scopeName" value="Recently Changed Files" />
       <option name="trackOnlyRoot" value="false" />
       <option name="workingDir" value="$ProjectFileDir$" />
       <envs />
@@ -75,8 +75,8 @@
       </option>
       <option name="outputFromStdout" value="false" />
       <option name="program" value="$ProjectFileDir$/frontend/node_modules/stylelint/bin/stylelint.js" />
-      <option name="runOnExternalChanges" value="true" />
-      <option name="scopeName" value="Current File" />
+      <option name="runOnExternalChanges" value="false" />
+      <option name="scopeName" value="Recently Changed Files" />
       <option name="trackOnlyRoot" value="false" />
       <option name="workingDir" value="" />
       <envs />
@@ -87,7 +87,7 @@
       <option name="description" />
       <option name="exitCodeBehavior" value="ERROR" />
       <option name="fileExtension" value="scss" />
-      <option name="immediateSync" value="true" />
+      <option name="immediateSync" value="false" />
       <option name="name" value="StyleLint (.scss)" />
       <option name="output" value="$FileDir$" />
       <option name="outputFilters">
@@ -95,8 +95,8 @@
       </option>
       <option name="outputFromStdout" value="false" />
       <option name="program" value="$ProjectFileDir$/frontend/node_modules/stylelint/bin/stylelint.js" />
-      <option name="runOnExternalChanges" value="true" />
-      <option name="scopeName" value="Current File" />
+      <option name="runOnExternalChanges" value="false" />
+      <option name="scopeName" value="Recently Changed Files" />
       <option name="trackOnlyRoot" value="false" />
       <option name="workingDir" value="" />
       <envs />
@@ -115,8 +115,8 @@
       </option>
       <option name="outputFromStdout" value="false" />
       <option name="program" value="$ProjectFileDir$/frontend/node_modules/prettier/bin-prettier.js" />
-      <option name="runOnExternalChanges" value="true" />
-      <option name="scopeName" value="Project Files" />
+      <option name="runOnExternalChanges" value="false" />
+      <option name="scopeName" value="Recently Changed Files" />
       <option name="trackOnlyRoot" value="false" />
       <option name="workingDir" value="$ProjectFileDir$" />
       <envs />
@@ -135,8 +135,8 @@
       </option>
       <option name="outputFromStdout" value="false" />
       <option name="program" value="$ProjectFileDir$/frontend/node_modules/prettier/bin-prettier.js" />
-      <option name="runOnExternalChanges" value="true" />
-      <option name="scopeName" value="Project Files" />
+      <option name="runOnExternalChanges" value="false" />
+      <option name="scopeName" value="Recently Changed Files" />
       <option name="trackOnlyRoot" value="false" />
       <option name="workingDir" value="$ProjectFileDir$" />
       <envs />

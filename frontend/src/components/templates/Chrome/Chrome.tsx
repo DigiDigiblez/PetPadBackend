@@ -13,7 +13,9 @@ const Chrome = ({ children }: IChromeProps) => {
     return (
         <Container className={baseclass}>
             <Header />
-            {children}
+            <section className={`${baseclass}__content`}>
+                {children}
+            </section>
             <Footer />
         </Container>
     );
