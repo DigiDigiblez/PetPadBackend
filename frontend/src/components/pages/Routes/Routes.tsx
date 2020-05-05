@@ -3,6 +3,7 @@ import { Redirect } from "react-router";
 import { Switch } from "react-router-dom";
 
 import PublicRoute from "../../molecules/PublicRoute/PublicRoute";
+import Pad from "../../templates/Pad";
 import Profile from "../../templates/Profile";
 import Homepage from "../Homepage";
 import Page404 from "../Page404";
@@ -26,6 +27,7 @@ const Routes = () => (
             path={ROUTES.PROFILE}
             component={Profile}
         />
+        <PublicRoute exact path={ROUTES.PAD} component={Pad} />
         <PublicRoute exact path="/404" component={Page404} />
         <Redirect to="/404" />
     </Switch>

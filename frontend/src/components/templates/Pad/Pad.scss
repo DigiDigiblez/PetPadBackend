@@ -1,0 +1,106 @@
+.pad {
+  &__moods,
+  &__note,
+  &__attachments {
+    border-radius: 5px;
+    margin: 10px 0;
+    text-align: center;
+    width: 300px;
+  }
+
+  &__moods {
+    border: solid 1px #999999;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &_mood {
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
+    }
+  }
+
+  &__note {
+    border: solid 1px #999999;
+    min-height: 220px;
+
+    & > textarea {
+      border: 0 none;
+      font-size: 14px;
+      margin: 0;
+      outline: 0 none;
+      padding: 20px 30px;
+      width: 100%;
+    }
+  }
+
+  &__attachments {
+    align-items: center;
+    border: dashed 1px #999999;
+    display: flex;
+    height: 140px;
+    justify-content: center;
+  }
+
+  #upload-image {
+    display: none;
+  }
+
+  &__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+  }
+
+  &__pet_avatar {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    #profile-image {
+      border-radius: 20px;
+      cursor: pointer;
+      max-height: 250px;
+      max-width: 200px;
+      min-height: 150px;
+      min-width: 150px;
+    }
+  }
+
+  .change-image {
+    background: green;
+    border-radius: 10px;
+    bottom: 0;
+    justify-content: center;
+    margin-top: -30px;
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+
+  &__pet_data,
+  &__pet_social {
+    align-items: center;
+    border: solid 1px #999999;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 0 20px;
+
+    &_title {
+      background-color: #EAFAF4;
+      border-radius: 20px;
+      margin: -20px 0 20px;
+      padding: 0 15px;
+    }
+  }
+
+  input,
+  select,
+  textarea {
+    width: 200px;
+  }
+}

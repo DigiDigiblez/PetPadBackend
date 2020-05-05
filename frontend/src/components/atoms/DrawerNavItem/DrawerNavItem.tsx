@@ -1,21 +1,31 @@
 import "./DrawerNavItem.scss";
 
-import React from "react";
-
-import Container from "../Container";
+import React, { useEffect, useState } from "react";
 import { IDrawerNavItemProps } from "./types";
-import { ReactComponent as NavigateProfile } from "../../../icons/navigate_profile.svg";
+import { NavLink } from "react-router-dom";
+import useStateWithCallback from "../../../helpers/hooks/useStateWithCallback";
 
-const DrawerNavItem = ({ alt, badge, text }: IDrawerNavItemProps) => {
+const DrawerNavItem = ({
+    to,
+    alt,
+    badge,
+    text,
+}: IDrawerNavItemProps) => {
     const baseclass = "drawer-nav-item";
 
     return (
-        <Container className={baseclass}>
+        <NavLink to={to} className={baseclass}>
             {alt && badge && (
-                <NavigateProfile className={`${baseclass}_logo`} />
+                <img
+                    className={`${baseclass}_logo`}
+                    alt={alt}
+                    src={badge}
+                    width="50px"
+                    height="30px"
+                />
             )}
             <span>{text}</span>
-        </Container>
+        </NavLink>
     );
 };
 

@@ -8,6 +8,11 @@ body {
   margin: 0;
 }
 
+a {
+  color: #333333;
+  text-decoration: none;
+}
+
 p {
   font-size: 20px;
 }
@@ -25,6 +30,7 @@ label {
 
 button {
   cursor: pointer;
+  height: 44px;
 }
 
 input,
@@ -47,11 +53,19 @@ textarea {
   border: none;
   border-radius: 5%;
   color: white;
-  left: 28%;
+      font-weight: bold;
+  margin: 10px;
+  //left: 28%;
   padding: 10px;
-  position: fixed;
+  //position: fixed;
   text-transform: uppercase;
-  top: 450px;
+  //top: 450px;
+  width: 200px;
+
+  a {
+    color: white;
+    font-weight: bold;
+  }
 }
 
 .secondary_cta {
@@ -63,6 +77,10 @@ textarea {
   padding: 10px;
   text-transform: uppercase;
   width: 100%;
+}
+
+.link_cta {
+  text-transform: uppercase;
 }
 
 .hidden {
