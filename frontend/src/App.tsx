@@ -14,6 +14,7 @@ if (!localStorage.getItem("petRegistrationData")) {
     localStorage.setItem(
         "petRegistrationData",
         JSON.stringify({
+            profileImage: null,
             gender: "",
             name: "",
             species: "",
