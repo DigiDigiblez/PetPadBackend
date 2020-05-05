@@ -13,19 +13,66 @@ const Profile = () => {
 
     const handleSubmit = (e: any) => {
         e.preventDefault();
-        const { species, breed, weight, height } = e.target;
+        const {
+            name,
+            species,
+            breed,
+            favouriteToy,
+            favouriteFood,
+            personalityTrait,
+            weight,
+            height,
+        } = e.target;
 
         let petData = JSON.parse(
             localStorage.getItem("petRegistrationData")!,
         );
 
+        const completedPetData = {
+            name: name ? name.value : petData.name,
+            species: species ? species.value : petData.species,
+            breed: breed ? breed.value : petData.breed,
+            favouriteToy: favouriteToy
+                ? favouriteToy.value
+                : petData.favouriteToy,
+            favouriteFood: favouriteFood
+                ? favouriteFood.value
+                : petData.favouriteFood,
+            personalityTrait: personalityTrait
+                ? personalityTrait.value
+                : petData.personalityTrait,
+            weight: weight ? weight.value : petData.weight,
+            height: height ? height.value : petData.height,
+        };
+
+        // Check if the profile is complete
+        const isComplete: boolean = Object.values(
+            completedPetData,
+        ).every(property => property);
+
         petData = {
             ...petData,
-            species: species.value,
-            breed: breed.value,
-            weight: weight.value,
-            height: height.value,
+            completedProfile: isComplete,
+            ...completedPetData,
         };
+        // Trigger refresh
+        setHasCompletedProfile(isComplete);
+        setPetsName(name);
+
+        const well = document.querySelector(".save-successful-well")!;
+        const submitBtn = document.getElementById(
+            "save-profile-data-btn",
+        )! as HTMLInputElement;
+
+        well.classList.toggle("hidden");
+        submitBtn.disabled = true;
+        submitBtn.style.cursor = "not-allowed";
+
+        setTimeout(() => {
+            well.classList.toggle("hidden");
+            submitBtn.disabled = false;
+            submitBtn.style.cursor = "pointer";
+        }, 2000);
 
         localStorage.setItem(
             "petRegistrationData",
@@ -34,9 +81,8 @@ const Profile = () => {
     };
 
     const {
-        profileImage,
-        gender,
         name,
+        gender,
         species,
         breed,
         // birthday,
@@ -49,11 +95,18 @@ const Profile = () => {
         // socialFacebook,
         // socialTwitter,
         // socialInstagram,
+        completedProfile,
+        profileImage,
     } = JSON.parse(localStorage.getItem("petRegistrationData")!);
 
     let pronoun;
     if (gender === "male") pronoun = "his";
     else if (gender === "female") pronoun = "her";
+
+    const petName = name ? name : "Pet";
+
+    const [, setHasCompletedProfile] = useState(completedProfile);
+    const [, setPetsName] = useState(completedProfile);
 
     // Click the file uploader input when the profile image container is clicked
     const handleFileUploader = () => {
@@ -88,17 +141,18 @@ const Profile = () => {
         <Container className={baseclass}>
             <Chrome>
                 <Container className={`${baseclass}__content`}>
-                    <h2>{name}'s Profile</h2>
+                    <h2>{petName}'s Profile</h2>
                     <Container className={`${baseclass}__pet_avatar`}>
                         <img
                             onClick={handleFileUploader}
                             src={
                                 (petProfileImage as unknown) as string
                             }
-                            alt={`${name}`}
+                            alt={`${petName}`}
                             id="profile-image"
                         />
-                        {profileImage === PlaceholderProfileImage && (
+                        {petProfileImage ===
+                            PlaceholderProfileImage && (
                             <span className="change-image">
                                 Upload image
                             </span>
@@ -119,8 +173,8 @@ const Profile = () => {
                         <span
                             className={`${baseclass}__pet_data_title`}>
                             <h4>
-                                Complete{" "}
-                                {pronoun ? pronoun : `${name}'s`}{" "}
+                                {!completedProfile && "Complete"}{" "}
+                                {pronoun ? pronoun : `${petName}'s`}{" "}
                                 profile
                             </h4>
                         </span>
@@ -128,80 +182,64 @@ const Profile = () => {
                             <input
                                 name="name"
                                 type="text"
-                                placeholder={name}
-                                value={name}
+                                placeholder={`${petName}'s name`}
+                                defaultValue={petName}
                                 id="form-name"
                             />
 
                             <input
                                 name="species"
                                 type="text"
-                                placeholder={species}
-                                value={species}
+                                placeholder={`${petName}'s species`}
+                                defaultValue={species}
                                 id="form-species"
                             />
 
                             <input
                                 name="breed"
                                 type="text"
-                                placeholder={breed}
-                                value={breed}
+                                placeholder={`${petName}'s breed`}
+                                defaultValue={breed}
                                 id="form-breed"
                             />
 
                             <input
                                 name="favouriteToy"
                                 type="text"
-                                placeholder={favouriteToy}
-                                value={favouriteToy}
-                                id="form-favouriteToy"
+                                placeholder={`${petName}'s favourite toy`}
+                                defaultValue={favouriteToy}
+                                id="form-favourite-toy"
                             />
 
                             <input
                                 name="favouriteFood"
                                 type="text"
-                                placeholder={favouriteFood}
-                                value={favouriteFood}
-                                id="form-favouriteFood"
+                                placeholder={`${petName}'s favourite food`}
+                                defaultValue={favouriteFood}
+                                id="form-favourite-food"
                             />
 
                             <input
                                 name="personalityTrait"
                                 type="text"
-                                placeholder={personalityTrait}
-                                value={personalityTrait}
-                                id="form-personalityTrait"
+                                placeholder={`${petName}'s personality trait`}
+                                defaultValue={personalityTrait}
+                                id="form-personality-trait"
                             />
 
                             <input
                                 name="weight"
                                 type="text"
-                                placeholder={weight}
-                                value={weight}
+                                placeholder={`${petName}'s weight (in kg)`}
+                                defaultValue={weight}
                                 id="form-weight"
                             />
 
                             <input
                                 name="height"
                                 type="text"
-                                placeholder={height}
-                                value={height}
-                                id="form-height"
-                            />
-
-                            <input
-                                name="height"
-                                type="text"
-                                placeholder={name}
-                                value={name}
-                                id="form-height"
-                            />
-
-                            <input
-                                name="height"
-                                type="text"
-                                placeholder={name}
-                                value={name}
+                                placeholder={`${petName}'s height (in cm)`}
+                                defaultValue={height}
                                 id="form-height"
                             />
 
@@ -252,9 +290,14 @@ const Profile = () => {
                             <button
                                 type="submit"
                                 className="secondary_cta"
-                                id="form-button">
+                                id="save-profile-data-btn">
                                 Continue
                             </button>
+
+                            <div
+                                className={`well save-successful-well hidden`}>
+                                Profile saved!
+                            </div>
                         </form>
                     </Container>
 

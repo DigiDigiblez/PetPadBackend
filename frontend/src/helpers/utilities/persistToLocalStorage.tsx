@@ -12,14 +12,14 @@ const persistToLocalStorage = (
         localStorage.getItem(storageItem)!,
     );
 
-    storageItemData = {
+    const updatedStorageData = {
         ...storageItemData,
         [storageItemProperty]: newKeyData,
     };
 
     localStorage.setItem(
         storageItem,
-        JSON.stringify(storageItemData),
+        JSON.stringify(updatedStorageData),
     );
 };
 

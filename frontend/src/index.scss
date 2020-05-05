@@ -23,6 +23,10 @@ label {
   margin-top: 30px;
 }
 
+button {
+  cursor: pointer;
+}
+
 input,
 select,
 textarea {
@@ -30,7 +34,6 @@ textarea {
   border: solid 1px #999999;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  color: #999999;
   display: block;
   height: 44px;
   margin: 10px 0;
@@ -56,9 +59,22 @@ textarea {
   border: none;
   border-radius: 5%;
   color: white;
-  margin: 20px 0;
+  margin: 10px 0;
   padding: 10px;
-  position: fixed;
   text-transform: uppercase;
-  width: 62%;
+  width: 100%;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.well {
+  margin-bottom: 20px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.save-successful-well {
+  background: rgba(87, 182, 2, .75);
 }
