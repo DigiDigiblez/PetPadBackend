@@ -16,107 +16,15 @@ import persistToLocalStorage from "../../../helpers/utilities/persistToLocalStor
 const Pad = () => {
     const baseclass = "pad";
 
-    const handleSubmit = (e: any) => {
-        e.preventDefault();
-        const {
-            name,
-            species,
-            breed,
-            favouriteToy,
-            favouriteFood,
-            personalityTrait,
-            weight,
-            height,
-        } = e.target;
-
-        let petData = JSON.parse(
-            localStorage.getItem("petRegistrationData")!,
-        );
-
-        const completedPetData = {
-            name: name ? name.value : petData.name,
-            species: species ? species.value : petData.species,
-            breed: breed ? breed.value : petData.breed,
-            favouriteToy: favouriteToy
-                ? favouriteToy.value
-                : petData.favouriteToy,
-            favouriteFood: favouriteFood
-                ? favouriteFood.value
-                : petData.favouriteFood,
-            personalityTrait: personalityTrait
-                ? personalityTrait.value
-                : petData.personalityTrait,
-            weight: weight ? weight.value : petData.weight,
-            height: height ? height.value : petData.height,
-        };
-
-        // Check if the profile is complete
-        const isComplete: boolean = Object.values(
-            completedPetData,
-        ).every(property => property);
-
-        petData = {
-            ...petData,
-            completedProfile: isComplete,
-            ...completedPetData,
-        };
-        // Trigger refresh
-        setHasCompletedProfile(isComplete);
-        setPetsName(name);
-
-        const well = document.querySelector(".save-successful-well")!;
-        const submitBtn = document.getElementById(
-            "save-profile-data-btn",
-        )! as HTMLInputElement;
-
-        well.classList.toggle("hidden");
-        submitBtn.disabled = true;
-        submitBtn.style.cursor = "not-allowed";
-
-        setTimeout(() => {
-            well.classList.toggle("hidden");
-            submitBtn.disabled = false;
-            submitBtn.style.cursor = "pointer";
-        }, 2000);
-
-        localStorage.setItem(
-            "petRegistrationData",
-            JSON.stringify(petData),
-        );
-    };
-
-    const {
-        name,
-        gender,
-        species,
-        breed,
-        // birthday,
-        favouriteToy,
-        favouriteFood,
-        personalityTrait,
-        weight,
-        height,
-        // socialGoogle,
-        // socialFacebook,
-        // socialTwitter,
-        // socialInstagram,
-        completedProfile,
-        profileImage,
-    } = JSON.parse(localStorage.getItem("petRegistrationData")!);
-
-    const petName = name ? name : "Pet";
-
-    const [, setHasCompletedProfile] = useState(completedProfile);
-    const [, setPetsName] = useState(completedProfile);
-
-    // Click the file uploader input when the profile image container is clicked
-    const handleFileUploader = () => {
-        document.getElementById("upload-image")!.click();
-    };
+    const { name, gender } = JSON.parse(
+        localStorage.getItem("petRegistrationData")!,
+    );
 
     const selectMood = (e: any) => {
         console.log(e.currentTarget.getAttribute("name"));
     };
+
+    const petName = name ? name : "Pet";
 
     let pronoun;
     if (gender === "male") pronoun = "he";

@@ -1,0 +1,101 @@
+.history {
+
+  &__log {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 35px;
+    text-align: center;
+
+    & > h3 {
+      text-align: left;
+    }
+
+    &_entry {
+      border: solid 1px #999999;
+      border-radius: 5px;
+      min-height: 120px;
+      text-align: left;
+      width: 300px;
+
+      &_header {
+        color: #999999;
+        margin: 0 25px;
+      }
+
+      &_body {
+        margin: 0 25px;
+      }
+    }
+  }
+
+  &__moods {
+    border: solid 1px #999999;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &_mood {
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
+    }
+  }
+
+  &__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+  }
+
+  &__pet_avatar {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    #profile-image {
+      border-radius: 20px;
+      cursor: pointer;
+      max-height: 250px;
+      max-width: 200px;
+      min-height: 150px;
+      min-width: 150px;
+    }
+  }
+
+  .change-image {
+    background: green;
+    border-radius: 10px;
+    bottom: 0;
+    justify-content: center;
+    margin-top: -30px;
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+
+  &__pet_data,
+  &__pet_social {
+    align-items: center;
+    border: solid 1px #999999;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 0 20px;
+
+    &_title {
+      background-color: #EAFAF4;
+      border-radius: 20px;
+      margin: -20px 0 20px;
+      padding: 0 15px;
+    }
+  }
+
+  input,
+  select,
+  textarea {
+    width: 200px;
+  }
+}

@@ -4,6 +4,7 @@ import { Switch } from "react-router-dom";
 
 import PublicRoute from "../../molecules/PublicRoute/PublicRoute";
 import Pad from "../../templates/Pad";
+import History from "../../templates/History";
 import Profile from "../../templates/Profile";
 import Homepage from "../Homepage";
 import Page404 from "../Page404";
@@ -28,6 +29,11 @@ const Routes = () => (
             component={Profile}
         />
         <PublicRoute exact path={ROUTES.PAD} component={Pad} />
+        <PublicRoute
+            exact
+            path={ROUTES.HISTORY}
+            component={History}
+        />
         <PublicRoute exact path="/404" component={Page404} />
         <Redirect to="/404" />
     </Switch>
