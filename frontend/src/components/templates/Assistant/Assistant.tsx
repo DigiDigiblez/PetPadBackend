@@ -88,10 +88,6 @@ const Assistant = () => {
                             park gates.
                         </div>
                     </Container>
-
-                    <button className="secondary_cta">
-                        Publish post
-                    </button>
                 </Container>
             </Chrome>
         </Container>

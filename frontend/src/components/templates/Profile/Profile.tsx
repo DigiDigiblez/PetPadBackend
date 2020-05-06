@@ -91,10 +91,6 @@ const Profile = () => {
         personalityTrait,
         weight,
         height,
-        // socialGoogle,
-        // socialFacebook,
-        // socialTwitter,
-        // socialInstagram,
         completedProfile,
         profileImage,
     } = JSON.parse(localStorage.getItem("petRegistrationData")!);
@@ -172,11 +168,22 @@ const Profile = () => {
                     <Container className={`${baseclass}__pet_data`}>
                         <span
                             className={`${baseclass}__pet_data_title`}>
-                            <h4>
-                                {!completedProfile && "Complete"}{" "}
-                                {pronoun ? pronoun : `${petName}'s`}{" "}
-                                profile
-                            </h4>
+                            {completedProfile ? (
+                                <h4>
+                                    {petName
+                                        ? `${petName}'s`
+                                        : pronoun}{" "}
+                                    profile complete
+                                </h4>
+                            ) : (
+                                <h4>
+                                    Complete{" "}
+                                    {petName
+                                        ? `${petName}'s`
+                                        : pronoun}{" "}
+                                    profile
+                                </h4>
+                            )}
                         </span>
                         <form onSubmit={handleSubmit}>
                             <input
@@ -243,50 +250,6 @@ const Profile = () => {
                                 id="form-height"
                             />
 
-                            {/*<div>*/}
-                            {/*    <label htmlFor="breed">*/}
-                            {/*        What is {petName}'s{" "}*/}
-                            {/*        <span className="emphasis">breed</span>?*/}
-                            {/*    </label>*/}
-                            {/*    <select name="breed" id="form-breed">*/}
-                            {/*        <option disabled selected>*/}
-                            {/*            {petName}'s breed is a*/}
-                            {/*        </option>*/}
-                            {/*        <option value="Border Collie">*/}
-                            {/*            Border Collie*/}
-                            {/*        </option>*/}
-                            {/*        <option value="German Shepherd">*/}
-                            {/*            German Shepherd*/}
-                            {/*        </option>*/}
-                            {/*    </select>*/}
-                            {/*</div>*/}
-
-                            {/*<div>*/}
-                            {/*    <label htmlFor="weight">*/}
-                            {/*        What is {petName}'s{" "}*/}
-                            {/*        <span className="emphasis">weight</span>?*/}
-                            {/*    </label>*/}
-                            {/*    <input*/}
-                            {/*        name="weight"*/}
-                            {/*        type="text"*/}
-                            {/*        placeholder={`${petName}'s weight is`}*/}
-                            {/*        id="form-weight"*/}
-                            {/*    />*/}
-                            {/*</div>*/}
-
-                            {/*<div>*/}
-                            {/*    <label htmlFor="height">*/}
-                            {/*        What is {petName}'s{" "}*/}
-                            {/*        <span className="emphasis">height</span>?*/}
-                            {/*    </label>*/}
-                            {/*    <input*/}
-                            {/*        name="height"*/}
-                            {/*        type="text"*/}
-                            {/*        placeholder={`${petName}'s height is`}*/}
-                            {/*        id="form-height"*/}
-                            {/*    />*/}
-                            {/*</div>*/}
-
                             <button
                                 type="submit"
                                 className="secondary_cta"
@@ -301,16 +264,16 @@ const Profile = () => {
                         </form>
                     </Container>
 
-                    <Container className={`${baseclass}__pet_social`}>
-                        <span
-                            className={`${baseclass}__pet_data_title`}>
-                            <h4>
-                                Link {pronoun ? pronoun : `${name}'s`}{" "}
-                                social media
-                            </h4>
-                        </span>
-                        Buttons TBA...
-                    </Container>
+                    {/*<Container className={`${baseclass}__pet_social`}>*/}
+                    {/*    <span*/}
+                    {/*        className={`${baseclass}__pet_data_title`}>*/}
+                    {/*        <h4>*/}
+                    {/*            Link {pronoun ? pronoun : `${name}'s`}{" "}*/}
+                    {/*            social media*/}
+                    {/*        </h4>*/}
+                    {/*    </span>*/}
+                    {/*    Buttons TBA...*/}
+                    {/*</Container>*/}
                 </Container>
             </Chrome>
         </Container>

@@ -1,6 +1,6 @@
 import "./Pad.scss";
 
-import React from "react";
+import React, { useState } from "react";
 
 import { ReactComponent as ExcitedMood } from "../../../icons/mood_1_excited.svg";
 import { ReactComponent as HappyMood } from "../../../icons/mood_2_happy.svg";
@@ -19,8 +19,21 @@ const Pad = () => {
         localStorage.getItem("petRegistrationData")!,
     );
 
+    const [activeMood, setActiveMood] = useState({
+        moodTarget: null,
+        moodLabel: "",
+    });
+
     const selectMood = (e: any) => {
-        console.log(e.currentTarget.getAttribute("name"));
+        activeMood.moodLabel = e.currentTarget.getAttribute("name");
+
+        if (activeMood.moodTarget) {
+            (activeMood.moodTarget as any).style.border =
+                "solid 5px transparent";
+        }
+        activeMood.moodTarget = e.currentTarget;
+        (activeMood.moodTarget as any).style.border =
+            "solid 5px green";
     };
 
     const petName = name ? name : "Pet";
