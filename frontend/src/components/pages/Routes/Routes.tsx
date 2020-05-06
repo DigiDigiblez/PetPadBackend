@@ -10,6 +10,7 @@ import Homepage from "../Homepage";
 import Page404 from "../Page404";
 import Register from "../Register";
 import { ROUTES } from "./types";
+import Assistant from "../../templates/Assistant/Assistant";
 
 const Routes = () => (
     <Switch>
@@ -33,6 +34,11 @@ const Routes = () => (
             exact
             path={ROUTES.HISTORY}
             component={History}
+        />
+        <PublicRoute
+            exact
+            path={ROUTES.ASSISTANT}
+            component={Assistant}
         />
         <PublicRoute exact path="/404" component={Page404} />
         <Redirect to="/404" />

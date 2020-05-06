@@ -4,4 +4,5 @@ export const ROUTES = {
     PROFILE: "/profile",
     PAD: "/pad",
     HISTORY: "/history",
+    ASSISTANT: "/assistant",
 };
