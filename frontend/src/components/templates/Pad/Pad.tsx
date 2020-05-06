@@ -1,6 +1,6 @@
 import "./Pad.scss";
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 import { ReactComponent as ExcitedMood } from "../../../icons/mood_1_excited.svg";
 import { ReactComponent as HappyMood } from "../../../icons/mood_2_happy.svg";
@@ -11,7 +11,6 @@ import { ReactComponent as ExhaustedMood } from "../../../icons/mood_6_exhausted
 
 import Container from "../../atoms/Container";
 import Chrome from "../Chrome/Chrome";
-import persistToLocalStorage from "../../../helpers/utilities/persistToLocalStorage";
 
 const Pad = () => {
     const baseclass = "pad";

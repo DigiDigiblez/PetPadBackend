@@ -8,6 +8,9 @@
   padding: 1rem;
 
   &__logo {
+    align-items: center;
+    display: flex;
+
     &_name {
       color: whitesmoke;
       font-style: italic;

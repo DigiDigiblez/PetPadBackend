@@ -3,44 +3,65 @@ import "./History.scss";
 import React from "react";
 import Container from "../../atoms/Container";
 import Chrome from "../Chrome/Chrome";
+import LogEntry from "../../organism/LogEntry";
 
 const History = () => {
     const baseclass = "history";
 
-    const { name, gender } = JSON.parse(
-        localStorage.getItem("petRegistrationData")!,
-    );
-
     const history = [
-        { "20-05-05": "Lorem ipsum 5" },
-        { "20-04-04": "Lorem ipsum 4" },
-        { "20-03-03": "Lorem ipsum 3" },
-        { "20-02-02": "Lorem ipsum 2" },
-        { "20-01-01": "Lorem ipsum 1" },
+        {
+            entry: "Lorem ipsum 4",
+            dateCreated: "2014-03-12T13:37:27+00:00",
+            dateLastModified: "2014-03-12T13:37:27+00:00",
+        },
+        {
+            entry: "Lorem ipsum 4",
+            dateCreated: "2013-03-12T13:37:27+00:00",
+            dateLastModified: "2013-03-12T13:37:27+00:00",
+        },
+        {
+            entry: "Lorem ipsum 4",
+            dateCreated: "2012-03-12T13:37:27+00:00",
+            dateLastModified: "2012-03-12T13:37:27+00:00",
+        },
+        {
+            entry: "Lorem ipsum 4",
+            dateCreated: "2012-03-12T13:37:27+00:00",
+            dateLastModified: "2012-03-12T13:37:27+00:00",
+        },
+        {
+            entry: "Lorem ipsum 4",
+            dateCreated: "2011-03-12T13:37:27+00:00",
+            dateLastModified: "2011-03-12T13:37:27+00:00",
+        },
+        {
+            entry: "Lorem ipsum 4",
+            dateCreated: "2011-03-12T13:37:27+00:00",
+            dateLastModified: "2011-03-12T13:37:27+00:00",
+        },
+        {
+            entry: "Lorem ipsum 4",
+            dateCreated: "2011-03-12T13:37:27+00:00",
+            dateLastModified: "2011-03-12T13:37:27+00:00",
+        },
     ];
 
-    const petName = name ? name : "Pet";
+    const { name: petName } = JSON.parse(
+        localStorage.getItem("petRegistrationData")!,
+    );
 
     return (
         <Container className={baseclass}>
             <Chrome>
-                <Container className={`${baseclass}__log`}>
+                <Container className={`${baseclass}__content`}>
                     <h2>{petName}'s History</h2>
-                    <h3>March 2020</h3>
-                    <Container className={`${baseclass}__log_entry`}>
-                        <div
-                            className={`${baseclass}__log_entry_header`}>
-                            <h4>Tuesday 5th</h4>
-                        </div>
-                        <div
-                            className={`${baseclass}__log_entry_body`}>
-                            <p>
-                                Today Marshall went to play in his
-                                favourite park in Highgate, and (no
-                                surprise) Squeaky came with.
-                            </p>
-                        </div>
-                    </Container>
+                    {history.map(entry => (
+                        <LogEntry
+                            dateCreated={entry.dateCreated}
+                            dateLastModified={entry.dateLastModified}>
+                            {entry.entry}
+                        </LogEntry>
+                    ))}
                 </Container>
             </Chrome>
         </Container>
