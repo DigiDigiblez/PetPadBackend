@@ -1,4 +1,4 @@
-from pet_pad_backend.app import api
+from petpadbackend.app import api
 from flask_restx import fields
 
 assistant_model = api.model("assistant_model", {

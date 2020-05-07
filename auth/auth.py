@@ -6,7 +6,7 @@ from flask import request, abort
 from jose import jwt
 from six.moves.urllib.request import urlopen
 
-from pet_pad_backend.constants.constants import AUTH_HEADER_ERR, RESPONSE
+from petpadbackend.constants.constants import AUTH_HEADER_ERR, RESPONSE
 
 # Auth0 identity provider config variables
 auth0Config = toml.load(r"configurations/auth0.toml")

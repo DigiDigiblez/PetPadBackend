@@ -1,13 +1,13 @@
 from flask_restx import Resource, abort
 from sqlalchemy.exc import IntegrityError
 
-from pet_pad_backend.app import api, logger, db
-from pet_pad_backend.constants.constants import RESPONSE
+from petpadbackend.app import api, logger, db
+from petpadbackend.constants.constants import RESPONSE
 
-from pet_pad_backend.database.pet import Pet
-from pet_pad_backend.models.pet import pet_list_model, pet_model
+from petpadbackend.database.pet import Pet
+from petpadbackend.models.pet import pet_list_model, pet_model
 
-from pet_pad_backend.helpers.extract_exception import extract_exception
+from petpadbackend.helpers.extract_exception import extract_exception
 
 pet_ns = api.namespace("pets", description="Pet endpoints")
 

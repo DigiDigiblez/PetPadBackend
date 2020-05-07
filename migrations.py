@@ -1,7 +1,7 @@
 from flask_migrate import Migrate, MigrateCommand
 from flask_script import Manager
 
-from pet_pad_backend.app import app, db
+from petpadbackend.app import app, db
 
 migrate = Migrate(app, db)
 manager = Manager(app)

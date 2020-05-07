@@ -1,1 +1,1 @@
-web: gunicorn pet_pad_backend:app
+web: gunicorn petpadbackend:app

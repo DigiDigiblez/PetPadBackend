@@ -8,8 +8,8 @@ from flask_migrate import Migrate
 from flask_restx import Api
 from flask_sqlalchemy import SQLAlchemy
 
-from pet_pad_backend.auth.auth import AuthError, RESPONSE
-from pet_pad_backend.constants.constants import API, ENV, LOG_LEVEL
+from petpadbackend.auth.auth import AuthError, RESPONSE
+from petpadbackend.constants.constants import API, ENV, LOG_LEVEL
 
 app = Flask(__name__)
 
@@ -17,7 +17,7 @@ logger = logging.getLogger("petpad_logger")
 
 # Try and configure project based on current environment
 try:
-    app.config.from_object(f"pet_pad_backend.configurations.config_{os.environ['ENV']}_env")
+    app.config.from_object(f"petpadbackend.configurations.config_{os.environ['ENV']}_env")
 
     # Additional configuration for LIVE environment
     if os.environ["ENV"] == ENV["PROD"]:
@@ -80,7 +80,7 @@ def app_status():
 
 
 # noinspection PyUnresolvedReferences
-from pet_pad_backend.controllers import *
+from petpadbackend.controllers import *
 
 
 # Error Handling
