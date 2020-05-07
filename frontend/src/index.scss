@@ -57,13 +57,10 @@ textarea {
   border: none;
   border-radius: 5%;
   color: white;
-      font-weight: bold;
+  font-weight: bold;
   margin: 10px;
-  //left: 28%;
   padding: 10px;
-  //position: fixed;
   text-transform: uppercase;
-  //top: 450px;
   width: 200px;
 
   a {
@@ -75,15 +72,16 @@ textarea {
 .secondary_cta {
   background-color: #999999;
   border: none;
-  border-radius: 5%;
   color: white;
   margin: 10px 0;
   padding: 10px;
   text-transform: uppercase;
-  width: 100%;
+  width: 91%;
 }
 
 .link_cta {
+  all: inherit;
+  font-size: 14px;
   text-transform: uppercase;
 }
 

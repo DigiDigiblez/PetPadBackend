@@ -1,5 +1,3 @@
-import "./Homepage.scss";
-
 import React from "react";
 
 import Container from "../../atoms/Container";

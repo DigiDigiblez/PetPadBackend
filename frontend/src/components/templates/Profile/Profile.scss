@@ -46,6 +46,7 @@
     flex-direction: column;
     margin-top: 50px;
     padding: 0 20px;
+    width: 90%;
 
     &_title {
       background-color: #EAFAF4;
@@ -55,9 +56,16 @@
     }
   }
 
+  form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+
   input,
   select,
   textarea {
-    width: 200px;
+    width: 90%;
   }
 }

@@ -5,14 +5,17 @@
     border-radius: 5px;
     margin: 10px 0;
     text-align: center;
-    width: 300px;
+    width: 90%;
   }
 
   &__moods {
     border: solid 1px #999999;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+
+    & > span {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
 
     &_mood {
       display: flex;
@@ -28,14 +31,14 @@
 
   &__note {
     border: solid 1px #999999;
+    font-size: 18px;
     min-height: 220px;
+    position: relative;
+    text-align: left;
 
-    & > textarea {
-      border: 0 none;
-      font-size: 14px;
-      margin: 0;
-      outline: 0 none;
-      padding: 20px 30px;
+    & > div {
+      height: 100%;
+      position: absolute;
       width: 100%;
     }
   }
@@ -46,6 +49,10 @@
     display: flex;
     height: 140px;
     justify-content: center;
+
+    & > span {
+      width: 100%;
+    }
   }
 
   &__content {

@@ -49,65 +49,67 @@ const Pad = () => {
                     <h2>{petName}'s Pad</h2>
                     <Container className={`${baseclass}__moods`}>
                         <h3>How was {petName} today?</h3>
-                        <div className={`${baseclass}__moods_mood`}>
-                            <ExcitedMood
-                                onClick={selectMood}
-                                name="Excited"
-                            />
-                            <span>Excited</span>
-                        </div>
-                        <div className={`${baseclass}__moods_mood`}>
-                            <HappyMood
-                                onClick={selectMood}
-                                name="Happy"
-                            />
-                            <span>Happy</span>
-                        </div>
-                        <div className={`${baseclass}__moods_mood`}>
-                            <OkayMood
-                                onClick={selectMood}
-                                name="Okay"
-                            />
-                            <span>Okay</span>
-                        </div>
-                        <div className={`${baseclass}__moods_mood`}>
-                            <SadMood
-                                onClick={selectMood}
-                                name="Sad"
-                            />
-                            <span>Sad</span>
-                        </div>
-                        <div className={`${baseclass}__moods_mood`}>
-                            <AngryMood
-                                onClick={selectMood}
-                                name="Angry"
-                            />
-                            <span>Angry</span>
-                        </div>
-                        <div className={`${baseclass}__moods_mood`}>
-                            <ExhaustedMood
-                                onClick={selectMood}
-                                name="Exhausted"
-                            />
-                            <span>Exhausted</span>
-                        </div>
+                        <span>
+                            <div
+                                className={`${baseclass}__moods_mood`}>
+                                <ExcitedMood
+                                    onClick={selectMood}
+                                    name="Excited"
+                                />
+                                <span>Excited</span>
+                            </div>
+                            <div
+                                className={`${baseclass}__moods_mood`}>
+                                <HappyMood
+                                    onClick={selectMood}
+                                    name="Happy"
+                                />
+                                <span>Happy</span>
+                            </div>
+                            <div
+                                className={`${baseclass}__moods_mood`}>
+                                <OkayMood
+                                    onClick={selectMood}
+                                    name="Okay"
+                                />
+                                <span>Okay</span>
+                            </div>
+                            <div
+                                className={`${baseclass}__moods_mood`}>
+                                <SadMood
+                                    onClick={selectMood}
+                                    name="Sad"
+                                />
+                                <span>Sad</span>
+                            </div>
+                            <div
+                                className={`${baseclass}__moods_mood`}>
+                                <AngryMood
+                                    onClick={selectMood}
+                                    name="Angry"
+                                />
+                                <span>Angry</span>
+                            </div>
+                            <div
+                                className={`${baseclass}__moods_mood`}>
+                                <ExhaustedMood
+                                    onClick={selectMood}
+                                    name="Exhausted"
+                                />
+                                <span>Exhausted</span>
+                            </div>
+                        </span>
                     </Container>
 
-                    <Container className={`${baseclass}__note`}>
-                        <h3>
-                            What did {pronoun || "they"} do today?
-                        </h3>
-                        <textarea
-                            name="log"
-                            placeholder={`Tell ${name}'s story for today`}
-                            id="log"
-                        />
-                    </Container>
-
+                    <h3>What did {pronoun || "they"} do today?</h3>
+                    <div className={`${baseclass}__note`}>
+                        <div contentEditable />
+                    </div>
                     <span
+                        className={`${baseclass}__attachments`}
                         onClick={() => alert("Feature coming soon!")}>
                         <Container
-                            className={`${baseclass}__attachments`}>
+                            className={`${baseclass}__attachments_contents`}>
                             <span>Click to upload files</span>
                         </Container>
                     </span>
