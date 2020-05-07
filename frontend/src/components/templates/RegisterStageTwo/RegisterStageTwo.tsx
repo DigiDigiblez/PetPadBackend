@@ -67,9 +67,6 @@ const RegisterStageTwo = () => {
                         <option value="Border Collie">
                             Border Collie
                         </option>
-                        <option value="German Shepherd">
-                            German Shepherd
-                        </option>
                     </select>
                 </div>
 
