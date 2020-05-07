@@ -1,5 +1,6 @@
-from petpadbackend.app import api
 from flask_restx import fields
+
+from app import api
 
 pad_note_model = api.model("pad_note_model", {
     "id": fields.String(readonly=True, description="Pad Note auto-incremented UUID (PRIMARY KEY)"),

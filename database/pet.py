@@ -2,7 +2,7 @@ import re
 from dataclasses import dataclass
 from datetime import datetime
 
-from petpadbackend.app import db
+from app import db
 
 
 @dataclass

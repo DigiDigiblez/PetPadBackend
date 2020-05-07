@@ -1,5 +1,6 @@
-from petpadbackend.app import api
 from flask_restx import fields
+
+from app import api
 
 pet_model = api.model("pet_model", {
     "id": fields.String(readonly=True, description="Pet's auto-incremented UUID (PRIMARY KEY)"),

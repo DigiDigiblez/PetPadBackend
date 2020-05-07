@@ -8,8 +8,8 @@ from flask_migrate import Migrate
 from flask_restx import Api
 from flask_sqlalchemy import SQLAlchemy
 
-from petpadbackend.auth.auth import AuthError, RESPONSE
-from petpadbackend.constants.constants import API, ENV, LOG_LEVEL
+from .auth.auth import AuthError
+from .constants.constants import ENV, LOG_LEVEL, API, RESPONSE
 
 app = Flask(__name__)
 
