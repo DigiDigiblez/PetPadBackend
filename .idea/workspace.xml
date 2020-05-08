@@ -11,8 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed7374c8-f810-4d82-b0b5-ba3b407ebca4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/auth/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/auth/auth.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588934111054</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="ENVs for Heroku">
+      <created>1588935409519</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1588935409519</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,7 +256,8 @@
     <MESSAGE value="Project remapping" />
     <MESSAGE value="Heroku test." />
     <MESSAGE value="Database URI for Heroku" />
-    <option name="LAST_COMMIT_MESSAGE" value="Database URI for Heroku" />
+    <MESSAGE value="ENVs for Heroku" />
+    <option name="LAST_COMMIT_MESSAGE" value="ENVs for Heroku" />
   </component>
   <component name="WindowStateProjectService">
     <state x="516" y="304" key="Github.ShareDialog" timestamp="1588909935913">
@@ -260,14 +268,14 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1588908927729" />
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1588934115199">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1588935411261">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1588934115199" />
-    <state x="340" y="157" width="600" height="486" key="find.popup" timestamp="1588934004755">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1588935411261" />
+    <state x="340" y="157" width="600" height="538" key="find.popup" timestamp="1588935597936">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="340" y="157" width="600" height="486" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1588934004755" />
+    <state x="340" y="157" width="600" height="538" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1588935597936" />
     <state x="397" y="285" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1588924961294">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
