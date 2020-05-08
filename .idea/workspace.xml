@@ -20,51 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11387947-bc38-466a-a790-b7bbf4c82e36" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/petpadbackend.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.idea/backend.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Procfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app_local_db.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app_prod_db.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app_run.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/auth/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/auth/auth.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/configurations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/configurations/auth0.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/configurations/config_dev_env.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/configurations/config_local_env.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/configurations/config_prod_env.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/configurations/config_test_env.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/constants/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/constants/constants.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/controllers/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/controllers/pet.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/database/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/database/pet.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/helpers/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/helpers/extract_exception.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/migrations.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/assistant.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/pad_note.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/pet.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/requirements.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +94,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588908684384</updated>
-      <workItem from="1588908686435" duration="242000" />
+      <workItem from="1588908686435" duration="823000" />
     </task>
     <task id="LOCAL-00001" summary="Project enhancements.">
       <created>1588908802639</created>
@@ -147,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588908802639</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Project git remapping.">
+      <created>1588908940503</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1588908940503</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,20 +132,21 @@
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
     <MESSAGE value="Project enhancements." />
-    <option name="LAST_COMMIT_MESSAGE" value="Project enhancements." />
+    <MESSAGE value="Project git remapping." />
+    <option name="LAST_COMMIT_MESSAGE" value="Project git remapping." />
   </component>
   <component name="WindowStateProjectService">
     <state x="149" y="39" key="SettingsEditor" timestamp="1588908927729">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1588908927729" />
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1588908804368">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1588908941803">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1588908804368" />
-    <state x="397" y="286" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1588908783959">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1588908941803" />
+    <state x="397" y="286" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1588909153606">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="397" y="286" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1280.800@0.0.1280.800" timestamp="1588908783958" />
+    <state x="397" y="286" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1280.800@0.0.1280.800" timestamp="1588909153606" />
   </component>
 </project>
