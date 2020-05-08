@@ -2,7 +2,7 @@ import re
 from dataclasses import dataclass
 from datetime import datetime
 
-from app import db
+from backend.app import db
 
 
 @dataclass
