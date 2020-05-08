@@ -10,8 +10,40 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11387947-bc38-466a-a790-b7bbf4c82e36" name="Default Changelist" comment="">
+    <list default="true" id="ed7374c8-f810-4d82-b0b5-ba3b407ebca4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_local_db.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_prod_db.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_run.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/auth.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurations/auth0.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurations/config_dev_env.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurations/config_local_env.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurations/config_prod_env.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurations/config_test_env.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants/constants.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/pet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/pet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers/extract_exception.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/assistant.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/pad_note.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/pet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +67,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
-  <component name="RunManager" selected="Shell Script.app_run.sh">
+  <component name="RunManager" selected="Shell Script.app_run.sh (1)">
     <configuration name="backend" type="PythonConfigurationType" factoryName="Python">
       <module name="backend" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -58,6 +90,17 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="app_run.sh (1)" type="ShConfigurationType" temporary="true">
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/backend/app_run.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/backend" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="app_run.sh" type="ShConfigurationType" temporary="true">
       <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
       <option name="SCRIPT_PATH" value="$PROJECT_DIR$/app_run.sh" />
@@ -71,6 +114,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Shell Script.app_run.sh (1)" />
         <item itemvalue="Shell Script.app_run.sh" />
       </list>
     </recent_temporary>
@@ -124,6 +168,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
