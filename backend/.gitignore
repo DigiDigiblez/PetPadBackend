@@ -1,7 +1,0 @@
-venv/
-../.idea
-__pycache__
-/lib/
-/migrations/
-/bin/
-/pyvenv.cfg

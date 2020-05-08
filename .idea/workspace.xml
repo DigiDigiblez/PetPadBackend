@@ -19,31 +19,62 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a493ef2-043b-4849-85c9-8717393ba247" name="Default Changelist" comment="Slight adjustments for Heroku.">
+    <list default="true" id="11387947-bc38-466a-a790-b7bbf4c82e36" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/petpadbackend.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend copy.textClipping" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.idea/backend.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/Procfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app_local_db.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app_prod_db.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app_run.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/auth/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/auth/auth.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/configurations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/configurations/auth0.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/configurations/config_dev_env.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/configurations/config_local_env.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/configurations/config_prod_env.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/configurations/config_test_env.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/constants/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/constants/constants.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/pet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/database/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/database/pet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/helpers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/helpers/extract_exception.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/migrations.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/assistant.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/pad_note.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/pet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/requirements.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1baHEVAANdgTfZMgB0KGMpPfuGC" />
+  <component name="ProjectId" id="1bblTqkoJo31PqRLookOlKD7uuR" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
@@ -55,17 +86,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/backend" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Shell Script.app_run.sh (1)">
-    <configuration name="PetPadBackend" type="PythonConfigurationType" factoryName="Python">
-      <module name="petpadbackend" />
+  <component name="RunManager" selected="Shell Script.app_run.sh">
+    <configuration name="backend" type="PythonConfigurationType" factoryName="Python">
+      <module name="backend" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -86,40 +111,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="app_run.sh (1)" type="ShConfigurationType" temporary="true">
-      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
-      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/backend/app_run.sh" />
-      <option name="SCRIPT_OPTIONS" value="" />
-      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
-      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/backend" />
-      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
-      <option name="INTERPRETER_PATH" value="/bin/bash" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="app_run.sh (3)" type="ShConfigurationType" temporary="true">
-      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
-      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/backend/app_run.sh" />
-      <option name="SCRIPT_OPTIONS" value="" />
-      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
-      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/backend" />
-      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
-      <option name="INTERPRETER_PATH" value="/bin/bash" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="app_run.sh (4)" type="ShConfigurationType" temporary="true">
-      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
-      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/app_run.sh" />
-      <option name="SCRIPT_OPTIONS" value="" />
-      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
-      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/backend" />
-      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
-      <option name="INTERPRETER_PATH" value="/bin/bash" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="app_run.sh (5)" type="ShConfigurationType" temporary="true">
+    <configuration name="app_run.sh" type="ShConfigurationType" temporary="true">
       <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
       <option name="SCRIPT_PATH" value="$PROJECT_DIR$/app_run.sh" />
       <option name="SCRIPT_OPTIONS" value="" />
@@ -130,24 +122,9 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="app_run.sh" type="ShConfigurationType" temporary="true">
-      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
-      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/app_run.sh" />
-      <option name="SCRIPT_OPTIONS" value="" />
-      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
-      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/backend" />
-      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
-      <option name="INTERPRETER_PATH" value="/bin/bash" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Shell Script.app_run.sh (1)" />
-        <item itemvalue="Shell Script.app_run.sh (5)" />
         <item itemvalue="Shell Script.app_run.sh" />
-        <item itemvalue="Shell Script.app_run.sh (4)" />
-        <item itemvalue="Shell Script.app_run.sh (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -156,44 +133,21 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="3a493ef2-043b-4849-85c9-8717393ba247" name="Default Changelist" comment="" />
-      <created>1588863172471</created>
+      <changelist id="11387947-bc38-466a-a790-b7bbf4c82e36" name="Default Changelist" comment="" />
+      <created>1588908684384</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1588863172471</updated>
-      <workItem from="1588863177232" duration="41000" />
-      <workItem from="1588863233151" duration="818000" />
-      <workItem from="1588864077497" duration="3871000" />
+      <updated>1588908684384</updated>
+      <workItem from="1588908686435" duration="242000" />
     </task>
-    <task id="LOCAL-00001" summary="Name changes">
-      <created>1588863619983</created>
+    <task id="LOCAL-00001" summary="Project enhancements.">
+      <created>1588908802639</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1588863619983</updated>
+      <updated>1588908802639</updated>
     </task>
-    <task id="LOCAL-00002" summary="Import updates.">
-      <created>1588865237187</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1588865237187</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Removing frontend previously faced. Reverse-engineered project history and re-deleted to fix critical bug.">
-      <created>1588903294654</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1588903294654</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Slight adjustments for Heroku.">
-      <created>1588907891716</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1588907891716</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,31 +156,6 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
-        <entry key="1">
-          <value>
-            <State>
-              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="HEAD" />
-                      </list>
-                    </value>
-                  </entry>
-                  <entry key="roots">
-                    <value>
-                      <list>
-                        <option value="$PROJECT_DIR$" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
         <entry key="MAIN">
           <value>
             <State />
@@ -234,48 +163,26 @@
         </entry>
       </map>
     </option>
-    <option name="OPEN_GENERIC_TABS">
-      <map>
-        <entry key="1" value="TOOL_WINDOW" />
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Name changes" />
-    <MESSAGE value="Import updates." />
-    <MESSAGE value="Removing frontend previously faced. Reverse-engineered project history and re-deleted to fix critical bug." />
-    <MESSAGE value="Slight adjustments for Heroku." />
-    <option name="LAST_COMMIT_MESSAGE" value="Slight adjustments for Heroku." />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+    <MESSAGE value="Project enhancements." />
+    <option name="LAST_COMMIT_MESSAGE" value="Project enhancements." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="378" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588903068579">
+    <state x="149" y="39" key="SettingsEditor" timestamp="1588908927729">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="378" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800@0.0.1280.800" timestamp="1588903068579" />
-    <state x="149" y="39" key="SettingsEditor" timestamp="1588864872894">
+    <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1588908927729" />
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1588908804368">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1588864872894" />
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1588907893148">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1588908804368" />
+    <state x="397" y="286" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1588908783959">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1588907893148" />
-    <state x="100" y="100" width="1080" height="600" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1588903206273">
-      <screen x="0" y="0" width="1280" height="800" />
-    </state>
-    <state x="100" y="100" width="1080" height="600" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1280.800@0.0.1280.800" timestamp="1588903206273" />
-    <state x="340" y="131" width="600" height="538" key="find.popup" timestamp="1588866161205">
-      <screen x="0" y="0" width="1280" height="800" />
-    </state>
-    <state x="340" y="131" width="600" height="538" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1588866161205" />
-    <state x="283" y="120" key="git4idea.branch.GitSmartOperationDialog" timestamp="1588902751807">
-      <screen x="0" y="0" width="1280" height="800" />
-    </state>
-    <state x="283" y="120" key="git4idea.branch.GitSmartOperationDialog/0.0.1280.800@0.0.1280.800" timestamp="1588902751807" />
-    <state x="401" y="296" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1588863457147">
-      <screen x="0" y="0" width="1280" height="800" />
-    </state>
-    <state x="401" y="296" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1280.800@0.0.1280.800" timestamp="1588863457147" />
+    <state x="397" y="286" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1280.800@0.0.1280.800" timestamp="1588908783958" />
   </component>
 </project>
