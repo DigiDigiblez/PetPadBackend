@@ -19,18 +19,18 @@ logger = logging.getLogger("petpad_logger")
 try:
     if os.environ["ENV"] == ENV["PROD"]:
         # Additional configuration for LIVE environment
-        SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
-        SQLALCHEMY_TRACK_MODIFICATIONS = False
-        ERROR_404_HELP = True
+        app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DATABASE_URL")
+        app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+        app.config["ERROR_404_HELP"] = True
 
         logger.level = LOG_LEVEL["INFO"]
         logging.getLogger("flask_cors").level = LOG_LEVEL["INFO"]
 
     # Additional configuration for LOCAL, DEV, and TEST environments
     else:
-        SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
-        SQLALCHEMY_TRACK_MODIFICATIONS = False
-        ERROR_404_HELP = False
+        app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DATABASE_URL")
+        app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+        app.config["ERROR_404_HELP"] = False
 
         logger.level = LOG_LEVEL["DEBUG"]
         logging.getLogger("flask_cors").level = LOG_LEVEL["DEBUG"]
