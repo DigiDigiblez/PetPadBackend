@@ -19,7 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a493ef2-043b-4849-85c9-8717393ba247" name="Default Changelist" comment="" />
+    <list default="true" id="3a493ef2-043b-4849-85c9-8717393ba247" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -159,7 +163,7 @@
       <updated>1588863172471</updated>
       <workItem from="1588863177232" duration="41000" />
       <workItem from="1588863233151" duration="818000" />
-      <workItem from="1588864077497" duration="2709000" />
+      <workItem from="1588864077497" duration="3053000" />
     </task>
     <task id="LOCAL-00001" summary="Name changes">
       <created>1588863619983</created>
@@ -175,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588865237187</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Removing frontend previously faced. Reverse-engineered project history and re-deleted to fix critical bug.">
+      <created>1588903294654</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1588903294654</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,7 +237,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Name changes" />
     <MESSAGE value="Import updates." />
-    <option name="LAST_COMMIT_MESSAGE" value="Import updates." />
+    <MESSAGE value="Removing frontend previously faced. Reverse-engineered project history and re-deleted to fix critical bug." />
+    <option name="LAST_COMMIT_MESSAGE" value="Removing frontend previously faced. Reverse-engineered project history and re-deleted to fix critical bug." />
   </component>
   <component name="WindowStateProjectService">
     <state x="378" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588903068579">
@@ -237,10 +249,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1588864872894" />
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1588865239767">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1588903295986">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1588865239767" />
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1588903295986" />
     <state x="100" y="100" width="1080" height="600" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1588903206273">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
