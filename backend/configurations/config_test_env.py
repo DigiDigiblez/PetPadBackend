@@ -1,4 +1,6 @@
 # TEST environment configuration (use when doing unit tests)
-SQLALCHEMY_DATABASE_URI = "postgres://carlbowen@localhost:5432/petpadtest"
+import os
+
+SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
 SQLALCHEMY_TRACK_MODIFICATIONS = False
 ERROR_404_HELP = False

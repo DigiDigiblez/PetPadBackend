@@ -1,3 +1,5 @@
-SQLALCHEMY_DATABASE_URI = "postgres://carlbowen@localhost:5432/petpad"
+import os
+
+SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
 SQLALCHEMY_TRACK_MODIFICATIONS = False
 ERROR_404_HELP = False

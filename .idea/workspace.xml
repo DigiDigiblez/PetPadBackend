@@ -12,8 +12,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ed7374c8-f810-4d82-b0b5-ba3b407ebca4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/auth/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/auth/auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/configurations/config_dev_env.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/configurations/config_dev_env.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/configurations/config_local_env.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/configurations/config_local_env.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/configurations/config_prod_env.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/configurations/config_prod_env.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/configurations/config_test_env.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/configurations/config_test_env.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588935610084</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Directory issue undo">
+      <created>1588936084204</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1588936084204</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,7 +275,8 @@
     <MESSAGE value="Database URI for Heroku" />
     <MESSAGE value="ENVs for Heroku" />
     <MESSAGE value="Directory issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="Directory issue" />
+    <MESSAGE value="Directory issue undo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Directory issue undo" />
   </component>
   <component name="WindowStateProjectService">
     <state x="516" y="304" key="Github.ShareDialog" timestamp="1588909935913">
@@ -277,14 +287,14 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1588908927729" />
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1588935611608">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1588936085507">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1588935611608" />
-    <state x="340" y="157" width="600" height="538" key="find.popup" timestamp="1588935597936">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1588936085507" />
+    <state x="340" y="157" width="600" height="538" key="find.popup" timestamp="1588937603697">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="340" y="157" width="600" height="538" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1588935597936" />
+    <state x="340" y="157" width="600" height="538" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1588937603697" />
     <state x="397" y="285" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1588924961294">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
