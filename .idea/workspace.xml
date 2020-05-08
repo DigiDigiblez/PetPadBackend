@@ -12,7 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ed7374c8-f810-4d82-b0b5-ba3b407ebca4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/pet.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/pet.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,12 +102,13 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="11387947-bc38-466a-a790-b7bbf4c82e36" name="Default Changelist" comment="" />
+      <changelist id="ed7374c8-f810-4d82-b0b5-ba3b407ebca4" name="Default Changelist" comment="" />
       <created>1588908684384</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588908684384</updated>
       <workItem from="1588908686435" duration="1699000" />
+      <workItem from="1588963622040" duration="103000" />
     </task>
     <task id="LOCAL-00001" summary="Project enhancements.">
       <created>1588908802639</created>
@@ -284,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588951715288</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="App config vars">
+      <created>1588959298547</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1588959298547</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,7 +332,8 @@
     <MESSAGE value="Flask migration directory" />
     <MESSAGE value="Flattened configurations directory." />
     <MESSAGE value="Heroku env" />
-    <option name="LAST_COMMIT_MESSAGE" value="Heroku env" />
+    <MESSAGE value="App config vars" />
+    <option name="LAST_COMMIT_MESSAGE" value="App config vars" />
   </component>
   <component name="WindowStateProjectService">
     <state x="516" y="304" key="Github.ShareDialog" timestamp="1588909935913">
@@ -335,10 +344,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1588908927729" />
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1588951716658">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1588959299835">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1588951716658" />
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1588959299835" />
     <state x="340" y="157" width="600" height="538" key="find.popup" timestamp="1588951713242">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
