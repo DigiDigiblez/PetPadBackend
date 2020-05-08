@@ -6,15 +6,6 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
     </expand>
     <select />
   </component>
@@ -94,7 +85,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588908684384</updated>
-      <workItem from="1588908686435" duration="823000" />
+      <workItem from="1588908686435" duration="1699000" />
     </task>
     <task id="LOCAL-00001" summary="Project enhancements.">
       <created>1588908802639</created>
@@ -110,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588908940503</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Project git remapping.">
+      <created>1588909682202</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1588909682202</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,17 +134,25 @@
     <option name="LAST_COMMIT_MESSAGE" value="Project git remapping." />
   </component>
   <component name="WindowStateProjectService">
+    <state x="516" y="304" key="Github.ShareDialog" timestamp="1588909935913">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="516" y="304" key="Github.ShareDialog/0.0.1280.800@0.0.1280.800" timestamp="1588909935913" />
     <state x="149" y="39" key="SettingsEditor" timestamp="1588908927729">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1588908927729" />
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1588908941803">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1588909683436">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1588908941803" />
-    <state x="397" y="286" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1588909153606">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1588909683436" />
+    <state x="340" y="157" width="600" height="486" key="find.popup" timestamp="1588910517281">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="397" y="286" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1280.800@0.0.1280.800" timestamp="1588909153606" />
+    <state x="340" y="157" width="600" height="486" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1588910517281" />
+    <state x="397" y="286" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1588909973964">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="397" y="286" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1280.800@0.0.1280.800" timestamp="1588909973964" />
   </component>
 </project>
