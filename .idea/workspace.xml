@@ -19,10 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a493ef2-043b-4849-85c9-8717393ba247" name="Default Changelist" comment="">
+    <list default="true" id="3a493ef2-043b-4849-85c9-8717393ba247" name="Default Changelist" comment="Slight adjustments for Heroku.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Procfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/backend copy.textClipping" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,10 +59,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/backend" />
     </key>
   </component>
-  <component name="RunManager" selected="Shell Script.app_run.sh (4)">
+  <component name="RunManager" selected="Shell Script.app_run.sh (1)">
     <configuration name="PetPadBackend" type="PythonConfigurationType" factoryName="Python">
       <module name="petpadbackend" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -88,21 +88,10 @@
     </configuration>
     <configuration name="app_run.sh (1)" type="ShConfigurationType" temporary="true">
       <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
-      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/app_run.sh" />
-      <option name="SCRIPT_OPTIONS" value="" />
-      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
-      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
-      <option name="INTERPRETER_PATH" value="/bin/bash" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="app_run.sh (2)" type="ShConfigurationType" temporary="true">
-      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
       <option name="SCRIPT_PATH" value="$PROJECT_DIR$/backend/app_run.sh" />
       <option name="SCRIPT_OPTIONS" value="" />
       <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
-      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/backend" />
       <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
       <option name="INTERPRETER_PATH" value="/bin/bash" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -121,7 +110,7 @@
     </configuration>
     <configuration name="app_run.sh (4)" type="ShConfigurationType" temporary="true">
       <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
-      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/backend/app_run.sh" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/app_run.sh" />
       <option name="SCRIPT_OPTIONS" value="" />
       <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
       <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/backend" />
@@ -130,7 +119,7 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="app_run.sh" type="ShConfigurationType" temporary="true">
+    <configuration name="app_run.sh (5)" type="ShConfigurationType" temporary="true">
       <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
       <option name="SCRIPT_PATH" value="$PROJECT_DIR$/app_run.sh" />
       <option name="SCRIPT_OPTIONS" value="" />
@@ -141,13 +130,24 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="app_run.sh" type="ShConfigurationType" temporary="true">
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/app_run.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/backend" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Shell Script.app_run.sh (1)" />
+        <item itemvalue="Shell Script.app_run.sh (5)" />
+        <item itemvalue="Shell Script.app_run.sh" />
         <item itemvalue="Shell Script.app_run.sh (4)" />
         <item itemvalue="Shell Script.app_run.sh (3)" />
-        <item itemvalue="Shell Script.app_run.sh (2)" />
-        <item itemvalue="Shell Script.app_run.sh (1)" />
-        <item itemvalue="Shell Script.app_run.sh" />
       </list>
     </recent_temporary>
   </component>
@@ -163,7 +163,7 @@
       <updated>1588863172471</updated>
       <workItem from="1588863177232" duration="41000" />
       <workItem from="1588863233151" duration="818000" />
-      <workItem from="1588864077497" duration="3053000" />
+      <workItem from="1588864077497" duration="3871000" />
     </task>
     <task id="LOCAL-00001" summary="Name changes">
       <created>1588863619983</created>
@@ -186,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588903294654</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Slight adjustments for Heroku.">
+      <created>1588907891716</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1588907891716</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,7 +245,8 @@
     <MESSAGE value="Name changes" />
     <MESSAGE value="Import updates." />
     <MESSAGE value="Removing frontend previously faced. Reverse-engineered project history and re-deleted to fix critical bug." />
-    <option name="LAST_COMMIT_MESSAGE" value="Removing frontend previously faced. Reverse-engineered project history and re-deleted to fix critical bug." />
+    <MESSAGE value="Slight adjustments for Heroku." />
+    <option name="LAST_COMMIT_MESSAGE" value="Slight adjustments for Heroku." />
   </component>
   <component name="WindowStateProjectService">
     <state x="378" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588903068579">
@@ -249,10 +257,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1588864872894" />
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1588903295986">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1588907893148">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1588903295986" />
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1588907893148" />
     <state x="100" y="100" width="1080" height="600" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1588903206273">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
