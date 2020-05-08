@@ -17,7 +17,7 @@ logger = logging.getLogger("petpad_logger")
 
 # Try and configure project based on current environment
 try:
-    app.config.from_object(f"backend.configurations.config_{os.environ['ENV']}_env")
+    app.config.from_object(f"backend/configurations.config_{os.environ['ENV']}_env")
 
     # Additional configuration for LIVE environment
     if os.environ["ENV"] == ENV["PROD"]:
