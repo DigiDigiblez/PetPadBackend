@@ -11,39 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed7374c8-f810-4d82-b0b5-ba3b407ebca4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_local_db.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_prod_db.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_run.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/auth.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configurations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configurations/auth0.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configurations/config_dev_env.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configurations/config_local_env.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configurations/config_prod_env.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configurations/config_test_env.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants/constants.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/pet.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/pet.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/helpers/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/helpers/extract_exception.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/assistant.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/pad_note.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/pet.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588909682202</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Project remapping">
+      <created>1588915964892</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1588915964892</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +136,11 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State />
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
@@ -176,7 +156,8 @@
     </ignored-roots>
     <MESSAGE value="Project enhancements." />
     <MESSAGE value="Project git remapping." />
-    <option name="LAST_COMMIT_MESSAGE" value="Project git remapping." />
+    <MESSAGE value="Project remapping" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project remapping" />
   </component>
   <component name="WindowStateProjectService">
     <state x="516" y="304" key="Github.ShareDialog" timestamp="1588909935913">
@@ -187,17 +168,17 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1588908927729" />
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1588909683436">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1588915966883">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1588909683436" />
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1588915966883" />
     <state x="340" y="157" width="600" height="486" key="find.popup" timestamp="1588910517281">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="340" y="157" width="600" height="486" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1588910517281" />
-    <state x="397" y="286" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1588909973964">
+    <state x="397" y="286" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1588916004914">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="397" y="286" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1280.800@0.0.1280.800" timestamp="1588909973964" />
+    <state x="397" y="286" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1280.800@0.0.1280.800" timestamp="1588916004914" />
   </component>
 </project>
