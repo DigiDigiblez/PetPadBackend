@@ -11,15 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed7374c8-f810-4d82-b0b5-ba3b407ebca4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/auth/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/auth/auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/configurations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/configurations/auth0.toml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/auth0.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/configurations/config_dev_env.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/configurations/config_local_env.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/configurations/config_prod_env.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/configurations/config_test_env.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588946265571</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Flattened configurations directory.">
+      <created>1588947113666</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1588947113666</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,7 +312,8 @@
     <MESSAGE value="Heroku envs" />
     <MESSAGE value="Configs" />
     <MESSAGE value="Flask migration directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Flask migration directory" />
+    <MESSAGE value="Flattened configurations directory." />
+    <option name="LAST_COMMIT_MESSAGE" value="Flattened configurations directory." />
   </component>
   <component name="WindowStateProjectService">
     <state x="516" y="304" key="Github.ShareDialog" timestamp="1588909935913">
@@ -323,14 +324,14 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1588908927729" />
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1588946267223">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1588947115191">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1588946267223" />
-    <state x="340" y="157" width="600" height="538" key="find.popup" timestamp="1588947080840">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1588947115191" />
+    <state x="340" y="157" width="600" height="538" key="find.popup" timestamp="1588951455979">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="340" y="157" width="600" height="538" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1588947080840" />
+    <state x="340" y="157" width="600" height="538" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1588951455979" />
     <state x="397" y="285" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1588924961294">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
