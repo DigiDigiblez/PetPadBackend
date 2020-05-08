@@ -66,7 +66,8 @@ CORS(app)
 # Configure CORS
 @app.after_request
 def after_request(response):
-    response.headers.add("Access-Control-Allow-Headers", "Content-Type, Authorization, True")
+    response.headers.add("Access-Control-Allow-Origin", "*")
+    response.headers.add("Access-Control-Allow-Headers", "Origin, Content-Type, X-Auth-Token")
     response.headers.add("Access-Control-Allow-Methods", "GET, POST, DELETE, PATCH, PUT, OPTIONS")
     return response
 
