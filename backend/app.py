@@ -156,7 +156,3 @@ def auth_error(exception):
     response = jsonify(exception.error)
     response.status_code = exception.status_code
     return response
-
-
-if __name__ == "__main__":
-    app.run()
