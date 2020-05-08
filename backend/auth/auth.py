@@ -9,7 +9,7 @@ from six.moves.urllib.request import urlopen
 from backend.constants.constants import AUTH_HEADER_ERR, RESPONSE
 
 # Auth0 identity provider config variables
-auth0Config = toml.load(r"backend/configurations/auth0.toml")
+auth0Config = toml.load(r"backend/auth0.toml")
 
 AUTH0_DOMAIN = auth0Config["Auth0"]["AUTH0_DOMAIN"]
 ALGORITHMS = auth0Config["Auth0"]["AUTH0_ALGORITHM"]
