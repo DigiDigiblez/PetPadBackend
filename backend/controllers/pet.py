@@ -33,9 +33,10 @@ class PetsNoID(Resource):
     @pet_ns.marshal_with(pet_model, code=RESPONSE["201_CREATED"][0], description=RESPONSE["201_CREATED"][1])
     @pet_ns.expect(pet_model)
     def post(self, **payload):
-        print("hit")
         new_pet = Pet(**api.payload)
+        print("hit", new_pet)
         new_pet.insert()
+        print("hit", new_pet)
 
         return api.payload, RESPONSE["201_CREATED"][0]
 
