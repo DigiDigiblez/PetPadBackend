@@ -35,44 +35,46 @@ class PetsNoID(Resource):
     @pet_ns.expect(pet_model)
     def post(self, **payload):
         try:
-            new_pet_json = request.get_json()
-            print(111, new_pet_json)
-
-            # Retrieve the parts of the question from the body
-            name = new_pet_data.get('name', None)
-            gender = new_pet_data.get('gender', None)
-            species = new_pet_data.get('species', None)
-            breed = new_pet_data.get('breed', None)
-            weight = new_pet_data.get('weight', None)
-            height = new_pet_data.get('height', None)
-            birthday = new_pet_data.get('birthday', None)
-            favourite_toy = new_pet_data.get('favourite_toy', None)
-            favourite_food = new_pet_data.get('favourite_food', None)
-            personality_trait = new_pet_data.get('personality_trait', None)
-            social_google_plus_url = new_pet_data.get('social_google_plus_url', None)
-            social_facebook_url = new_pet_data.get('social_facebook_url', None)
-            social_twitter_url = new_pet_data.get('social_twitter_url', None)
-            social_instragram_url = new_pet_data.get('social_instragram_url', None)
-
-            # Build a new pet object
-            new_pet = Pet(
-                name=name,
-                gender=gender,
-                species=species,
-                breed=breed,
-                weight=weight,
-                height=height,
-                birthday=birthday,
-                favourite_toy=favourite_toy,
-                favourite_food=favourite_food,
-                personality_trait=personality_trait,
-                social_google_plus_url=social_google_plus_url,
-                social_facebook_url=social_facebook_url,
-                social_twitter_url=social_twitter_url,
-                social_instragram_url=social_instragram_url,
-            )
-
+            new_pet = Pet(**api.payload)
             new_pet.insert()
+
+            # new_pet_json = request.get_json()
+            # print(111, new_pet_json)
+            #
+            # # Retrieve the parts of the question from the body
+            # name = new_pet_data.get('name', None)
+            # gender = new_pet_data.get('gender', None)
+            # species = new_pet_data.get('species', None)
+            # breed = new_pet_data.get('breed', None)
+            # weight = new_pet_data.get('weight', None)
+            # height = new_pet_data.get('height', None)
+            # birthday = new_pet_data.get('birthday', None)
+            # favourite_toy = new_pet_data.get('favourite_toy', None)
+            # favourite_food = new_pet_data.get('favourite_food', None)
+            # personality_trait = new_pet_data.get('personality_trait', None)
+            # social_google_plus_url = new_pet_data.get('social_google_plus_url', None)
+            # social_facebook_url = new_pet_data.get('social_facebook_url', None)
+            # social_twitter_url = new_pet_data.get('social_twitter_url', None)
+            # social_instragram_url = new_pet_data.get('social_instragram_url', None)
+            #
+            # # Build a new pet object
+            # new_pet = Pet(
+            #     name=name,
+            #     gender=gender,
+            #     species=species,
+            #     breed=breed,
+            #     weight=weight,
+            #     height=height,
+            #     birthday=birthday,
+            #     favourite_toy=favourite_toy,
+            #     favourite_food=favourite_food,
+            #     personality_trait=personality_trait,
+            #     social_google_plus_url=social_google_plus_url,
+            #     social_facebook_url=social_facebook_url,
+            #     social_twitter_url=social_twitter_url,
+            #     social_instragram_url=social_instragram_url,
+            # )
+
 
         # Exception handling
         except Exception as ex:
