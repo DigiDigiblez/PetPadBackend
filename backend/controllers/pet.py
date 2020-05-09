@@ -43,9 +43,12 @@ class PetsNoID(Resource):
             new_pet_data = request.data
             if new_pet_data:
                 new_pet_data = json.loads(new_pet_data)
+            else:
+                raise ValueError('Empty Payload received')  # add this because if flows wrong it there is empty
+
             print(111, new_pet_data)
 
-            # Retrieve the parts of the question from the body
+            # Retrieve the parts of the pet from the body
             name = new_pet_data['name'],
             gender = new_pet_data['gender'],
             species = new_pet_data['species'],
