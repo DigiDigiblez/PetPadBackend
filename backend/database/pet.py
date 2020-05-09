@@ -82,10 +82,10 @@ class Pet(db.Model):
         genders = ["male", "female"]
         uri_parts = ["http://www.", "https://www.", ".com/"]
 
-        if self.weight < 0.0:
+        if float(self.weight) < 0.0:
             raise ValueError("Weight must exceed zero")
 
-        if self.height < 0.0:
+        if float(self.height) < 0.0:
             raise ValueError("Height must exceed zero")
 
         if self.gender.lower() not in genders:
@@ -108,14 +108,18 @@ class Pet(db.Model):
         if not re.match(r"^[A-Z][a-z]*( [A-Z][a-z]*)*$", self.species):
             raise ValueError("Species must only use a mix of single-spaced capitalised words")
 
-        if not any(uriPart in self.social_google_plus_url for uriPart in uri_parts):
-            raise ValueError("Social URL is not in valid format (e.g. https://plus.google.com/<account id>)")
+        if self.social_google_plus_url:
+            if not any(uriPart in self.social_google_plus_url for uriPart in uri_parts):
+                raise ValueError("Social URL is not in valid format (e.g. https://plus.google.com/<account id>)")
 
-        if not any(uriPart in self.social_facebook_url for uriPart in uri_parts):
-            raise ValueError("Social URL is not in valid format (e.g. https://Facebook.com/<account id>)")
+        if self.social_facebook_url:
+            if not any(uriPart in self.social_facebook_url for uriPart in uri_parts):
+                raise ValueError("Social URL is not in valid format (e.g. https://Facebook.com/<account id>)")
 
-        if not any(uriPart in self.social_twitter_url for uriPart in uri_parts):
-            raise ValueError("Social URL is not in valid format (e.g. https://Twitter.com/<account id>)")
+        if self.social_twitter_url:
+            if not any(uriPart in self.social_twitter_url for uriPart in uri_parts):
+                raise ValueError("Social URL is not in valid format (e.g. https://Twitter.com/<account id>)")
 
-        if not any(uriPart in self.social_instragram_url for uriPart in uri_parts):
-            raise ValueError("Social URL is not in valid format (e.g. https://Twitter.com/<account id>)")
+        if self.social_instragram_url:
+            if not any(uriPart in self.social_instragram_url for uriPart in uri_parts):
+                raise ValueError("Social URL is not in valid format (e.g. https://Twitter.com/<account id>)")
