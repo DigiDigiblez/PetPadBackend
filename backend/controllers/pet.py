@@ -84,9 +84,39 @@ class PetsNoID(Resource):
         return api.payload, RESPONSE["201_CREATED"][0]
 
 
-# Handles DELETE, PATCH requests (requiring pet id)
+# Handles GET, DELETE, PATCH requests (requiring pet id)
 @pet_ns.route("/<int:pet_id>")
 class PetsID(Resource):
+
+    # GET "/pets/<int:pet_id>" endpoint
+    @pet_ns.marshal_with(pet_model, code=RESPONSE["200_OK"][0], description=RESPONSE["200_OK"][1])
+    def get(self, pet_id):
+        try:
+            # Retrieve existing pet record to delete
+            existing_pet = Pet.query.filter(Pet.id == pet_id).one_or_none()
+
+            # If pet record doesn't exist, abort
+            if existing_pet is None:
+                err_code = RESPONSE["404_RESOURCE_NOT_FOUND"][0]
+                err_desc = RESPONSE["404_RESOURCE_NOT_FOUND"][1]
+
+            else:
+                response = {
+                    "pet": existing_pet,
+                }
+
+                return response, RESPONSE["200_OK"][0]
+
+        # Exception handling
+        except Exception as ex:
+            logger.exception(ex, exc_info=True)
+
+            db.session.rollback()
+
+            raise ex
+
+        if err_code:
+            abort(int(err_code), err_desc)
 
     # DELETE "/pets/<int:pet_id>" endpoint
     @pet_ns.marshal_with(pet_model, code=RESPONSE["204_NO_CONTENT"][0], description=RESPONSE["204_NO_CONTENT"][1])
