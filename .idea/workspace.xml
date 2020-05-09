@@ -108,14 +108,7 @@
       <option name="presentableId" value="Default" />
       <updated>1588908684384</updated>
       <workItem from="1588908686435" duration="1699000" />
-      <workItem from="1588963622040" duration="16642000" />
-    </task>
-    <task id="LOCAL-00008" summary="Project remapping">
-      <created>1588923570206</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1588923570206</updated>
+      <workItem from="1588963622040" duration="17784000" />
     </task>
     <task id="LOCAL-00009" summary="Project remapping">
       <created>1588927683489</created>
@@ -453,7 +446,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589025175044</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="New specific pet GET endpoint.">
+      <created>1589039214109</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1589039214109</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -537,7 +537,8 @@
     <MESSAGE value="Optimising POST endpoint" />
     <MESSAGE value="Fixing POST endpoint." />
     <MESSAGE value="Fixing Pet db conditions." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing Pet db conditions." />
+    <MESSAGE value="New specific pet GET endpoint." />
+    <option name="LAST_COMMIT_MESSAGE" value="New specific pet GET endpoint." />
   </component>
   <component name="WindowStateProjectService">
     <state x="516" y="304" key="Github.ShareDialog" timestamp="1588909935913">
@@ -548,10 +549,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1588908927729" />
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1589025176083">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1589039216814">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1589025176083" />
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1589039216814" />
     <state x="414" y="141" key="VcsDiffUtil.ChangesDialog" timestamp="1588999653481">
       <screen x="0" y="0" width="1280" height="800" />
     </state>

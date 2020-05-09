@@ -21,6 +21,7 @@ class PetsNoID(Resource):
 
     # GET "/pets/" endpoint
     @pet_ns.marshal_list_with(pet_list_model, code=RESPONSE["200_OK"][0], description=RESPONSE["200_OK"][1])
+    @pet_ns.expect(pet_model)
     def get(self):
         # Retrieve all pets from newest to oldest
         all_pets = Pet.query.order_by(db.desc(Pet.id)).all()
@@ -90,6 +91,7 @@ class PetsID(Resource):
 
     # GET "/pets/<int:pet_id>" endpoint
     @pet_ns.marshal_with(pet_model, code=RESPONSE["200_OK"][0], description=RESPONSE["200_OK"][1])
+    @pet_ns.expect(pet_model)
     def get(self, pet_id):
         try:
             # Retrieve existing pet record to delete
@@ -101,11 +103,7 @@ class PetsID(Resource):
                 err_desc = RESPONSE["404_RESOURCE_NOT_FOUND"][1]
 
             else:
-                response = {
-                    "pet": existing_pet,
-                }
-
-                return response, RESPONSE["200_OK"][0]
+                return existing_pet, RESPONSE["200_OK"][0]
 
         # Exception handling
         except Exception as ex:
