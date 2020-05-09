@@ -37,46 +37,27 @@ class PetsNoID(Resource):
     @pet_ns.expect(pet_model)
     def post(self, **payload):
         try:
-            # new_pet = Pet(**api.payload)
-            # new_pet.insert()
-            #
-            new_pet_data = request.data
-            if new_pet_data:
-                new_pet_data = json.loads(new_pet_data)
-            else:
-                raise ValueError('Empty Payload received')  # add this because if flows wrong it there is empty
-
-            print(jsonify(new_pet_data))
-            # print(1, new_pet_data.name)
-            # print(2, new_pet_data.gender)
-            # print(3, new_pet_data.species)
-            # print(4, new_pet_data.breed)
-            # print(5, new_pet_data.weight)
-            # print(6, new_pet_data.height)
-            # print(7, new_pet_data.birthday)
-            # print(8, new_pet_data.favourite_toy)
-            # print(9, new_pet_data.favourite_food)
-            # print(10, new_pet_data.personality_trait)
-            # print(11, new_pet_data.social_google_plus_url)
-            # print(12, new_pet_data.social_facebook_url)
-            # print(13, new_pet_data.social_twitter_url)
-            # print(13, new_pet_data.social_instragram_url)
+            # new_pet_data = request.data
+            # if new_pet_data:
+            #     new_pet_data = json.loads(new_pet_data)
+            # else:
+            #     raise ValueError('Empty Payload received')  # add this because if flows wrong it there is empty
 
             # Retrieve the parts of the pet from the body
-            name = new_pet_data.name,
-            gender = new_pet_data.gender,
-            species = new_pet_data.species,
-            breed = new_pet_data.breed,
-            weight = new_pet_data.weight,
-            height = new_pet_data.height,
-            birthday = new_pet_data.birthday,
-            favourite_toy = new_pet_data.favourite_toy,
-            favourite_food = new_pet_data.favourite_food,
-            personality_trait = new_pet_data.personality_trait,
-            social_google_plus_url = new_pet_data.social_google_plus_url,
-            social_facebook_url = new_pet_data.social_facebook_url,
-            social_twitter_url = new_pet_data.social_twitter_url,
-            social_instragram_url = new_pet_data.social_instragram_url,
+            name = api.payload["name"]
+            gender = api.payload["gender"]
+            species = api.payload["species"]
+            breed = api.payload["breed"]
+            weight = api.payload["weight"]
+            height = api.payload["height"]
+            birthday = api.payload["birthday"]
+            favourite_toy = api.payload["favourite_toy"]
+            favourite_food = api.payload["favourite_food"]
+            personality_trait = api.payload["personality_trait"]
+            social_google_plus_url = api.payload["social_google_plus_url"]
+            social_facebook_url = api.payload["social_facebook_url"]
+            social_twitter_url = api.payload["social_twitter_url"]
+            social_instragram_url = api.payload["social_instragram_url"]
 
             # Build a new pet object
             new_pet = Pet(
@@ -97,7 +78,6 @@ class PetsNoID(Resource):
             )
 
             new_pet.insert()
-
 
         # Exception handling
         except Exception as ex:
