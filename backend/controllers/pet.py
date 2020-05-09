@@ -34,7 +34,7 @@ class PetsNoID(Resource):
     @pet_ns.expect(pet_model)
     def post(self, **payload):
         try:
-            new_pet = Pet(**api.payload)
+            new_pet = Pet(api.payload)
             print("hit", new_pet)
             new_pet.insert()
             print("hit", new_pet)
