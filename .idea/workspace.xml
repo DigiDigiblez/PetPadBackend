@@ -10,7 +10,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed7374c8-f810-4d82-b0b5-ba3b407ebca4" name="Default Changelist" comment="" />
+    <list default="true" id="ed7374c8-f810-4d82-b0b5-ba3b407ebca4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -105,7 +108,7 @@
       <option name="presentableId" value="Default" />
       <updated>1588908684384</updated>
       <workItem from="1588908686435" duration="1699000" />
-      <workItem from="1588963622040" duration="2388000" />
+      <workItem from="1588963622040" duration="2815000" />
     </task>
     <task id="LOCAL-00001" summary="Project enhancements.">
       <created>1588908802639</created>
@@ -317,18 +320,55 @@
       <option name="project" value="LOCAL" />
       <updated>1588967018520</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Adjustment to CORS">
+      <created>1588967466003</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1588967466003</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="1">
           <value>
-            <State />
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
         <entry key="MAIN">
@@ -336,6 +376,11 @@
             <State />
           </value>
         </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
@@ -371,10 +416,14 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1588908927729" />
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1588967019744">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1588967467454">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1588967019744" />
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1588967467454" />
+    <state x="414" y="141" key="VcsDiffUtil.ChangesDialog" timestamp="1588999653481">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="414" y="141" key="VcsDiffUtil.ChangesDialog/0.0.1280.800@0.0.1280.800" timestamp="1588999653481" />
     <state x="340" y="157" width="600" height="538" key="find.popup" timestamp="1588951713242">
       <screen x="0" y="0" width="1280" height="800" />
     </state>

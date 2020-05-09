@@ -60,17 +60,14 @@ api = Api(
 )
 
 # Add CORS support to application
-CORS(app, resources={r"/*": {"origins": "*"}})
-app.config['CORS_HEADERS'] = 'Content-Type'
-app.config['CORS_SUPPORTS_CREDENTIALS'] = True
+CORS(app)
 
 
+# Configure CORS
 @app.after_request
 def after_request(response):
-    response.headers.add('Access-Control-Allow-Origin', 'http://localhost:3000')
-    response.headers.add('Access-Control-Allow-Headers', 'Content-Type, Authorization')
-    response.headers.add('Access-Control-Allow-Methods', 'GET, POST, PATCH, PUT, DELETE, OPTIONS')
-    response.headers.add('Access-Control-Allow-Credentials', 'true')
+    response.headers.add("Access-Control-Allow-Headers", "Content-Type, Authorization, True")
+    response.headers.add("Access-Control-Allow-Methods", "GET, POST, DELETE, PATCH, PUT, OPTIONS")
     return response
 
 
