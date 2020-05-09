@@ -1,6 +1,6 @@
 import json
 
-from flask import request
+from flask import request, jsonify
 from flask_restx import Resource, abort
 from sqlalchemy.exc import IntegrityError
 
@@ -46,20 +46,21 @@ class PetsNoID(Resource):
             else:
                 raise ValueError('Empty Payload received')  # add this because if flows wrong it there is empty
 
-            print(1, new_pet_data.name)
-            print(2, new_pet_data.gender)
-            print(3, new_pet_data.species)
-            print(4, new_pet_data.breed)
-            print(5, new_pet_data.weight)
-            print(6, new_pet_data.height)
-            print(7, new_pet_data.birthday)
-            print(8, new_pet_data.favourite_toy)
-            print(9, new_pet_data.favourite_food)
-            print(10, new_pet_data.personality_trait)
-            print(11, new_pet_data.social_google_plus_url)
-            print(12, new_pet_data.social_facebook_url)
-            print(13, new_pet_data.social_twitter_url)
-            print(13, new_pet_data.social_instragram_url)
+            print(jsonify(new_pet_data))
+            # print(1, new_pet_data.name)
+            # print(2, new_pet_data.gender)
+            # print(3, new_pet_data.species)
+            # print(4, new_pet_data.breed)
+            # print(5, new_pet_data.weight)
+            # print(6, new_pet_data.height)
+            # print(7, new_pet_data.birthday)
+            # print(8, new_pet_data.favourite_toy)
+            # print(9, new_pet_data.favourite_food)
+            # print(10, new_pet_data.personality_trait)
+            # print(11, new_pet_data.social_google_plus_url)
+            # print(12, new_pet_data.social_facebook_url)
+            # print(13, new_pet_data.social_twitter_url)
+            # print(13, new_pet_data.social_instragram_url)
 
             # Retrieve the parts of the pet from the body
             name = new_pet_data.name,
