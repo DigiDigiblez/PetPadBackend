@@ -35,7 +35,7 @@ class PetsNoID(Resource):
     @pet_ns.expect(pet_model)
     def post(self, **payload):
         try:
-            new_pet_json = request.get_json()
+            new_pet_json = request.json()
             print(111, new_pet_json)
 
             new_pet_data = request.data
