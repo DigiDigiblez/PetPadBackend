@@ -44,14 +44,8 @@ class PetsNoID(Resource):
             logger.exception(ex, exc_info=True)
 
             # Handle only exceptions which contain code, title, and description segments differently
-            if "'" not in str(ex):
-                ex_data = extract_exception(ex)
-                err_code = ex_data["code"]
-                err_desc = ex_data["title"]
-            else:
-                raise ex
-
             db.session.rollback()
+            raise ex
 
         return api.payload, RESPONSE["201_CREATED"][0]
 
