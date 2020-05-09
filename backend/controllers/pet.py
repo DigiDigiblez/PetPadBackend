@@ -33,10 +33,25 @@ class PetsNoID(Resource):
     @pet_ns.marshal_with(pet_model, code=RESPONSE["201_CREATED"][0], description=RESPONSE["201_CREATED"][1])
     @pet_ns.expect(pet_model)
     def post(self, **payload):
-        new_pet = Pet(**api.payload)
-        print("hit", new_pet)
-        new_pet.insert()
-        print("hit", new_pet)
+        try:
+            new_pet = Pet(**api.payload)
+            print("hit", new_pet)
+            new_pet.insert()
+            print("hit", new_pet)
+
+        # Exception handling
+        except Exception as ex:
+            logger.exception(ex, exc_info=True)
+
+            # Handle only exceptions which contain code, title, and description segments differently
+            if "'" not in str(ex):
+                ex_data = extract_exception(ex)
+                err_code = ex_data["code"]
+                err_desc = ex_data["title"]
+            else:
+                raise ex
+
+            db.session.rollback()
 
         return api.payload, RESPONSE["201_CREATED"][0]
 

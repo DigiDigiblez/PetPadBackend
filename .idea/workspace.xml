@@ -108,7 +108,7 @@
       <option name="presentableId" value="Default" />
       <updated>1588908684384</updated>
       <workItem from="1588908686435" duration="1699000" />
-      <workItem from="1588963622040" duration="3148000" />
+      <workItem from="1588963622040" duration="3964000" />
     </task>
     <task id="LOCAL-00001" summary="Project enhancements.">
       <created>1588908802639</created>
@@ -334,7 +334,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588999726912</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Debugging POST endpoint hits">
+      <created>1589000161690</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1589000161690</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -412,7 +419,8 @@
     <MESSAGE value="App config vars" />
     <MESSAGE value="Api POST test" />
     <MESSAGE value="Adjustment to CORS" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adjustment to CORS" />
+    <MESSAGE value="Debugging POST endpoint hits" />
+    <option name="LAST_COMMIT_MESSAGE" value="Debugging POST endpoint hits" />
   </component>
   <component name="WindowStateProjectService">
     <state x="516" y="304" key="Github.ShareDialog" timestamp="1588909935913">
@@ -423,10 +431,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1588908927729" />
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1588999728133">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1589000162822">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1588999728133" />
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1589000162822" />
     <state x="414" y="141" key="VcsDiffUtil.ChangesDialog" timestamp="1588999653481">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
