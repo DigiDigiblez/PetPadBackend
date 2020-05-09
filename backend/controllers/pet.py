@@ -37,12 +37,6 @@ class PetsNoID(Resource):
     @pet_ns.expect(pet_model)
     def post(self, **payload):
         try:
-            # new_pet_data = request.data
-            # if new_pet_data:
-            #     new_pet_data = json.loads(new_pet_data)
-            # else:
-            #     raise ValueError('Empty Payload received')  # add this because if flows wrong it there is empty
-
             # Retrieve the parts of the pet from the body
             name = api.payload["name"]
             gender = api.payload["gender"]
