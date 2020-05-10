@@ -97,14 +97,6 @@ class Pet(db.Model):
         if not re.match(r"^[A-Z][a-z]*( [A-Z][a-z]*)*$", self.breed):
             raise ValueError("Breed must only use a mix of single-spaced capitalised words")
 
-        # TODO - birthday validation (needed?)
-
-        # TODO - favourite toy validation
-
-        # TODO - favourite food validation
-
-        # TODO - personality trait validation
-
         if not re.match(r"^[A-Z][a-z]*( [A-Z][a-z]*)*$", self.species):
             raise ValueError("Species must only use a mix of single-spaced capitalised words")
 

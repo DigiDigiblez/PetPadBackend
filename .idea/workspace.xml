@@ -12,6 +12,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ed7374c8-f810-4d82-b0b5-ba3b407ebca4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/post.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/post.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/database/pet.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/pet.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/database/post.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/post.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,14 +112,7 @@
       <option name="presentableId" value="Default" />
       <updated>1588908684384</updated>
       <workItem from="1588908686435" duration="1699000" />
-      <workItem from="1588963622040" duration="21375000" />
-    </task>
-    <task id="LOCAL-00015" summary="Heroku test.">
-      <created>1588933893568</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1588933893568</updated>
+      <workItem from="1588963622040" duration="21725000" />
     </task>
     <task id="LOCAL-00016" summary="Database URI for Heroku">
       <created>1588934111054</created>
@@ -455,7 +450,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589084592387</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Typo in post record validation.">
+      <created>1589084971783</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1589084971783</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -517,7 +519,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="Heroku test." />
     <MESSAGE value="Database URI for Heroku" />
     <MESSAGE value="ENVs for Heroku" />
     <MESSAGE value="Directory issue" />
@@ -542,7 +543,8 @@
     <MESSAGE value="Updated facilities for Posting." />
     <MESSAGE value="Remove migrations folder." />
     <MESSAGE value="Add Post to lists." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Post to lists." />
+    <MESSAGE value="Typo in post record validation." />
+    <option name="LAST_COMMIT_MESSAGE" value="Typo in post record validation." />
   </component>
   <component name="WindowStateProjectService">
     <state x="516" y="304" key="Github.ShareDialog" timestamp="1588909935913">
@@ -553,10 +555,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1588908927729" />
-    <state x="179" y="280" key="Vcs.Push.Dialog.v2" timestamp="1589084593585">
+    <state x="179" y="280" key="Vcs.Push.Dialog.v2" timestamp="1589084972830">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="179" y="280" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1589084593585" />
+    <state x="179" y="280" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1589084972830" />
     <state x="414" y="141" key="VcsDiffUtil.ChangesDialog" timestamp="1588999653481">
       <screen x="0" y="0" width="1280" height="800" />
     </state>

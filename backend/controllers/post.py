@@ -34,11 +34,17 @@ class PetsNoID(Resource):
             # Retrieve the parts of the post from the body
             mood = api.payload["mood"]
             content = api.payload["content"]
+            creation_datetime = api.payload["creation_datetime"]
+            date_last_modified = api.payload["date_last_modified"]
+            is_open = api.payload["is_open"]
 
             # Build a new post object
             new_post = Post(
                 mood=mood,
                 content=content,
+                creation_datetime=creation_datetime,
+                date_last_modified=date_last_modified,
+                is_open=is_open,
             )
 
             new_post.insert()

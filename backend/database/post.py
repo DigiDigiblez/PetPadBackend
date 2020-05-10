@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-
+from datetime import datetime
 from backend.app import db
 
 
@@ -9,6 +9,9 @@ class Post(db.Model):
     id: int = db.Column(db.Integer, primary_key=True, autoincrement=True)
     mood: str = db.Column(db.String(30), nullable=False)
     content: str = db.Column(db.String(100000), nullable=False)
+    creation_datetime: datetime = db.Column(db.DateTime)
+    date_last_modified: datetime = db.Column(db.DateTime)
+    is_open: bool = db.Column(db.String(100000), nullable=False)
 
     # Insert new Post record into the database
     def insert(self):
@@ -37,6 +40,9 @@ class Post(db.Model):
                 for post_property in [
                     "mood",
                     "content",
+                    "creation_datetime",
+                    "date_last_modified",
+                    "is_open",
                 ]:
                     if post_property in updated_properties:
                         setattr(self, post_property, updated_properties[post_property])
