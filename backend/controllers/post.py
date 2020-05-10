@@ -2,9 +2,10 @@ from flask_restx import Resource
 
 from backend.app import api, logger, db
 from backend.constants.constants import RESPONSE
-from backend.database.pet import Pet
+from backend.database.post import Post
+from backend.models.post import post_model, post_list_model
 
-pet_ns = api.namespace("posts", description="Pet endpoints")
+pet_ns = api.namespace("posts", description="Post endpoints")
 
 
 # Handles GET, POST requests (requiring no post id)
@@ -16,11 +17,11 @@ class PetsNoID(Resource):
     @pet_ns.expect(post_model)
     def get(self):
         # Retrieve all posts from newest to oldest
-        all_pets = Pet.query.order_by(db.desc(Pet.id)).all()
+        all_posts = Post.query.order_by(db.desc(Post.id)).all()
 
         response = {
-            "posts": all_pets,
-            "total_pets": len(all_pets),
+            "posts": all_posts,
+            "total_posts": len(all_posts),
         }
 
         return response, RESPONSE["200_OK"][0]
