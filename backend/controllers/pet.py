@@ -1,16 +1,11 @@
-import json
-
-from flask import request, jsonify
 from flask_restx import Resource, abort
 from sqlalchemy.exc import IntegrityError
 
 from backend.app import api, logger, db
 from backend.constants.constants import RESPONSE
-
 from backend.database.pet import Pet
-from backend.models.pet import pet_list_model, pet_model
-
 from backend.helpers.extract_exception import extract_exception
+from backend.models.pet import pet_list_model, pet_model
 
 pet_ns = api.namespace("pets", description="Pet endpoints")
 
