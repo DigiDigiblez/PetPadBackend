@@ -37,8 +37,8 @@ class PetsNoID(Resource):
             # Retrieve the parts of the post from the body
             mood = api.payload["mood"]
             content = api.payload["content"]
-            creation_datetime = datetime("2020-05-10T09:54:06.271000")
-            date_last_modified = datetime("2020-05-10T09:54:06.271000")
+            creation_datetime = datetime("2020-05-5T09:54:06.271000")
+            date_last_modified = datetime("2020-05-5T09:54:06.271000")
             is_open = api.payload["is_open"]
 
             # Build a new post object
