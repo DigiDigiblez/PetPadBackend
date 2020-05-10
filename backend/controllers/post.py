@@ -61,6 +61,9 @@ class PetsNoID(Resource):
 
         return api.payload, RESPONSE["201_CREATED"][0]
 
+
+@pet_ns.route("/<int:post_id>")
+class PetsID(Resource):
     # DELETE "/posts/<int:post_id>" endpoint
     @pet_ns.marshal_with(post_model, code=RESPONSE["204_NO_CONTENT"][0], description=RESPONSE["204_NO_CONTENT"][1])
     @pet_ns.expect(post_model)
