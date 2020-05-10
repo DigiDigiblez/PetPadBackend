@@ -11,11 +11,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed7374c8-f810-4d82-b0b5-ba3b407ebca4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/migrations/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/alembic.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/env.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/script.py.mako" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/versions/f6ac8ce86f4d_.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/database/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,14 +112,7 @@
       <option name="presentableId" value="Default" />
       <updated>1588908684384</updated>
       <workItem from="1588908686435" duration="1699000" />
-      <workItem from="1588963622040" duration="20637000" />
-    </task>
-    <task id="LOCAL-00013" summary="Project remapping">
-      <created>1588930347649</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1588930347649</updated>
+      <workItem from="1588963622040" duration="20933000" />
     </task>
     <task id="LOCAL-00014" summary="Heroku test.">
       <created>1588932858766</created>
@@ -458,7 +450,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589083722730</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Remove migrations folder.">
+      <created>1589084175878</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1589084175878</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -520,7 +519,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="Project git remapping." />
     <MESSAGE value="Project remapping" />
     <MESSAGE value="Heroku test." />
     <MESSAGE value="Database URI for Heroku" />
@@ -545,7 +543,8 @@
     <MESSAGE value="Improvements to GET &quot;/pets/&lt;int:pet_id&gt;&quot; endpoint" />
     <MESSAGE value="Added facilities for Posting." />
     <MESSAGE value="Updated facilities for Posting." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated facilities for Posting." />
+    <MESSAGE value="Remove migrations folder." />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove migrations folder." />
   </component>
   <component name="WindowStateProjectService">
     <state x="516" y="304" key="Github.ShareDialog" timestamp="1588909935913">
@@ -556,10 +555,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1588908927729" />
-    <state x="179" y="280" key="Vcs.Push.Dialog.v2" timestamp="1589083724232">
+    <state x="179" y="280" key="Vcs.Push.Dialog.v2" timestamp="1589084177004">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="179" y="280" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1589083724232" />
+    <state x="179" y="280" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1589084177004" />
     <state x="414" y="141" key="VcsDiffUtil.ChangesDialog" timestamp="1588999653481">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
