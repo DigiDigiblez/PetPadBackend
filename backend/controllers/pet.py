@@ -2,6 +2,7 @@ from flask_restx import Resource, abort
 from sqlalchemy.exc import IntegrityError
 
 from backend.app import api, logger, db
+from backend.auth.auth import requires_auth
 from backend.constants.constants import RESPONSE
 from backend.database.pet import Pet
 from backend.helpers.extract_exception import extract_exception
@@ -17,6 +18,7 @@ class PetsNoID(Resource):
     # GET "/pets/" endpoint
     @pet_ns.marshal_list_with(pet_list_model, code=RESPONSE["200_OK"][0], description=RESPONSE["200_OK"][1])
     @pet_ns.expect(pet_model)
+    @requires_auth("get:pets")
     def get(self):
         # Retrieve all pets from newest to oldest
         all_pets = Pet.query.order_by(db.desc(Pet.id)).all()
@@ -31,6 +33,7 @@ class PetsNoID(Resource):
     # POST "/pets/" endpoint
     @pet_ns.marshal_with(pet_model, code=RESPONSE["201_CREATED"][0], description=RESPONSE["201_CREATED"][1])
     @pet_ns.expect(pet_model)
+    @requires_auth("post:pet")
     def post(self, **payload):
         try:
             # Retrieve the parts of the pet from the body
@@ -83,6 +86,7 @@ class PetsID(Resource):
     # GET "/pets/<int:pet_id>" endpoint
     @pet_ns.marshal_with(pet_model, code=RESPONSE["200_OK"][0], description=RESPONSE["200_OK"][1])
     @pet_ns.expect(pet_model)
+    @requires_auth("get:pet")
     def get(self, pet_id):
         try:
             # Retrieve existing pet record to delete
@@ -110,6 +114,7 @@ class PetsID(Resource):
     # DELETE "/pets/<int:pet_id>" endpoint
     @pet_ns.marshal_with(pet_model, code=RESPONSE["204_NO_CONTENT"][0], description=RESPONSE["204_NO_CONTENT"][1])
     @pet_ns.expect(pet_model)
+    @requires_auth("delete:pet")
     def delete(self, pet_id, **payload):
         # Try retrieving and updating pet record
         err_code = ""
@@ -152,6 +157,7 @@ class PetsID(Resource):
     # PATCH "/pets/<int:pet_id>" endpoint
     @pet_ns.marshal_with(pet_model, code=RESPONSE["204_NO_CONTENT"][0], description=RESPONSE["204_NO_CONTENT"][1])
     @pet_ns.expect(pet_model)
+    @requires_auth("patch:pet")
     def patch(self, pet_id, **payload):
         # Try retrieving and updating pet record
         err_code = ""

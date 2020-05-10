@@ -2,6 +2,7 @@ from sqlite3 import IntegrityError
 
 from flask_restx import Resource, abort
 from backend.app import api, logger, db
+from backend.auth.auth import requires_auth
 from backend.constants.constants import RESPONSE
 from backend.database.post import Post
 from backend.helpers.extract_exception import extract_exception
@@ -17,6 +18,7 @@ class PostsNoID(Resource):
     # GET "/posts/" endpoint
     @post_ns.marshal_list_with(post_list_model, code=RESPONSE["200_OK"][0], description=RESPONSE["200_OK"][1])
     @post_ns.expect(post_model)
+    @requires_auth("get:posts")
     def get(self):
         # Retrieve all posts from newest to oldest
         all_posts = Post.query.order_by(db.desc(Post.id)).all()
@@ -31,6 +33,7 @@ class PostsNoID(Resource):
     # POST "/posts/" endpoint
     @post_ns.marshal_with(post_model, code=RESPONSE["201_CREATED"][0], description=RESPONSE["201_CREATED"][1])
     @post_ns.expect(post_model)
+    @requires_auth("post:post")
     def post(self, **payload):
         try:
             # Retrieve the parts of the post from the body
@@ -64,9 +67,11 @@ class PostsNoID(Resource):
 
 @post_ns.route("/<int:post_id>")
 class PostsID(Resource):
+
     # DELETE "/posts/<int:post_id>" endpoint
     @post_ns.marshal_with(post_model, code=RESPONSE["204_NO_CONTENT"][0], description=RESPONSE["204_NO_CONTENT"][1])
     @post_ns.expect(post_model)
+    @requires_auth("delete:post")
     def delete(self, post_id, **payload):
         # Try retrieving and deleting post record
         err_code = ""
@@ -105,6 +110,7 @@ class PostsID(Resource):
     # PATCH "/posts/<int:post_id>" endpoint
     @post_ns.marshal_with(post_model, code=RESPONSE["204_NO_CONTENT"][0], description=RESPONSE["204_NO_CONTENT"][1])
     @post_ns.expect(post_model)
+    @requires_auth("patch:post")
     def patch(self, post_id, **payload):
         # Try retrieving and updating post record
         err_code = ""
