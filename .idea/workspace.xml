@@ -12,9 +12,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ed7374c8-f810-4d82-b0b5-ba3b407ebca4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/controllers/post.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/post.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/database/pet.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/pet.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/database/post.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/post.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/post.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/post.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,14 +111,7 @@
       <option name="presentableId" value="Default" />
       <updated>1588908684384</updated>
       <workItem from="1588908686435" duration="1699000" />
-      <workItem from="1588963622040" duration="21725000" />
-    </task>
-    <task id="LOCAL-00016" summary="Database URI for Heroku">
-      <created>1588934111054</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1588934111054</updated>
+      <workItem from="1588963622040" duration="22131000" />
     </task>
     <task id="LOCAL-00017" summary="ENVs for Heroku">
       <created>1588935409519</created>
@@ -457,7 +449,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589084971783</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="Updated Post API endpoint setup">
+      <created>1589085358454</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1589085358454</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -519,7 +518,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="Database URI for Heroku" />
     <MESSAGE value="ENVs for Heroku" />
     <MESSAGE value="Directory issue" />
     <MESSAGE value="Directory issue undo" />
@@ -544,7 +542,8 @@
     <MESSAGE value="Remove migrations folder." />
     <MESSAGE value="Add Post to lists." />
     <MESSAGE value="Typo in post record validation." />
-    <option name="LAST_COMMIT_MESSAGE" value="Typo in post record validation." />
+    <MESSAGE value="Updated Post API endpoint setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Post API endpoint setup" />
   </component>
   <component name="WindowStateProjectService">
     <state x="516" y="304" key="Github.ShareDialog" timestamp="1588909935913">
@@ -555,10 +554,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1588908927729" />
-    <state x="179" y="280" key="Vcs.Push.Dialog.v2" timestamp="1589084972830">
+    <state x="179" y="280" key="Vcs.Push.Dialog.v2" timestamp="1589085359523">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="179" y="280" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1589084972830" />
+    <state x="179" y="280" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1589085359523" />
     <state x="414" y="141" key="VcsDiffUtil.ChangesDialog" timestamp="1588999653481">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
