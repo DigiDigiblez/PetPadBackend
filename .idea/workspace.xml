@@ -12,8 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ed7374c8-f810-4d82-b0b5-ba3b407ebca4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/database/pet.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/pet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/database/post.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/post.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/post.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/post.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,14 +110,7 @@
       <option name="presentableId" value="Default" />
       <updated>1588908684384</updated>
       <workItem from="1588908686435" duration="1699000" />
-      <workItem from="1588963622040" duration="26348000" />
-    </task>
-    <task id="LOCAL-00021" summary="Heroku envs">
-      <created>1588937748783</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1588937748783</updated>
+      <workItem from="1588963622040" duration="28057000" />
     </task>
     <task id="LOCAL-00022" summary="Configs">
       <created>1588943010414</created>
@@ -456,7 +448,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589090531044</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="Updated Pet/Post endpoints.">
+      <created>1589100570694</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1589100570694</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -518,7 +517,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="Directory issue" />
     <MESSAGE value="Directory issue undo" />
     <MESSAGE value="Heroku envs" />
     <MESSAGE value="Configs" />
@@ -543,7 +541,8 @@
     <MESSAGE value="Typo in post record validation." />
     <MESSAGE value="Updated Post API endpoint setup" />
     <MESSAGE value="Updated Pet endpoints." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated Pet endpoints." />
+    <MESSAGE value="Updated Pet/Post endpoints." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Pet/Post endpoints." />
   </component>
   <component name="WindowStateProjectService">
     <state x="516" y="304" key="Github.ShareDialog" timestamp="1588909935913">
@@ -554,14 +553,19 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1588908927729" />
-    <state x="179" y="280" key="Vcs.Push.Dialog.v2" timestamp="1589090532535">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="1431" y="-448" key="Vcs.Push.Dialog.v2" timestamp="1589100571804">
+      <screen x="1280" y="-1120" width="1080" height="1920" />
     </state>
+    <state x="1431" y="-448" key="Vcs.Push.Dialog.v2/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589100571804" />
     <state x="179" y="280" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1589090532535" />
     <state x="414" y="141" key="VcsDiffUtil.ChangesDialog" timestamp="1588999653481">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="414" y="141" key="VcsDiffUtil.ChangesDialog/0.0.1280.800@0.0.1280.800" timestamp="1588999653481" />
+    <state x="1421" y="-543" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1589104175520">
+      <screen x="1280" y="-1120" width="1080" height="1920" />
+    </state>
+    <state x="1421" y="-543" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589104175520" />
     <state x="340" y="157" width="600" height="538" key="find.popup" timestamp="1589090527167">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
