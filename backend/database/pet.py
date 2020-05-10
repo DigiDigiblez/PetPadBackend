@@ -20,7 +20,7 @@ class Pet(db.Model):
     favourite_food: str = db.Column(db.String(100), nullable=False)
     personality_trait: str = db.Column(db.String(50), nullable=False)
     profile_image: str = db.Column(db.String(100000), nullable=False)
-    profile_completed: bool = db.Column(db.Boolean, nullable=False)
+    profile_completed: bool = db.Column(db.Boolean, nullable=False, default=False)
 
     # Insert new Pet record into the database
     def insert(self):

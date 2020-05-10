@@ -13,6 +13,7 @@
     <list default="true" id="ed7374c8-f810-4d82-b0b5-ba3b407ebca4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/database/pet.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/pet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/database/post.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/post.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,14 +111,7 @@
       <option name="presentableId" value="Default" />
       <updated>1588908684384</updated>
       <workItem from="1588908686435" duration="1699000" />
-      <workItem from="1588963622040" duration="24638000" />
-    </task>
-    <task id="LOCAL-00020" summary="Heroku envs">
-      <created>1588937668401</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1588937668401</updated>
+      <workItem from="1588963622040" duration="26348000" />
     </task>
     <task id="LOCAL-00021" summary="Heroku envs">
       <created>1588937748783</created>
@@ -455,7 +449,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589089859700</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="Updated Pet endpoints.">
+      <created>1589090531044</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1589090531044</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -553,10 +554,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1588908927729" />
-    <state x="179" y="280" key="Vcs.Push.Dialog.v2" timestamp="1589089860786">
+    <state x="179" y="280" key="Vcs.Push.Dialog.v2" timestamp="1589090532535">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="179" y="280" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1589089860786" />
+    <state x="179" y="280" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1589090532535" />
     <state x="414" y="141" key="VcsDiffUtil.ChangesDialog" timestamp="1588999653481">
       <screen x="0" y="0" width="1280" height="800" />
     </state>

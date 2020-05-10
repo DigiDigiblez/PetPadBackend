@@ -9,9 +9,9 @@ class Post(db.Model):
     id: int = db.Column(db.Integer, primary_key=True, autoincrement=True)
     mood: str = db.Column(db.String(30), nullable=False)
     content: str = db.Column(db.String(100000), nullable=False)
-    creation_datetime: datetime = db.Column(db.DateTime)
-    date_last_modified: datetime = db.Column(db.DateTime)
-    is_open: bool = db.Column(db.String(100000), nullable=False)
+    creation_datetime: datetime = db.Column(db.DateTime, nullable=False)
+    date_last_modified: datetime = db.Column(db.DateTime, nullable=False)
+    is_open: bool = db.Column(db.Boolean, nullable=False, default=False)
 
     # Insert new Post record into the database
     def insert(self):
