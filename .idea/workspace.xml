@@ -12,9 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ed7374c8-f810-4d82-b0b5-ba3b407ebca4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/controllers/pet.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/pet.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/database/pet.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/pet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/pet.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/pet.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,14 +110,7 @@
       <option name="presentableId" value="Default" />
       <updated>1588908684384</updated>
       <workItem from="1588908686435" duration="1699000" />
-      <workItem from="1588963622040" duration="23970000" />
-    </task>
-    <task id="LOCAL-00019" summary="Directory issue undo">
-      <created>1588936084204</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1588936084204</updated>
+      <workItem from="1588963622040" duration="24638000" />
     </task>
     <task id="LOCAL-00020" summary="Heroku envs">
       <created>1588937668401</created>
@@ -457,7 +448,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589085867779</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="Updated Pet endpoints.">
+      <created>1589089859700</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1589089859700</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -519,7 +517,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="ENVs for Heroku" />
     <MESSAGE value="Directory issue" />
     <MESSAGE value="Directory issue undo" />
     <MESSAGE value="Heroku envs" />
@@ -544,7 +541,8 @@
     <MESSAGE value="Add Post to lists." />
     <MESSAGE value="Typo in post record validation." />
     <MESSAGE value="Updated Post API endpoint setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated Post API endpoint setup" />
+    <MESSAGE value="Updated Pet endpoints." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Pet endpoints." />
   </component>
   <component name="WindowStateProjectService">
     <state x="516" y="304" key="Github.ShareDialog" timestamp="1588909935913">
@@ -555,18 +553,18 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1588908927729" />
-    <state x="179" y="280" key="Vcs.Push.Dialog.v2" timestamp="1589085868867">
+    <state x="179" y="280" key="Vcs.Push.Dialog.v2" timestamp="1589089860786">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="179" y="280" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1589085868867" />
+    <state x="179" y="280" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1589089860786" />
     <state x="414" y="141" key="VcsDiffUtil.ChangesDialog" timestamp="1588999653481">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="414" y="141" key="VcsDiffUtil.ChangesDialog/0.0.1280.800@0.0.1280.800" timestamp="1588999653481" />
-    <state x="340" y="157" width="600" height="538" key="find.popup" timestamp="1588951713242">
+    <state x="340" y="157" width="600" height="538" key="find.popup" timestamp="1589090527167">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="340" y="157" width="600" height="538" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1588951713242" />
+    <state x="340" y="157" width="600" height="538" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1589090527167" />
     <state x="397" y="285" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1588924961294">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
