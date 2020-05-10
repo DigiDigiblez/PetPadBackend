@@ -11,7 +11,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed7374c8-f810-4d82-b0b5-ba3b407ebca4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/controllers/post.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/post.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,14 +109,7 @@
       <option name="presentableId" value="Default" />
       <updated>1588908684384</updated>
       <workItem from="1588908686435" duration="1699000" />
-      <workItem from="1588963622040" duration="32937000" />
-    </task>
-    <task id="LOCAL-00028" summary="Adjustment to CORS">
-      <created>1588964647608</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1588964647608</updated>
+      <workItem from="1588963622040" duration="32969000" />
     </task>
     <task id="LOCAL-00029" summary="Adjustment to CORS">
       <created>1588965106438</created>
@@ -455,7 +447,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589125656743</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="Fixed endpoints.">
+      <created>1589127416945</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1589127416945</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -517,7 +516,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="Flask migration directory" />
     <MESSAGE value="Flattened configurations directory." />
     <MESSAGE value="Heroku env" />
     <MESSAGE value="App config vars" />
@@ -542,7 +540,8 @@
     <MESSAGE value="Testing birthday with mock date." />
     <MESSAGE value="Added DELETE and PATCH post endpoints. Also updated Auth0 config." />
     <MESSAGE value="Housekeeping." />
-    <option name="LAST_COMMIT_MESSAGE" value="Housekeeping." />
+    <MESSAGE value="Fixed endpoints." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed endpoints." />
   </component>
   <component name="WindowStateProjectService">
     <state x="516" y="304" key="Github.ShareDialog" timestamp="1588909935913">
@@ -553,10 +552,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1588908927729" />
-    <state x="1431" y="-448" key="Vcs.Push.Dialog.v2" timestamp="1589125657974">
+    <state x="1431" y="-448" key="Vcs.Push.Dialog.v2" timestamp="1589127420694">
       <screen x="1280" y="-1120" width="1080" height="1920" />
     </state>
-    <state x="1431" y="-448" key="Vcs.Push.Dialog.v2/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589125657974" />
+    <state x="1431" y="-448" key="Vcs.Push.Dialog.v2/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589127420694" />
     <state x="179" y="280" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1589090532535" />
     <state x="414" y="141" key="VcsDiffUtil.ChangesDialog" timestamp="1588999653481">
       <screen x="0" y="0" width="1280" height="800" />

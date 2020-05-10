@@ -7,16 +7,16 @@ from backend.database.post import Post
 from backend.helpers.extract_exception import extract_exception
 from backend.models.post import post_model, post_list_model
 
-pet_ns = api.namespace("posts", description="Post endpoints")
+post_ns = api.namespace("posts", description="Post endpoints")
 
 
 # Handles GET, POST requests (requiring no post id)
-@pet_ns.route("/")
+@post_ns.route("/")
 class PetsNoID(Resource):
 
     # GET "/posts/" endpoint
-    @pet_ns.marshal_list_with(post_list_model, code=RESPONSE["200_OK"][0], description=RESPONSE["200_OK"][1])
-    @pet_ns.expect(post_model)
+    @post_ns.marshal_list_with(post_list_model, code=RESPONSE["200_OK"][0], description=RESPONSE["200_OK"][1])
+    @post_ns.expect(post_model)
     def get(self):
         # Retrieve all posts from newest to oldest
         all_posts = Post.query.order_by(db.desc(Post.id)).all()
@@ -29,8 +29,8 @@ class PetsNoID(Resource):
         return response, RESPONSE["200_OK"][0]
 
     # POST "/posts/" endpoint
-    @pet_ns.marshal_with(post_model, code=RESPONSE["201_CREATED"][0], description=RESPONSE["201_CREATED"][1])
-    @pet_ns.expect(post_model)
+    @post_ns.marshal_with(post_model, code=RESPONSE["201_CREATED"][0], description=RESPONSE["201_CREATED"][1])
+    @post_ns.expect(post_model)
     def post(self, **payload):
         try:
             # Retrieve the parts of the post from the body
@@ -62,11 +62,11 @@ class PetsNoID(Resource):
         return api.payload, RESPONSE["201_CREATED"][0]
 
 
-@pet_ns.route("/<int:post_id>")
+@post_ns.route("/<int:post_id>")
 class PetsID(Resource):
     # DELETE "/posts/<int:post_id>" endpoint
-    @pet_ns.marshal_with(post_model, code=RESPONSE["204_NO_CONTENT"][0], description=RESPONSE["204_NO_CONTENT"][1])
-    @pet_ns.expect(post_model)
+    @post_ns.marshal_with(post_model, code=RESPONSE["204_NO_CONTENT"][0], description=RESPONSE["204_NO_CONTENT"][1])
+    @post_ns.expect(post_model)
     def delete(self, post_id, **payload):
         # Try retrieving and deleting post record
         err_code = ""
@@ -103,8 +103,8 @@ class PetsID(Resource):
             return "", RESPONSE["204_NO_CONTENT"][0]
 
     # PATCH "/posts/<int:post_id>" endpoint
-    @pet_ns.marshal_with(post_model, code=RESPONSE["204_NO_CONTENT"][0], description=RESPONSE["204_NO_CONTENT"][1])
-    @pet_ns.expect(post_model)
+    @post_ns.marshal_with(post_model, code=RESPONSE["204_NO_CONTENT"][0], description=RESPONSE["204_NO_CONTENT"][1])
+    @post_ns.expect(post_model)
     def patch(self, post_id, **payload):
         # Try retrieving and updating post record
         err_code = ""
