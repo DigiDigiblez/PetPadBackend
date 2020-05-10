@@ -12,9 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ed7374c8-f810-4d82-b0b5-ba3b407ebca4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/controllers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/database/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/database/post.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/post.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,14 +110,7 @@
       <option name="presentableId" value="Default" />
       <updated>1588908684384</updated>
       <workItem from="1588908686435" duration="1699000" />
-      <workItem from="1588963622040" duration="20933000" />
-    </task>
-    <task id="LOCAL-00014" summary="Heroku test.">
-      <created>1588932858766</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1588932858766</updated>
+      <workItem from="1588963622040" duration="21375000" />
     </task>
     <task id="LOCAL-00015" summary="Heroku test.">
       <created>1588933893568</created>
@@ -457,7 +448,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589084175878</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Add Post to lists.">
+      <created>1589084592387</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1589084592387</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -519,7 +517,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="Project remapping" />
     <MESSAGE value="Heroku test." />
     <MESSAGE value="Database URI for Heroku" />
     <MESSAGE value="ENVs for Heroku" />
@@ -544,7 +541,8 @@
     <MESSAGE value="Added facilities for Posting." />
     <MESSAGE value="Updated facilities for Posting." />
     <MESSAGE value="Remove migrations folder." />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove migrations folder." />
+    <MESSAGE value="Add Post to lists." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Post to lists." />
   </component>
   <component name="WindowStateProjectService">
     <state x="516" y="304" key="Github.ShareDialog" timestamp="1588909935913">
@@ -555,10 +553,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1588908927729" />
-    <state x="179" y="280" key="Vcs.Push.Dialog.v2" timestamp="1589084177004">
+    <state x="179" y="280" key="Vcs.Push.Dialog.v2" timestamp="1589084593585">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="179" y="280" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1589084177004" />
+    <state x="179" y="280" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1589084593585" />
     <state x="414" y="141" key="VcsDiffUtil.ChangesDialog" timestamp="1588999653481">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -571,9 +569,9 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="397" y="285" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1280.800@0.0.1280.800" timestamp="1588924961294" />
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1589020639396">
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1589084814699">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1589020639396" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1589084814699" />
   </component>
 </project>

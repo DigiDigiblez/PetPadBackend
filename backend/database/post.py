@@ -53,7 +53,7 @@ class Post(db.Model):
 
     # Prevent bad data from entering db
     def validate(self):
-        moods = ["Excited", "Happy", "Okay", "Sad", "Angry", "Exhausted"]
+        moods = ["excited", "happy", "okay", "sad", "angry", "exhausted"]
 
-        if self.gender.mood() not in moods:
+        if self.mood.lower() not in moods:
             raise ValueError("Mood not recognised, might be a bug!")
