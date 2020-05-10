@@ -12,7 +12,7 @@ post_ns = api.namespace("posts", description="Post endpoints")
 
 # Handles GET, POST requests (requiring no post id)
 @post_ns.route("/")
-class PetsNoID(Resource):
+class PostsNoID(Resource):
 
     # GET "/posts/" endpoint
     @post_ns.marshal_list_with(post_list_model, code=RESPONSE["200_OK"][0], description=RESPONSE["200_OK"][1])
@@ -63,7 +63,7 @@ class PetsNoID(Resource):
 
 
 @post_ns.route("/<int:post_id>")
-class PetsID(Resource):
+class PostsID(Resource):
     # DELETE "/posts/<int:post_id>" endpoint
     @post_ns.marshal_with(post_model, code=RESPONSE["204_NO_CONTENT"][0], description=RESPONSE["204_NO_CONTENT"][1])
     @post_ns.expect(post_model)
