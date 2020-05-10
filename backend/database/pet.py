@@ -19,10 +19,8 @@ class Pet(db.Model):
     favourite_toy: str = db.Column(db.String(100), nullable=False)
     favourite_food: str = db.Column(db.String(100), nullable=False)
     personality_trait: str = db.Column(db.String(50), nullable=False)
-    social_google_plus_url: str = db.Column(db.String(500), nullable=True)
-    social_facebook_url: str = db.Column(db.String(500), nullable=True)
-    social_twitter_url: str = db.Column(db.String(500), nullable=True)
-    social_instragram_url: str = db.Column(db.String(500), nullable=True)
+    profile_image: str = db.Column(db.String(100000), nullable=False)
+    profile_completed: bool = db.Column(db.Boolean, nullable=False)
 
     # Insert new Pet record into the database
     def insert(self):
@@ -59,10 +57,8 @@ class Pet(db.Model):
                     "favourite_toy",
                     "favourite_food",
                     "personality_trait",
-                    "social_google_plus_url",
-                    "social_facebook_url",
-                    "social_twitter_url",
-                    "social_instragram_url",
+                    "profile_image",
+                    "profile_completed",
                 ]:
                     if pet_property in updated_properties:
                         setattr(self, pet_property, updated_properties[pet_property])

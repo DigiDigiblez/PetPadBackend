@@ -49,10 +49,8 @@ class PetsNoID(Resource):
             favourite_toy = api.payload["favourite_toy"]
             favourite_food = api.payload["favourite_food"]
             personality_trait = api.payload["personality_trait"]
-            social_google_plus_url = api.payload["social_google_plus_url"]
-            social_facebook_url = api.payload["social_facebook_url"]
-            social_twitter_url = api.payload["social_twitter_url"]
-            social_instragram_url = api.payload["social_instragram_url"]
+            profile_image = api.payload["profile_image"]
+            profile_completed = api.payload["profile_completed"]
 
             # Build a new pet object
             new_pet = Pet(
@@ -66,10 +64,8 @@ class PetsNoID(Resource):
                 favourite_toy=favourite_toy,
                 favourite_food=favourite_food,
                 personality_trait=personality_trait,
-                social_google_plus_url=social_google_plus_url,
-                social_facebook_url=social_facebook_url,
-                social_twitter_url=social_twitter_url,
-                social_instragram_url=social_instragram_url,
+                profile_image=profile_image,
+                profile_completed=profile_completed,
             )
 
             new_pet.insert()

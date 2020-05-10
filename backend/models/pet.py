@@ -13,10 +13,8 @@ pet_model = api.model("pet_model", {
     "favourite_toy": fields.String(description="Pet's favourite toy", required=True),
     "favourite_food": fields.String(description="Pet's favourite food", required=True),
     "personality_trait": fields.String(description="Pet's personality trait", required=True),
-    "social_google_plus_url": fields.String(description="URL of Pet's Google Plus social account", required=False),
-    "social_facebook_url": fields.String(description="URL of Pet's Facebook social account", required=False),
-    "social_twitter_url": fields.String(description="URL of Pet's Twitter social account", required=False),
-    "social_instragram_url": fields.String(description="URL of Pet's Instagram social account", required=False),
+    "profile_image": fields.String(description="Pet's base64 encoded profile image", required=True),
+    "profile_completed": fields.Boolean(description="Pet's profile is completed flag", required=True, default=False),
 })
 
 pet_list_model = api.model("pet_list_model", {
