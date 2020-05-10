@@ -1,7 +1,4 @@
-from datetime import datetime
-
 from flask_restx import Resource
-from future.backports.datetime import timedelta
 
 from backend.app import api, logger, db
 from backend.constants.constants import RESPONSE
@@ -37,8 +34,8 @@ class PetsNoID(Resource):
             # Retrieve the parts of the post from the body
             mood = api.payload["mood"]
             content = api.payload["content"]
-            creation_datetime = datetime("2020-05-5T09:54:06.271000")
-            date_last_modified = datetime("2020-05-5T09:54:06.271000")
+            creation_datetime = api.payload["creation_datetime"]
+            date_last_modified = api.payload["date_last_modified"]
             is_open = api.payload["is_open"]
 
             # Build a new post object
