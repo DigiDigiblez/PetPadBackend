@@ -65,7 +65,7 @@ class PetsNoID(Resource):
     @pet_ns.marshal_with(post_model, code=RESPONSE["204_NO_CONTENT"][0], description=RESPONSE["204_NO_CONTENT"][1])
     @pet_ns.expect(post_model)
     def delete(self, post_id, **payload):
-        # Try retrieving and updating post record
+        # Try retrieving and deleting post record
         err_code = ""
         err_desc = ""
 

@@ -12,8 +12,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ed7374c8-f810-4d82-b0b5-ba3b407ebca4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/auth0.toml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/auth0.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/controllers/pet.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/pet.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/controllers/post.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/post.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -112,14 +110,7 @@
       <option name="presentableId" value="Default" />
       <updated>1588908684384</updated>
       <workItem from="1588908686435" duration="1699000" />
-      <workItem from="1588963622040" duration="29848000" />
-    </task>
-    <task id="LOCAL-00026" summary="App config vars">
-      <created>1588959298547</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1588959298547</updated>
+      <workItem from="1588963622040" duration="32178000" />
     </task>
     <task id="LOCAL-00027" summary="Api POST test">
       <created>1588963738537</created>
@@ -457,7 +448,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589104731494</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="Added DELETE and PATCH post endpoints. Also updated Auth0 config.">
+      <created>1589115883879</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1589115883879</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -519,7 +517,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="Heroku envs" />
     <MESSAGE value="Configs" />
     <MESSAGE value="Flask migration directory" />
     <MESSAGE value="Flattened configurations directory." />
@@ -544,7 +541,8 @@
     <MESSAGE value="Updated Pet endpoints." />
     <MESSAGE value="Updated Pet/Post endpoints." />
     <MESSAGE value="Testing birthday with mock date." />
-    <option name="LAST_COMMIT_MESSAGE" value="Testing birthday with mock date." />
+    <MESSAGE value="Added DELETE and PATCH post endpoints. Also updated Auth0 config." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added DELETE and PATCH post endpoints. Also updated Auth0 config." />
   </component>
   <component name="WindowStateProjectService">
     <state x="516" y="304" key="Github.ShareDialog" timestamp="1588909935913">
@@ -555,10 +553,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1588908927729" />
-    <state x="1431" y="-448" key="Vcs.Push.Dialog.v2" timestamp="1589104732902">
+    <state x="1431" y="-448" key="Vcs.Push.Dialog.v2" timestamp="1589115885121">
       <screen x="1280" y="-1120" width="1080" height="1920" />
     </state>
-    <state x="1431" y="-448" key="Vcs.Push.Dialog.v2/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589104732902" />
+    <state x="1431" y="-448" key="Vcs.Push.Dialog.v2/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589115885121" />
     <state x="179" y="280" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1589090532535" />
     <state x="414" y="141" key="VcsDiffUtil.ChangesDialog" timestamp="1588999653481">
       <screen x="0" y="0" width="1280" height="800" />
