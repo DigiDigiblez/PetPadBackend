@@ -11,7 +11,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed7374c8-f810-4d82-b0b5-ba3b407ebca4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/controllers/pet.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/pet.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,14 +109,7 @@
       <option name="presentableId" value="Default" />
       <updated>1588908684384</updated>
       <workItem from="1588908686435" duration="1699000" />
-      <workItem from="1588963622040" duration="38758000" />
-    </task>
-    <task id="LOCAL-00034" summary="Improving POST endpoint">
-      <created>1589001573694</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1589001573694</updated>
+      <workItem from="1588963622040" duration="38972000" />
     </task>
     <task id="LOCAL-00035" summary="Improving POST endpoint">
       <created>1589001820650</created>
@@ -455,7 +447,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589192142705</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="Adjustments.">
+      <created>1589193542048</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1589193542049</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -553,10 +552,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1588908927729" />
-    <state x="1431" y="-448" key="Vcs.Push.Dialog.v2" timestamp="1589192144213">
+    <state x="1431" y="-448" key="Vcs.Push.Dialog.v2" timestamp="1589193543407">
       <screen x="1280" y="-1120" width="1080" height="1920" />
     </state>
-    <state x="1431" y="-448" key="Vcs.Push.Dialog.v2/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589192144213" />
+    <state x="1431" y="-448" key="Vcs.Push.Dialog.v2/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589193543407" />
     <state x="179" y="280" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1589090532535" />
     <state x="414" y="141" key="VcsDiffUtil.ChangesDialog" timestamp="1588999653481">
       <screen x="0" y="0" width="1280" height="800" />

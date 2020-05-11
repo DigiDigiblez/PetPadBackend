@@ -34,7 +34,7 @@ class PetsNoID(Resource):
     @pet_ns.marshal_with(pet_model, code=RESPONSE["201_CREATED"][0], description=RESPONSE["201_CREATED"][1])
     @pet_ns.expect(pet_model)
     @requires_auth("post:pet")
-    def post(self, **payload):
+    def post(self, payload):
         try:
             # Retrieve the parts of the pet from the body
             name = api.payload["name"]
