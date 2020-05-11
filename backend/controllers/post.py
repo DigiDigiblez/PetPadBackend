@@ -19,7 +19,7 @@ class PostsNoID(Resource):
     @post_ns.marshal_list_with(post_list_model, code=RESPONSE["200_OK"][0], description=RESPONSE["200_OK"][1])
     @post_ns.expect(post_model)
     @requires_auth("get:posts")
-    def get(self):
+    def get(self, payload):
         # Retrieve all posts from newest to oldest
         all_posts = Post.query.order_by(db.desc(Post.id)).all()
 
@@ -34,7 +34,7 @@ class PostsNoID(Resource):
     @post_ns.marshal_with(post_model, code=RESPONSE["201_CREATED"][0], description=RESPONSE["201_CREATED"][1])
     @post_ns.expect(post_model)
     @requires_auth("post:post")
-    def post(self, **payload):
+    def post(self, payload):
         try:
             # Retrieve the parts of the post from the body
             mood = api.payload["mood"]
@@ -72,7 +72,7 @@ class PostsID(Resource):
     @post_ns.marshal_with(post_model, code=RESPONSE["204_NO_CONTENT"][0], description=RESPONSE["204_NO_CONTENT"][1])
     @post_ns.expect(post_model)
     @requires_auth("delete:post")
-    def delete(self, post_id, **payload):
+    def delete(self, request, post_id):
         # Try retrieving and deleting post record
         err_code = ""
         err_desc = ""
@@ -111,7 +111,7 @@ class PostsID(Resource):
     @post_ns.marshal_with(post_model, code=RESPONSE["204_NO_CONTENT"][0], description=RESPONSE["204_NO_CONTENT"][1])
     @post_ns.expect(post_model)
     @requires_auth("patch:post")
-    def patch(self, post_id, **payload):
+    def patch(self, request, post_id):
         # Try retrieving and updating post record
         err_code = ""
         err_desc = ""
