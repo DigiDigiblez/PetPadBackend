@@ -116,15 +116,12 @@ class PetsID(Resource):
     @pet_ns.expect(pet_model)
     @requires_auth("delete:pet")
     def delete(self, request, pet_id):
-        # Try retrieving and updating pet record
+        # Try retrieving and deleting pet record
         err_code = ""
         err_desc = ""
 
         try:
-            # Retrieve existing pet record to delete
             existing_pet = Pet.query.filter(Pet.id == pet_id).one_or_none()
-            # Retrieve pad record connected to pet record to delete TODO
-            # existing_pet_pad = Pad.query.filter(Pad.id == pet_id).one_or_none()
 
             # If pet record doesn't exist, abort
             if existing_pet is None:
@@ -132,8 +129,8 @@ class PetsID(Resource):
                 err_desc = RESPONSE["404_RESOURCE_NOT_FOUND"][1]
 
             else:
-                # TODO - delete related records when the pet is deleted
                 existing_pet.delete()
+                return "", RESPONSE["204_NO_CONTENT"][0]
 
         # Exception handling
         except Exception as ex:
@@ -151,8 +148,6 @@ class PetsID(Resource):
 
         if err_code:
             abort(int(err_code), err_desc)
-        else:
-            return "", RESPONSE["204_NO_CONTENT"][0]
 
     # PATCH "/pets/<int:pet_id>" endpoint
     @pet_ns.marshal_with(pet_model, code=RESPONSE["204_NO_CONTENT"][0], description=RESPONSE["204_NO_CONTENT"][1])
