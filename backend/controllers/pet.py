@@ -164,6 +164,7 @@ class PetsID(Resource):
             # Pet record does exist, so update
             else:
                 existing_pet.update(api.payload)
+                return "", RESPONSE["204_NO_CONTENT"][0]
 
         # Error handling
         except (ValueError, IntegrityError) as err:
@@ -182,5 +183,3 @@ class PetsID(Resource):
 
         if err_code:
             abort(int(err_code), err_desc)
-        else:
-            return "", RESPONSE["204_NO_CONTENT"][0]
