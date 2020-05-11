@@ -11,6 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed7374c8-f810-4d82-b0b5-ba3b407ebca4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/controllers/pet.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/pet.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,14 +110,7 @@
       <option name="presentableId" value="Default" />
       <updated>1588908684384</updated>
       <workItem from="1588908686435" duration="1699000" />
-      <workItem from="1588963622040" duration="38972000" />
-    </task>
-    <task id="LOCAL-00035" summary="Improving POST endpoint">
-      <created>1589001820650</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1589001820650</updated>
+      <workItem from="1588963622040" duration="40382000" />
     </task>
     <task id="LOCAL-00036" summary="Improving POST endpoint">
       <created>1589002069883</created>
@@ -454,7 +448,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589193542049</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="Adjustments.">
+      <created>1589193753607</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1589193753607</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -552,10 +553,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1588908927729" />
-    <state x="1431" y="-448" key="Vcs.Push.Dialog.v2" timestamp="1589193543407">
+    <state x="1431" y="-448" key="Vcs.Push.Dialog.v2" timestamp="1589193754881">
       <screen x="1280" y="-1120" width="1080" height="1920" />
     </state>
-    <state x="1431" y="-448" key="Vcs.Push.Dialog.v2/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589193543407" />
+    <state x="1431" y="-448" key="Vcs.Push.Dialog.v2/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589193754881" />
     <state x="179" y="280" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1589090532535" />
     <state x="414" y="141" key="VcsDiffUtil.ChangesDialog" timestamp="1588999653481">
       <screen x="0" y="0" width="1280" height="800" />
@@ -565,18 +566,19 @@
       <screen x="1280" y="-1120" width="1080" height="1920" />
     </state>
     <state x="1421" y="-543" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589104175520" />
-    <state x="340" y="157" width="600" height="538" key="find.popup" timestamp="1589090527167">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="1567" y="-743" width="570" height="1292" key="find.popup" timestamp="1589194379187">
+      <screen x="1280" y="-1120" width="1080" height="1920" />
     </state>
+    <state x="1567" y="-743" width="570" height="1292" key="find.popup/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589194379187" />
     <state x="340" y="157" width="600" height="538" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1589090527167" />
     <state x="397" y="285" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1588924961294">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="397" y="285" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1280.800@0.0.1280.800" timestamp="1588924961294" />
-    <state x="1537" y="-822" width="670" height="1623" key="search.everywhere.popup" timestamp="1589128282161">
+    <state x="1537" y="-822" width="670" height="1623" key="search.everywhere.popup" timestamp="1589194367633">
       <screen x="1280" y="-1120" width="1080" height="1920" />
     </state>
-    <state x="1537" y="-822" width="670" height="1623" key="search.everywhere.popup/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589128282161" />
+    <state x="1537" y="-822" width="670" height="1623" key="search.everywhere.popup/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589194367633" />
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1589084814699" />
   </component>
 </project>

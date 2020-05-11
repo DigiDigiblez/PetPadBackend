@@ -87,7 +87,7 @@ class PetsID(Resource):
     @pet_ns.marshal_with(pet_model, code=RESPONSE["200_OK"][0], description=RESPONSE["200_OK"][1])
     @pet_ns.expect(pet_model)
     @requires_auth("get:pet")
-    def get(self, pet_id):
+    def get(self, pet_id, payload):
         try:
             # Retrieve existing pet record to delete
             existing_pet = Pet.query.filter(Pet.id == pet_id).one_or_none()
@@ -115,7 +115,7 @@ class PetsID(Resource):
     @pet_ns.marshal_with(pet_model, code=RESPONSE["204_NO_CONTENT"][0], description=RESPONSE["204_NO_CONTENT"][1])
     @pet_ns.expect(pet_model)
     @requires_auth("delete:pet")
-    def delete(self, pet_id, **payload):
+    def delete(self, pet_id, payload):
         # Try retrieving and updating pet record
         err_code = ""
         err_desc = ""
@@ -158,7 +158,7 @@ class PetsID(Resource):
     @pet_ns.marshal_with(pet_model, code=RESPONSE["204_NO_CONTENT"][0], description=RESPONSE["204_NO_CONTENT"][1])
     @pet_ns.expect(pet_model)
     @requires_auth("patch:pet")
-    def patch(self, pet_id, **payload):
+    def patch(self, pet_id, payload):
         # Try retrieving and updating pet record
         err_code = ""
         err_desc = ""
