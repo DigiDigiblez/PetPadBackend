@@ -11,8 +11,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed7374c8-f810-4d82-b0b5-ba3b407ebca4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Back End - Getting Started.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Front End - Getting Started.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project_Doc (BE &amp; FE).md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.coverage" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_petpad.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_petpad.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +37,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
@@ -43,11 +46,11 @@
       <recent name="$PROJECT_DIR$/backend" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/backend" />
       <recent name="$PROJECT_DIR$/backend/tests" />
       <recent name="$PROJECT_DIR$/backend/database" />
       <recent name="$PROJECT_DIR$/backend/controllers" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager" selected="Python tests.pytest in test_petpad.py">
@@ -167,14 +170,7 @@
       <option name="presentableId" value="Default" />
       <updated>1588908684384</updated>
       <workItem from="1588908686435" duration="1699000" />
-      <workItem from="1588963622040" duration="66682000" />
-    </task>
-    <task id="LOCAL-00047" summary="Optimising POST endpoint">
-      <created>1589009456953</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1589009456953</updated>
+      <workItem from="1588963622040" duration="69622000" />
     </task>
     <task id="LOCAL-00048" summary="Optimising POST endpoint">
       <created>1589010456436</created>
@@ -512,7 +508,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589229074235</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="Finished all 30 authenticated and unauthenticated user tests.">
+      <created>1589235668141</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1589235668141</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -574,7 +577,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="Improving POST endpoint" />
     <MESSAGE value="Testing POST endpoint" />
     <MESSAGE value="Optimising POST endpoint" />
     <MESSAGE value="Fixing POST endpoint." />
@@ -599,7 +601,8 @@
     <MESSAGE value="Improvements to endpoints for authentication" />
     <MESSAGE value="Added unit tests for unauthenticated free users." />
     <MESSAGE value="Progress to unit tests." />
-    <option name="LAST_COMMIT_MESSAGE" value="Progress to unit tests." />
+    <MESSAGE value="Finished all 30 authenticated and unauthenticated user tests." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished all 30 authenticated and unauthenticated user tests." />
   </component>
   <component name="WindowStateProjectService">
     <state x="1380" y="-1020" width="880" height="1720" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1589224428975">
@@ -634,10 +637,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1588908927729" />
-    <state x="-46" y="-973" key="Vcs.Push.Dialog.v2" timestamp="1589229076070">
+    <state x="-46" y="-973" key="Vcs.Push.Dialog.v2" timestamp="1589235670646">
       <screen x="-640" y="-1200" width="1920" height="1200" />
     </state>
-    <state x="-46" y="-973" key="Vcs.Push.Dialog.v2/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589229076070" />
+    <state x="-46" y="-973" key="Vcs.Push.Dialog.v2/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589235670646" />
     <state x="179" y="280" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1589090532535" />
     <state x="1560" y="-757" key="Vcs.Push.Dialog.v2/0.23.1280.728/-640.-1177.1920.1177/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589198117942" />
     <state x="414" y="141" key="VcsDiffUtil.ChangesDialog" timestamp="1588999653481">
