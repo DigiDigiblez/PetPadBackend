@@ -12,8 +12,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ed7374c8-f810-4d82-b0b5-ba3b407ebca4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/auth/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/auth/auth.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/controllers/pet.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/pet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/controllers/post.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/post.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,14 +111,7 @@
       <option name="presentableId" value="Default" />
       <updated>1588908684384</updated>
       <workItem from="1588908686435" duration="1699000" />
-      <workItem from="1588963622040" duration="34581000" />
-    </task>
-    <task id="LOCAL-00031" summary="Adjustment to CORS">
-      <created>1588967466003</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1588967466003</updated>
+      <workItem from="1588963622040" duration="37680000" />
     </task>
     <task id="LOCAL-00032" summary="Adjustment to CORS">
       <created>1588999726912</created>
@@ -456,7 +449,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589127482215</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="Added auth decorators to all (Pet and Post) endpoints.">
+      <created>1589138703121</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1589138703121</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -518,7 +518,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="Flattened configurations directory." />
     <MESSAGE value="Heroku env" />
     <MESSAGE value="App config vars" />
     <MESSAGE value="Api POST test" />
@@ -543,7 +542,8 @@
     <MESSAGE value="Added DELETE and PATCH post endpoints. Also updated Auth0 config." />
     <MESSAGE value="Housekeeping." />
     <MESSAGE value="Fixed endpoints." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed endpoints." />
+    <MESSAGE value="Added auth decorators to all (Pet and Post) endpoints." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added auth decorators to all (Pet and Post) endpoints." />
   </component>
   <component name="WindowStateProjectService">
     <state x="516" y="304" key="Github.ShareDialog" timestamp="1588909935913">
@@ -554,10 +554,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1588908927729" />
-    <state x="1431" y="-448" key="Vcs.Push.Dialog.v2" timestamp="1589127483275">
+    <state x="1431" y="-448" key="Vcs.Push.Dialog.v2" timestamp="1589138704613">
       <screen x="1280" y="-1120" width="1080" height="1920" />
     </state>
-    <state x="1431" y="-448" key="Vcs.Push.Dialog.v2/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589127483275" />
+    <state x="1431" y="-448" key="Vcs.Push.Dialog.v2/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589138704613" />
     <state x="179" y="280" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1589090532535" />
     <state x="414" y="141" key="VcsDiffUtil.ChangesDialog" timestamp="1588999653481">
       <screen x="0" y="0" width="1280" height="800" />

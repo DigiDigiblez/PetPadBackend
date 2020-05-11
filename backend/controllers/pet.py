@@ -19,7 +19,7 @@ class PetsNoID(Resource):
     @pet_ns.marshal_list_with(pet_list_model, code=RESPONSE["200_OK"][0], description=RESPONSE["200_OK"][1])
     @pet_ns.expect(pet_model)
     @requires_auth("get:pets")
-    def get(self):
+    def get(self, **payload):
         # Retrieve all pets from newest to oldest
         all_pets = Pet.query.order_by(db.desc(Pet.id)).all()
 
