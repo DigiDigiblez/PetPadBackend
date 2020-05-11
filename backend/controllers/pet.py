@@ -136,15 +136,9 @@ class PetsID(Resource):
         except Exception as ex:
             logger.exception(ex, exc_info=True)
 
-            # Handle only exceptions which contain code, title, and description segments differently
-            if "'" not in str(ex):
-                ex_data = extract_exception(ex)
-                err_code = ex_data["code"]
-                err_desc = ex_data["title"]
-            else:
-                raise ex
-
             db.session.rollback()
+
+            raise ex
 
         if err_code:
             abort(int(err_code), err_desc)
@@ -182,15 +176,9 @@ class PetsID(Resource):
         except Exception as ex:
             logger.exception(ex, exc_info=True)
 
-            # Handle only exceptions which contain code, title, and description segments differently
-            if "'" not in str(ex):
-                ex_data = extract_exception(ex)
-                err_code = ex_data["code"]
-                err_desc = ex_data["title"]
-            else:
-                raise ex
-
             db.session.rollback()
+
+            raise ex
 
         if err_code:
             abort(int(err_code), err_desc)

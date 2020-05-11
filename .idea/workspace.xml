@@ -110,14 +110,7 @@
       <option name="presentableId" value="Default" />
       <updated>1588908684384</updated>
       <workItem from="1588908686435" duration="1699000" />
-      <workItem from="1588963622040" duration="41365000" />
-    </task>
-    <task id="LOCAL-00039" summary="Improving POST endpoint">
-      <created>1589003560954</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1589003560954</updated>
+      <workItem from="1588963622040" duration="41590000" />
     </task>
     <task id="LOCAL-00040" summary="Improving POST endpoint">
       <created>1589005340089</created>
@@ -455,7 +448,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589196658994</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="Improvements to endpoints for authentication">
+      <created>1589197222159</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1589197222160</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -553,10 +553,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1588908927729" />
-    <state x="1431" y="-448" key="Vcs.Push.Dialog.v2" timestamp="1589196660143">
+    <state x="1431" y="-448" key="Vcs.Push.Dialog.v2" timestamp="1589197223507">
       <screen x="1280" y="-1120" width="1080" height="1920" />
     </state>
-    <state x="1431" y="-448" key="Vcs.Push.Dialog.v2/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589196660143" />
+    <state x="1431" y="-448" key="Vcs.Push.Dialog.v2/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589197223507" />
     <state x="179" y="280" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1589090532535" />
     <state x="414" y="141" key="VcsDiffUtil.ChangesDialog" timestamp="1588999653481">
       <screen x="0" y="0" width="1280" height="800" />
