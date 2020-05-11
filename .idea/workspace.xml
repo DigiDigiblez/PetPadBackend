@@ -11,11 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed7374c8-f810-4d82-b0b5-ba3b407ebca4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Back End - Getting Started.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front End - Getting Started.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project_Doc (BE &amp; FE).md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.coverage" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project_Doc_(BE_&amp;_FE).md" beforeDir="false" afterPath="$PROJECT_DIR$/Project_Doc_(BE_&amp;_FE).md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,14 +167,7 @@
       <option name="presentableId" value="Default" />
       <updated>1588908684384</updated>
       <workItem from="1588908686435" duration="1699000" />
-      <workItem from="1588963622040" duration="69622000" />
-    </task>
-    <task id="LOCAL-00048" summary="Optimising POST endpoint">
-      <created>1589010456436</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1589010456437</updated>
+      <workItem from="1588963622040" duration="70069000" />
     </task>
     <task id="LOCAL-00049" summary="Optimising POST endpoint">
       <created>1589010686994</created>
@@ -515,7 +505,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589235668141</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="Adding Back End API and Project documentation. Finalisations.">
+      <created>1589238783164</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1589238783164</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -577,7 +574,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="Testing POST endpoint" />
     <MESSAGE value="Optimising POST endpoint" />
     <MESSAGE value="Fixing POST endpoint." />
     <MESSAGE value="Fixing Pet db conditions." />
@@ -602,13 +598,18 @@
     <MESSAGE value="Added unit tests for unauthenticated free users." />
     <MESSAGE value="Progress to unit tests." />
     <MESSAGE value="Finished all 30 authenticated and unauthenticated user tests." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished all 30 authenticated and unauthenticated user tests." />
+    <MESSAGE value="Adding Back End API and Project documentation. Finalisations." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding Back End API and Project documentation. Finalisations." />
   </component>
   <component name="WindowStateProjectService">
     <state x="1380" y="-1020" width="880" height="1720" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1589224428975">
       <screen x="1280" y="-1120" width="1080" height="1920" />
     </state>
     <state x="1380" y="-1020" width="880" height="1720" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589224428975" />
+    <state x="1558" y="-406" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589239020358">
+      <screen x="1280" y="-1120" width="1080" height="1920" />
+    </state>
+    <state x="1558" y="-406" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589239020358" />
     <state x="516" y="304" key="Github.ShareDialog" timestamp="1588909935913">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -637,10 +638,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1588908927729" />
-    <state x="-46" y="-973" key="Vcs.Push.Dialog.v2" timestamp="1589235670646">
+    <state x="-46" y="-973" key="Vcs.Push.Dialog.v2" timestamp="1589238785486">
       <screen x="-640" y="-1200" width="1920" height="1200" />
     </state>
-    <state x="-46" y="-973" key="Vcs.Push.Dialog.v2/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589235670646" />
+    <state x="-46" y="-973" key="Vcs.Push.Dialog.v2/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589238785486" />
     <state x="179" y="280" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1589090532535" />
     <state x="1560" y="-757" key="Vcs.Push.Dialog.v2/0.23.1280.728/-640.-1177.1920.1177/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589198117942" />
     <state x="414" y="141" key="VcsDiffUtil.ChangesDialog" timestamp="1588999653481">

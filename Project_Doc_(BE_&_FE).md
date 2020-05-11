@@ -11,7 +11,7 @@ It's more than just a degree as people know it, well to me anyway. It's an oppor
 Please refer to the [Back End - Getting Started](Back_End_-_Getting_Started.md) wiki in this repo for everything you need to know about getting setup with the back end.
 
 #### Setting Up Front End
-Please refer to the [Front End - Getting Started](Front_End_-_Getting_Started.md) wiki in the [PetPadFrontend](https://github.com/MisterEmpyrean/PetPadFrontend) repo for everything you need to know about getting setup with the front end.
+Please refer to the `Front End - Getting Started` wiki in the [PetPadFrontend](https://github.com/MisterEmpyrean/PetPadFrontend) repo for everything you need to know about getting setup with the front end.
 
 #### Authorial decrees
 - Carl Bowen: Developed this app and came up with its inspiration
