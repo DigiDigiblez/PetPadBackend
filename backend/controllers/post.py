@@ -65,8 +65,37 @@ class PostsNoID(Resource):
         return api.payload, RESPONSE["201_CREATED"][0]
 
 
+# Handles GET, DELETE, PATCH requests (requiring post id)
 @post_ns.route("/<int:post_id>")
 class PostsID(Resource):
+
+    # GET "/posts/<int:post_id>" endpoint
+    @post_ns.marshal_with(post_model, code=RESPONSE["200_OK"][0], description=RESPONSE["200_OK"][1])
+    @post_ns.expect(post_model)
+    @requires_auth("get:post")
+    def get(self, request, post_id):
+        try:
+            # Retrieve existing post record to delete
+            existing_post = Post.query.filter(Post.id == post_id).one_or_none()
+
+            # If post record doesn't exist, abort
+            if existing_post is None:
+                err_code = RESPONSE["404_RESOURCE_NOT_FOUND"][0]
+                err_desc = RESPONSE["404_RESOURCE_NOT_FOUND"][1]
+
+            else:
+                return existing_post, RESPONSE["200_OK"][0]
+
+        # Exception handling
+        except Exception as ex:
+            logger.exception(ex, exc_info=True)
+
+            db.session.rollback()
+
+            raise ex
+
+        if err_code:
+            abort(int(err_code), err_desc)
 
     # DELETE "/posts/<int:post_id>" endpoint
     @post_ns.marshal_with(post_model, code=RESPONSE["204_NO_CONTENT"][0], description=RESPONSE["204_NO_CONTENT"][1])
