@@ -11,11 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed7374c8-f810-4d82-b0b5-ba3b407ebca4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/models/db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/.coverage" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/test_petpad.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_petpad.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_petpad.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_petpad.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,14 +167,7 @@
       <option name="presentableId" value="Default" />
       <updated>1588908684384</updated>
       <workItem from="1588908686435" duration="1699000" />
-      <workItem from="1588963622040" duration="62866000" />
-    </task>
-    <task id="LOCAL-00046" summary="Optimising POST endpoint">
-      <created>1589009361209</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1589009361209</updated>
+      <workItem from="1588963622040" duration="66682000" />
     </task>
     <task id="LOCAL-00047" summary="Optimising POST endpoint">
       <created>1589009456953</created>
@@ -515,7 +505,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589217205435</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="Progress to unit tests.">
+      <created>1589229074235</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1589229074235</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -577,7 +574,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="Debugging POST endpoint hits" />
     <MESSAGE value="Improving POST endpoint" />
     <MESSAGE value="Testing POST endpoint" />
     <MESSAGE value="Optimising POST endpoint" />
@@ -602,7 +598,8 @@
     <MESSAGE value="Added get:post endpoint." />
     <MESSAGE value="Improvements to endpoints for authentication" />
     <MESSAGE value="Added unit tests for unauthenticated free users." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added unit tests for unauthenticated free users." />
+    <MESSAGE value="Progress to unit tests." />
+    <option name="LAST_COMMIT_MESSAGE" value="Progress to unit tests." />
   </component>
   <component name="WindowStateProjectService">
     <state x="1380" y="-1020" width="880" height="1720" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1589224428975">
@@ -613,34 +610,34 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="516" y="304" key="Github.ShareDialog/0.0.1280.800@0.0.1280.800" timestamp="1588909935913" />
-    <state width="1038" height="582" key="GridCell.Tab.0.bottom" timestamp="1589228958760">
+    <state width="1038" height="582" key="GridCell.Tab.0.bottom" timestamp="1589234896188">
       <screen x="1280" y="-1120" width="1080" height="1920" />
     </state>
     <state width="1038" height="582" key="GridCell.Tab.0.bottom/0.0.1280.800/-640.-1177.1920.1177/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589209187769" />
-    <state width="1038" height="582" key="GridCell.Tab.0.bottom/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589228958760" />
-    <state width="1038" height="582" key="GridCell.Tab.0.center" timestamp="1589228958755">
+    <state width="1038" height="582" key="GridCell.Tab.0.bottom/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589234896188" />
+    <state width="1038" height="582" key="GridCell.Tab.0.center" timestamp="1589234896185">
       <screen x="1280" y="-1120" width="1080" height="1920" />
     </state>
     <state width="1038" height="582" key="GridCell.Tab.0.center/0.0.1280.800/-640.-1177.1920.1177/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589209187766" />
-    <state width="1038" height="582" key="GridCell.Tab.0.center/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589228958755" />
-    <state width="1038" height="582" key="GridCell.Tab.0.left" timestamp="1589228958753">
+    <state width="1038" height="582" key="GridCell.Tab.0.center/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589234896185" />
+    <state width="1038" height="582" key="GridCell.Tab.0.left" timestamp="1589234896183">
       <screen x="1280" y="-1120" width="1080" height="1920" />
     </state>
     <state width="1038" height="582" key="GridCell.Tab.0.left/0.0.1280.800/-640.-1177.1920.1177/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589209187764" />
-    <state width="1038" height="582" key="GridCell.Tab.0.left/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589228958753" />
-    <state width="1038" height="582" key="GridCell.Tab.0.right" timestamp="1589228958758">
+    <state width="1038" height="582" key="GridCell.Tab.0.left/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589234896183" />
+    <state width="1038" height="582" key="GridCell.Tab.0.right" timestamp="1589234896186">
       <screen x="1280" y="-1120" width="1080" height="1920" />
     </state>
     <state width="1038" height="582" key="GridCell.Tab.0.right/0.0.1280.800/-640.-1177.1920.1177/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589209187768" />
-    <state width="1038" height="582" key="GridCell.Tab.0.right/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589228958758" />
+    <state width="1038" height="582" key="GridCell.Tab.0.right/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589234896186" />
     <state x="149" y="39" key="SettingsEditor" timestamp="1588908927729">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1588908927729" />
-    <state x="-46" y="-973" key="Vcs.Push.Dialog.v2" timestamp="1589217207562">
+    <state x="-46" y="-973" key="Vcs.Push.Dialog.v2" timestamp="1589229076070">
       <screen x="-640" y="-1200" width="1920" height="1200" />
     </state>
-    <state x="-46" y="-973" key="Vcs.Push.Dialog.v2/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589217207562" />
+    <state x="-46" y="-973" key="Vcs.Push.Dialog.v2/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589229076070" />
     <state x="179" y="280" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1589090532535" />
     <state x="1560" y="-757" key="Vcs.Push.Dialog.v2/0.23.1280.728/-640.-1177.1920.1177/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589198117942" />
     <state x="414" y="141" key="VcsDiffUtil.ChangesDialog" timestamp="1588999653481">
@@ -669,6 +666,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PetPadBackend$pytest_for_test_petpad_PetPadUnitTestSuite_test_404_for_authenticated_get_pets.coverage" NAME="pytest for test_petpad.PetPadUnitTestSuite.test_404_for_authenticated_get_pets Coverage Results" MODIFIED="1589218196652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend" />
     <SUITE FILE_PATH="coverage/PetPadBackend$pytest_for_test_petpad_PetPadUnitTestSuite_test_200_for_get_pets.coverage" NAME="pytest for test_petpad.PetPadUnitTestSuite.test_200_for_get_pets Coverage Results" MODIFIED="1589209115198" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PetPadBackend$pytest_in_test_petpad_py.coverage" NAME="pytest in test_petpad.py Coverage Results" MODIFIED="1589228958738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PetPadBackend$pytest_in_test_petpad_py.coverage" NAME="pytest in test_petpad.py Coverage Results" MODIFIED="1589234904479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
