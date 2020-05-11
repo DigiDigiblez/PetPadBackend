@@ -11,8 +11,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed7374c8-f810-4d82-b0b5-ba3b407ebca4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/auth/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/auth/auth.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/controllers/pet.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/pet.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,14 +109,7 @@
       <option name="presentableId" value="Default" />
       <updated>1588908684384</updated>
       <workItem from="1588908686435" duration="1699000" />
-      <workItem from="1588963622040" duration="37680000" />
-    </task>
-    <task id="LOCAL-00032" summary="Adjustment to CORS">
-      <created>1588999726912</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1588999726912</updated>
+      <workItem from="1588963622040" duration="38067000" />
     </task>
     <task id="LOCAL-00033" summary="Debugging POST endpoint hits">
       <created>1589000161690</created>
@@ -456,7 +447,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589138703121</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="Adjustments.">
+      <created>1589191828402</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1589191828402</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -518,7 +516,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="Heroku env" />
     <MESSAGE value="App config vars" />
     <MESSAGE value="Api POST test" />
     <MESSAGE value="Adjustment to CORS" />
@@ -543,7 +540,8 @@
     <MESSAGE value="Housekeeping." />
     <MESSAGE value="Fixed endpoints." />
     <MESSAGE value="Added auth decorators to all (Pet and Post) endpoints." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added auth decorators to all (Pet and Post) endpoints." />
+    <MESSAGE value="Adjustments." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adjustments." />
   </component>
   <component name="WindowStateProjectService">
     <state x="516" y="304" key="Github.ShareDialog" timestamp="1588909935913">
@@ -554,10 +552,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1588908927729" />
-    <state x="1431" y="-448" key="Vcs.Push.Dialog.v2" timestamp="1589138704613">
+    <state x="1431" y="-448" key="Vcs.Push.Dialog.v2" timestamp="1589191829821">
       <screen x="1280" y="-1120" width="1080" height="1920" />
     </state>
-    <state x="1431" y="-448" key="Vcs.Push.Dialog.v2/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589138704613" />
+    <state x="1431" y="-448" key="Vcs.Push.Dialog.v2/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589191829821" />
     <state x="179" y="280" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1589090532535" />
     <state x="414" y="141" key="VcsDiffUtil.ChangesDialog" timestamp="1588999653481">
       <screen x="0" y="0" width="1280" height="800" />
