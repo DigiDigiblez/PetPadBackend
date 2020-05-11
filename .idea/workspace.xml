@@ -11,6 +11,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed7374c8-f810-4d82-b0b5-ba3b407ebca4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app_tests.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/test_petpad.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/controllers/post.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/post.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,8 +36,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/database" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
@@ -41,12 +47,14 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend" />
+      <recent name="$PROJECT_DIR$/backend/tests" />
       <recent name="$PROJECT_DIR$/backend/database" />
       <recent name="$PROJECT_DIR$/backend/controllers" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Shell Script.app_run.sh (1)">
+  <component name="RunManager" selected="Python tests.pytest in test_petpad.py">
     <configuration name="backend" type="PythonConfigurationType" factoryName="Python">
       <module name="backend" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -91,8 +99,56 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="app_tests.sh" type="ShConfigurationType" temporary="true">
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/backend/app_tests.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/backend" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for backend.test_petpad.PetPadUnitTestSuite.test_200_for_get_pets" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="backend" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;backend.test_petpad.PetPadUnitTestSuite.test_200_for_get_pets&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in test_petpad.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="backend" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/backend/test_petpad.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest in test_petpad.py" />
+        <item itemvalue="Python tests.pytest for backend.test_petpad.PetPadUnitTestSuite.test_200_for_get_pets" />
+        <item itemvalue="Shell Script.app_tests.sh" />
         <item itemvalue="Shell Script.app_run.sh (1)" />
         <item itemvalue="Shell Script.app_run.sh" />
       </list>
@@ -109,14 +165,7 @@
       <option name="presentableId" value="Default" />
       <updated>1588908684384</updated>
       <workItem from="1588908686435" duration="1699000" />
-      <workItem from="1588963622040" duration="43705000" />
-    </task>
-    <task id="LOCAL-00044" summary="Optimising POST endpoint">
-      <created>1589007937296</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1589007937296</updated>
+      <workItem from="1588963622040" duration="53562000" />
     </task>
     <task id="LOCAL-00045" summary="Optimising POST endpoint">
       <created>1589008264233</created>
@@ -454,7 +503,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589200260287</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="Improvements to endpoints for authentication">
+      <created>1589200504174</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1589200504174</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -539,23 +595,43 @@
     <MESSAGE value="Fixed endpoints." />
     <MESSAGE value="Added auth decorators to all (Pet and Post) endpoints." />
     <MESSAGE value="Adjustments." />
-    <MESSAGE value="Improvements to endpoints for authentication" />
     <MESSAGE value="Added get:post endpoint." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added get:post endpoint." />
+    <MESSAGE value="Improvements to endpoints for authentication" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improvements to endpoints for authentication" />
   </component>
   <component name="WindowStateProjectService">
     <state x="516" y="304" key="Github.ShareDialog" timestamp="1588909935913">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="516" y="304" key="Github.ShareDialog/0.0.1280.800@0.0.1280.800" timestamp="1588909935913" />
+    <state width="1038" height="582" key="GridCell.Tab.0.bottom" timestamp="1589217115775">
+      <screen x="1280" y="-1120" width="1080" height="1920" />
+    </state>
+    <state width="1038" height="582" key="GridCell.Tab.0.bottom/0.0.1280.800/-640.-1177.1920.1177/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589209187769" />
+    <state width="1038" height="582" key="GridCell.Tab.0.bottom/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589217115775" />
+    <state width="1038" height="582" key="GridCell.Tab.0.center" timestamp="1589217115771">
+      <screen x="1280" y="-1120" width="1080" height="1920" />
+    </state>
+    <state width="1038" height="582" key="GridCell.Tab.0.center/0.0.1280.800/-640.-1177.1920.1177/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589209187766" />
+    <state width="1038" height="582" key="GridCell.Tab.0.center/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589217115771" />
+    <state width="1038" height="582" key="GridCell.Tab.0.left" timestamp="1589217115769">
+      <screen x="1280" y="-1120" width="1080" height="1920" />
+    </state>
+    <state width="1038" height="582" key="GridCell.Tab.0.left/0.0.1280.800/-640.-1177.1920.1177/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589209187764" />
+    <state width="1038" height="582" key="GridCell.Tab.0.left/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589217115769" />
+    <state width="1038" height="582" key="GridCell.Tab.0.right" timestamp="1589217115773">
+      <screen x="1280" y="-1120" width="1080" height="1920" />
+    </state>
+    <state width="1038" height="582" key="GridCell.Tab.0.right/0.0.1280.800/-640.-1177.1920.1177/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589209187768" />
+    <state width="1038" height="582" key="GridCell.Tab.0.right/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589217115773" />
     <state x="149" y="39" key="SettingsEditor" timestamp="1588908927729">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1588908927729" />
-    <state x="-46" y="-973" key="Vcs.Push.Dialog.v2" timestamp="1589200262940">
+    <state x="-46" y="-973" key="Vcs.Push.Dialog.v2" timestamp="1589200506524">
       <screen x="-640" y="-1200" width="1920" height="1200" />
     </state>
-    <state x="-46" y="-973" key="Vcs.Push.Dialog.v2/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589200262940" />
+    <state x="-46" y="-973" key="Vcs.Push.Dialog.v2/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589200506524" />
     <state x="179" y="280" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1589090532535" />
     <state x="1560" y="-757" key="Vcs.Push.Dialog.v2/0.23.1280.728/-640.-1177.1920.1177/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589198117942" />
     <state x="414" y="141" key="VcsDiffUtil.ChangesDialog" timestamp="1588999653481">
@@ -575,10 +651,14 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="397" y="285" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1280.800@0.0.1280.800" timestamp="1588924961294" />
-    <state x="1537" y="-822" width="670" height="1623" key="search.everywhere.popup" timestamp="1589194367633">
+    <state x="1537" y="-822" width="670" height="1623" key="search.everywhere.popup" timestamp="1589201198047">
       <screen x="1280" y="-1120" width="1080" height="1920" />
     </state>
-    <state x="1537" y="-822" width="670" height="1623" key="search.everywhere.popup/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589194367633" />
+    <state x="1537" y="-822" width="670" height="1623" key="search.everywhere.popup/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589201198047" />
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1589084814699" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/PetPadBackend$pytest_for_test_petpad_PetPadUnitTestSuite_test_200_for_get_pets.coverage" NAME="pytest for test_petpad.PetPadUnitTestSuite.test_200_for_get_pets Coverage Results" MODIFIED="1589209115198" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PetPadBackend$pytest_in_test_petpad_py.coverage" NAME="pytest in test_petpad.py Coverage Results" MODIFIED="1589217115758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

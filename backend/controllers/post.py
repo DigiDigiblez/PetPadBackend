@@ -129,7 +129,6 @@ class PostsID(Resource):
         if err_code:
             abort(int(err_code), err_desc)
 
-
     # PATCH "/posts/<int:post_id>" endpoint
     @post_ns.marshal_with(post_model, code=RESPONSE["204_NO_CONTENT"][0], description=RESPONSE["204_NO_CONTENT"][1])
     @post_ns.expect(post_model)
