@@ -87,7 +87,7 @@ class PetsID(Resource):
     @pet_ns.marshal_with(pet_model, code=RESPONSE["200_OK"][0], description=RESPONSE["200_OK"][1])
     @pet_ns.expect(pet_model)
     @requires_auth("get:pet")
-    def get(self, pet_id, payload):
+    def get(self, request, pet_id):
         try:
             # Retrieve existing pet record to delete
             existing_pet = Pet.query.filter(Pet.id == pet_id).one_or_none()
