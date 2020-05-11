@@ -11,7 +11,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed7374c8-f810-4d82-b0b5-ba3b407ebca4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/controllers/post.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/post.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,14 +109,7 @@
       <option name="presentableId" value="Default" />
       <updated>1588908684384</updated>
       <workItem from="1588908686435" duration="1699000" />
-      <workItem from="1588963622040" duration="43465000" />
-    </task>
-    <task id="LOCAL-00043" summary="Optimising POST endpoint">
-      <created>1589007556731</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1589007556731</updated>
+      <workItem from="1588963622040" duration="43705000" />
     </task>
     <task id="LOCAL-00044" summary="Optimising POST endpoint">
       <created>1589007937296</created>
@@ -455,7 +447,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589198116657</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="Added get:post endpoint.">
+      <created>1589200260287</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1589200260287</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -517,7 +516,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="Api POST test" />
     <MESSAGE value="Adjustment to CORS" />
     <MESSAGE value="Debugging POST endpoint hits" />
     <MESSAGE value="Improving POST endpoint" />
@@ -542,7 +540,8 @@
     <MESSAGE value="Added auth decorators to all (Pet and Post) endpoints." />
     <MESSAGE value="Adjustments." />
     <MESSAGE value="Improvements to endpoints for authentication" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improvements to endpoints for authentication" />
+    <MESSAGE value="Added get:post endpoint." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added get:post endpoint." />
   </component>
   <component name="WindowStateProjectService">
     <state x="516" y="304" key="Github.ShareDialog" timestamp="1588909935913">
@@ -553,10 +552,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1588908927729" />
-    <state x="1560" y="-757" key="Vcs.Push.Dialog.v2" timestamp="1589198117942">
-      <screen x="1280" y="-1120" width="1080" height="1920" />
+    <state x="-46" y="-973" key="Vcs.Push.Dialog.v2" timestamp="1589200262940">
+      <screen x="-640" y="-1200" width="1920" height="1200" />
     </state>
-    <state x="-46" y="-973" key="Vcs.Push.Dialog.v2/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589197489400" />
+    <state x="-46" y="-973" key="Vcs.Push.Dialog.v2/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589200262940" />
     <state x="179" y="280" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1589090532535" />
     <state x="1560" y="-757" key="Vcs.Push.Dialog.v2/0.23.1280.728/-640.-1177.1920.1177/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589198117942" />
     <state x="414" y="141" key="VcsDiffUtil.ChangesDialog" timestamp="1588999653481">

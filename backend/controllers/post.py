@@ -116,25 +116,19 @@ class PostsID(Resource):
 
             else:
                 existing_post.delete()
+                return "", RESPONSE["204_NO_CONTENT"][0]
 
         # Exception handling
         except Exception as ex:
             logger.exception(ex, exc_info=True)
 
-            # Handle only exceptions which contain code, title, and description segments differently
-            if "'" not in str(ex):
-                ex_data = extract_exception(ex)
-                err_code = ex_data["code"]
-                err_desc = ex_data["title"]
-            else:
-                raise ex
-
             db.session.rollback()
+
+            raise ex
 
         if err_code:
             abort(int(err_code), err_desc)
-        else:
-            return "", RESPONSE["204_NO_CONTENT"][0]
+
 
     # PATCH "/posts/<int:post_id>" endpoint
     @post_ns.marshal_with(post_model, code=RESPONSE["204_NO_CONTENT"][0], description=RESPONSE["204_NO_CONTENT"][1])
@@ -157,6 +151,7 @@ class PostsID(Resource):
             # Post record does exist, so update
             else:
                 existing_post.update(api.payload)
+                return "", RESPONSE["204_NO_CONTENT"][0]
 
         # Error handling
         except (ValueError, IntegrityError) as err:
@@ -169,17 +164,9 @@ class PostsID(Resource):
         except Exception as ex:
             logger.exception(ex, exc_info=True)
 
-            # Handle only exceptions which contain code, title, and description segments differently
-            if "'" not in str(ex):
-                ex_data = extract_exception(ex)
-                err_code = ex_data["code"]
-                err_desc = ex_data["title"]
-            else:
-                raise ex
-
             db.session.rollback()
+
+            raise ex
 
         if err_code:
             abort(int(err_code), err_desc)
-        else:
-            return "", RESPONSE["204_NO_CONTENT"][0]
