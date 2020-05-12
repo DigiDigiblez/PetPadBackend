@@ -5,6 +5,9 @@
 As there's so much to cover, we are going to break this down into stages. The backend production API is hosted on Heroku, while testing is doing using a local PostgreSQL database. Authentication is handled using the identity service provider Auth0, actioned through the use of JWTs (bearer tokens) in auth headers.
 In addition, testing is done both in Postman, and through the use of the UnitTest Python library.
 
+#### Installation
+Going to have to set up a virtual environment, e.g. virtualenv. Additionally, install the requirements.txt file using `pip install -r requirements.txt`.
+
 #### Coding style & conventions
 This project back end uses [pep 8 style](https://www.python.org/dev/peps/pep-0008/), to ensure the code is neat and error-free.
 
@@ -49,3 +52,6 @@ The Free User's Auth0 account details are `free.user@petpad.com / Udacity2020`, 
 #### Unit Tests (testing PROD API)
 In addition to Postman tests, `30 unit tests` have also been created and fully pass. They test all endpoints, both authenticated and unauthenticated for both actors. The database used is a local test one, separated from the Heroku production database to prevent conflicts.
 Each time you run the tests the best course of action would be to load `psql` and type `CREATE DATABASE "petpadtest";` when first beginning the project, and both `DROP DATABASE "petpadtest";` and `CREATE DATABASE "petpadtest";` before doing future test runs to completely reset the test environment. To run tests, run the `test_petpad.py` file provided.
+
+
+Additionally, since we're testing secure https endpoints locally, we will want to leverage local `SSL Certificates`, see `https://stackoverflow.com/questions/50236117/scraping-ssl-certificate-verify-failed-error-for-http-en-wikipedia-org`. For this, we will want to go to the directory of Python, and run the `Install Certificates.command` and `Update Shell Profile.command` files in that directory before running our unit test suite. On Mac this can be found in `Applications / Python 3.x / <files>`.

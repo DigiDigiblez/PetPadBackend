@@ -12,7 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ed7374c8-f810-4d82-b0b5-ba3b407ebca4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_Doc_(BE_&amp;_FE).md" beforeDir="false" afterPath="$PROJECT_DIR$/Project_Doc_(BE_&amp;_FE).md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back_End_-_Getting_Started.md" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End_-_Getting_Started.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,14 +167,7 @@
       <option name="presentableId" value="Default" />
       <updated>1588908684384</updated>
       <workItem from="1588908686435" duration="1699000" />
-      <workItem from="1588963622040" duration="70069000" />
-    </task>
-    <task id="LOCAL-00049" summary="Optimising POST endpoint">
-      <created>1589010686994</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1589010686994</updated>
+      <workItem from="1588963622040" duration="74970000" />
     </task>
     <task id="LOCAL-00050" summary="Optimising POST endpoint">
       <created>1589011039572</created>
@@ -512,7 +505,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589238783164</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="Housekeeping.">
+      <created>1589239055720</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1589239055720</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -589,7 +589,6 @@
     <MESSAGE value="Updated Pet/Post endpoints." />
     <MESSAGE value="Testing birthday with mock date." />
     <MESSAGE value="Added DELETE and PATCH post endpoints. Also updated Auth0 config." />
-    <MESSAGE value="Housekeeping." />
     <MESSAGE value="Fixed endpoints." />
     <MESSAGE value="Added auth decorators to all (Pet and Post) endpoints." />
     <MESSAGE value="Adjustments." />
@@ -599,7 +598,8 @@
     <MESSAGE value="Progress to unit tests." />
     <MESSAGE value="Finished all 30 authenticated and unauthenticated user tests." />
     <MESSAGE value="Adding Back End API and Project documentation. Finalisations." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding Back End API and Project documentation. Finalisations." />
+    <MESSAGE value="Housekeeping." />
+    <option name="LAST_COMMIT_MESSAGE" value="Housekeeping." />
   </component>
   <component name="WindowStateProjectService">
     <state x="1380" y="-1020" width="880" height="1720" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1589224428975">
@@ -614,34 +614,34 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="516" y="304" key="Github.ShareDialog/0.0.1280.800@0.0.1280.800" timestamp="1588909935913" />
-    <state width="1038" height="582" key="GridCell.Tab.0.bottom" timestamp="1589234896188">
+    <state width="1038" height="582" key="GridCell.Tab.0.bottom" timestamp="1589242221126">
       <screen x="1280" y="-1120" width="1080" height="1920" />
     </state>
     <state width="1038" height="582" key="GridCell.Tab.0.bottom/0.0.1280.800/-640.-1177.1920.1177/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589209187769" />
-    <state width="1038" height="582" key="GridCell.Tab.0.bottom/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589234896188" />
-    <state width="1038" height="582" key="GridCell.Tab.0.center" timestamp="1589234896185">
+    <state width="1038" height="582" key="GridCell.Tab.0.bottom/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589242221126" />
+    <state width="1038" height="582" key="GridCell.Tab.0.center" timestamp="1589242221124">
       <screen x="1280" y="-1120" width="1080" height="1920" />
     </state>
     <state width="1038" height="582" key="GridCell.Tab.0.center/0.0.1280.800/-640.-1177.1920.1177/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589209187766" />
-    <state width="1038" height="582" key="GridCell.Tab.0.center/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589234896185" />
-    <state width="1038" height="582" key="GridCell.Tab.0.left" timestamp="1589234896183">
+    <state width="1038" height="582" key="GridCell.Tab.0.center/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589242221124" />
+    <state width="1038" height="582" key="GridCell.Tab.0.left" timestamp="1589242221123">
       <screen x="1280" y="-1120" width="1080" height="1920" />
     </state>
     <state width="1038" height="582" key="GridCell.Tab.0.left/0.0.1280.800/-640.-1177.1920.1177/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589209187764" />
-    <state width="1038" height="582" key="GridCell.Tab.0.left/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589234896183" />
-    <state width="1038" height="582" key="GridCell.Tab.0.right" timestamp="1589234896186">
+    <state width="1038" height="582" key="GridCell.Tab.0.left/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589242221123" />
+    <state width="1038" height="582" key="GridCell.Tab.0.right" timestamp="1589242221125">
       <screen x="1280" y="-1120" width="1080" height="1920" />
     </state>
     <state width="1038" height="582" key="GridCell.Tab.0.right/0.0.1280.800/-640.-1177.1920.1177/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589209187768" />
-    <state width="1038" height="582" key="GridCell.Tab.0.right/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589234896186" />
+    <state width="1038" height="582" key="GridCell.Tab.0.right/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589242221125" />
     <state x="149" y="39" key="SettingsEditor" timestamp="1588908927729">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1588908927729" />
-    <state x="-46" y="-973" key="Vcs.Push.Dialog.v2" timestamp="1589238785486">
+    <state x="-46" y="-973" key="Vcs.Push.Dialog.v2" timestamp="1589239057606">
       <screen x="-640" y="-1200" width="1920" height="1200" />
     </state>
-    <state x="-46" y="-973" key="Vcs.Push.Dialog.v2/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589238785486" />
+    <state x="-46" y="-973" key="Vcs.Push.Dialog.v2/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589239057606" />
     <state x="179" y="280" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1589090532535" />
     <state x="1560" y="-757" key="Vcs.Push.Dialog.v2/0.23.1280.728/-640.-1177.1920.1177/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589198117942" />
     <state x="414" y="141" key="VcsDiffUtil.ChangesDialog" timestamp="1588999653481">
@@ -652,19 +652,19 @@
       <screen x="1280" y="-1120" width="1080" height="1920" />
     </state>
     <state x="1421" y="-543" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589104175520" />
-    <state x="1567" y="-743" width="570" height="1292" key="find.popup" timestamp="1589218498136">
+    <state x="1567" y="-743" width="570" height="1292" key="find.popup" timestamp="1589243187402">
       <screen x="1280" y="-1120" width="1080" height="1920" />
     </state>
-    <state x="1567" y="-743" width="570" height="1292" key="find.popup/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589218498136" />
+    <state x="1567" y="-743" width="570" height="1292" key="find.popup/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589243187402" />
     <state x="340" y="157" width="600" height="538" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1589090527167" />
     <state x="397" y="285" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1588924961294">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="397" y="285" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1280.800@0.0.1280.800" timestamp="1588924961294" />
-    <state x="1537" y="-822" width="670" height="1623" key="search.everywhere.popup" timestamp="1589201198047">
+    <state x="1537" y="-822" width="670" height="1623" key="search.everywhere.popup" timestamp="1589243175572">
       <screen x="1280" y="-1120" width="1080" height="1920" />
     </state>
-    <state x="1537" y="-822" width="670" height="1623" key="search.everywhere.popup/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589201198047" />
+    <state x="1537" y="-822" width="670" height="1623" key="search.everywhere.popup/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589243175572" />
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1589084814699" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
