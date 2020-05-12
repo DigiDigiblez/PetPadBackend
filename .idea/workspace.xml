@@ -11,7 +11,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed7374c8-f810-4d82-b0b5-ba3b407ebca4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Back_End_-_Getting_Started.md" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End_-_Getting_Started.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -167,14 +166,7 @@
       <option name="presentableId" value="Default" />
       <updated>1588908684384</updated>
       <workItem from="1588908686435" duration="1699000" />
-      <workItem from="1588963622040" duration="74970000" />
-    </task>
-    <task id="LOCAL-00050" summary="Optimising POST endpoint">
-      <created>1589011039572</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1589011039573</updated>
+      <workItem from="1588963622040" duration="75268000" />
     </task>
     <task id="LOCAL-00051" summary="Optimising POST endpoint">
       <created>1589011506942</created>
@@ -512,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589239055720</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="Improved backend documentation.">
+      <created>1589251311213</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1589251311213</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -574,7 +573,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="Optimising POST endpoint" />
     <MESSAGE value="Fixing POST endpoint." />
     <MESSAGE value="Fixing Pet db conditions." />
     <MESSAGE value="New specific pet GET endpoint." />
@@ -599,7 +597,8 @@
     <MESSAGE value="Finished all 30 authenticated and unauthenticated user tests." />
     <MESSAGE value="Adding Back End API and Project documentation. Finalisations." />
     <MESSAGE value="Housekeeping." />
-    <option name="LAST_COMMIT_MESSAGE" value="Housekeeping." />
+    <MESSAGE value="Improved backend documentation." />
+    <option name="LAST_COMMIT_MESSAGE" value="Improved backend documentation." />
   </component>
   <component name="WindowStateProjectService">
     <state x="1380" y="-1020" width="880" height="1720" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1589224428975">
@@ -638,10 +637,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1588908927729" />
-    <state x="-46" y="-973" key="Vcs.Push.Dialog.v2" timestamp="1589239057606">
+    <state x="-46" y="-973" key="Vcs.Push.Dialog.v2" timestamp="1589251313227">
       <screen x="-640" y="-1200" width="1920" height="1200" />
     </state>
-    <state x="-46" y="-973" key="Vcs.Push.Dialog.v2/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589239057606" />
+    <state x="-46" y="-973" key="Vcs.Push.Dialog.v2/0.0.1280.800/-640.-1200.1920.1200/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589251313227" />
     <state x="179" y="280" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1589090532535" />
     <state x="1560" y="-757" key="Vcs.Push.Dialog.v2/0.23.1280.728/-640.-1177.1920.1177/1280.-1120.1080.1920@1280.-1120.1080.1920" timestamp="1589198117942" />
     <state x="414" y="141" key="VcsDiffUtil.ChangesDialog" timestamp="1588999653481">
